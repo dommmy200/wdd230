@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'confortaa';
+  font-weight: 600;
+  src: url(/styles/fonts/comforter-regular-webfont.woff2) format('woff2'),
+      url(/styles/fonts/comforter-regular-webfont.woff) format('woff')
+}
+@font-face {
+  font-family: 'montserrat';
+  font-weight: 600;
+  src: url(/styles/fonts/montserrat-variablefont_wght-webfont.woff2) format('woff2'),
+      url(/styles/fonts/montserrat-variablefont_wght-webfont.woff) format('woff')
+}
+@font-face {
+  font-family: 'salsa';
+  font-weight: 800;
+  src: url(/styles/fonts/salsa-regular-webfont.woff) format('woff')
+}
+.container {
+  font-family: montserrat, sans-serif;
+  color: black;
+}
+.sub-container1 {
+  background: rgb(38, 7, 118);
+}
+.sub-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  margin-bottom: -20px;
+}
+.image1 {
+  max-width: 180px;
+  margin-left: -20px;
+  margin-right: 50px;
+}
+.image1-name {
+  color: white;
+}
+.sub-container2 {
+  text-align: center;
+  font-family: salsa, sans-serif;
+  font-size: larger;
+  background-color: black;
+}
+#remove {
+  list-style-type: none;
+}
+li > a {
+  color: white;
+}
+#remove li {
+  padding: 30px;
+}
+.sub-container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.line {
+  width: 97%;
+  height: 0.5px; 
+  background-color: #130f0f;
+  margin-top: -20px;
+}
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr;
+  align-items: center; 
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 97%;
+  margin-top: 10px;
+}
+.sub-container4 {
+  min-height: 30vh;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+.sub-card1, .sub-card2{
+  width:100%;
+  color: white;
+  font-size:xx-large;
+  background: rgb(55, 55, 150);
+  text-align: center;
+  
+  padding: auto;
+  height: 100%;
+}
+ul {
+  list-style-type: decimal-leading-zero;
+  padding: 0;
+}
+.sub-container4 {
+  display: grid;
+  grid-template-columns: 1fr; /* Create one column */
+  grid-gap: 10px;            /* Add some space between items */
+  justify-content: center; 
+}
+.weeks {
+  background-color: rgb(152, 152, 192);
+  height: 100%;
+  align-items: center;
+}
