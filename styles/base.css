@@ -125,10 +125,25 @@ ul {
 .copyright-logo, .page-author, .flag {
   color: white;
   display: block;
-  width: 200px;
+  text-align: center;
+  width: 400px;
 }
 .paragraph1 {
-
   display: block;
-  width: 200px;
+  width: 400px;
+}
+.page-author::after {
+  content: url("../images/flower.jpeg");
+  display: inline;
+  margin-left: 20px;
+}
+.page-author::before {
+  content: url("../images/flower.jpeg");
+  display: inline;
+  margin-right: 20px;
+}
+.flag::after {
+  content: url("../images/naija.png");
+  display: inline;
+  margin-left: 20px;
 }
