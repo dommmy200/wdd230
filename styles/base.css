@@ -85,18 +85,20 @@ li > a {
   font-size:xx-large;
   background: rgb(55, 55, 150);
   text-align: center;
-  padding: auto;
   height: 100%;
+  margin: auto;
 }
 ul {
   list-style-type: decimal-leading-zero;
   color: rgb(245, 241, 241);
 }
 .sub-container4 {
-  display: grid;
-  grid-template-columns: 1fr; /* Create one column */
-  grid-gap: 10px;            /* Add some space between items */
-  justify-content: center; 
+  display: flex;
+  flex-direction: column;
+/*   align-items: center; */
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(5, 5, 90);
 }
 .weeks {
   background-color: rgb(48, 32, 32);
@@ -108,16 +110,25 @@ ul {
   margin-bottom: 10px;
 }
 .weeks li::before {
-  content: "\003a"; /* Unicode character for a bullet (adjust if needed) */
-  font-size: 20px; /* Adjust the font size of the bullet as needed */
-  margin-right: 5px; /* Adjust the space between the bullet and the text */
+  content: "\003a"; 
+  font-size: 20px; 
+  margin-right: 5px;
   color: rgb(244, 242, 242);
   font-weight: bold;
 }
 #lastModified {
   color: white;
   font-weight: bolder;
+  display: block;
+  width: 200px;
 }
-.foot {
-  align-items: center;
+.copyright-logo, .page-author, .flag {
+  color: white;
+  display: block;
+  width: 200px;
+}
+.paragraph1 {
+
+  display: block;
+  width: 200px;
 }
