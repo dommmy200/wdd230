@@ -91,6 +91,7 @@ li > a {
 ul {
   list-style-type: decimal-leading-zero;
   color: rgb(245, 241, 241);
+  padding-inline: 650px;
 }
 .sub-container4 {
   display: flex;
