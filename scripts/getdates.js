@@ -4,4 +4,4 @@ const options = {
     month : 'long',
     year : 'numeric'
 }
-document.getElementById('lastModified').textContent = new Date().toLocaleDateString('en-US', options);
+document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleDateString('en-US', options);
