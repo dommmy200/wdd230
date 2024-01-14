@@ -93,9 +93,10 @@ ul {
   color: rgb(245, 241, 241);
 }
 .sub-container4 {
-  display: grid;
-  grid-template-columns: 1fr; 
-  grid-gap: 10px;
+  display: flex;
+  flex-direction: column;
+/*   align-items: center; */
+  justify-content: center;
   align-items: center;
   background-color: rgb(5, 5, 90);
 }
@@ -118,7 +119,16 @@ ul {
 #lastModified {
   color: white;
   font-weight: bolder;
+  display: block;
+  width: 200px;
 }
-.foot {
-  align-items: center;
+.copyright-logo, .page-author, .flag {
+  color: white;
+  display: block;
+  width: 200px;
+}
+.paragraph1 {
+
+  display: block;
+  width: 200px;
 }
