@@ -66,8 +66,9 @@ li > a {
 .card {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 1fr 3fr;
   align-items: center; 
+  justify-content: center;
   border: 1px solid black;
   border-radius: 5px;
   width: 97%;
@@ -84,13 +85,12 @@ li > a {
   font-size:xx-large;
   background: rgb(55, 55, 150);
   text-align: center;
-  
   padding: auto;
   height: 100%;
 }
 ul {
   list-style-type: decimal-leading-zero;
-  padding: 0;
+  color: rgb(245, 241, 241);
 }
 .sub-container4 {
   display: grid;
@@ -99,7 +99,18 @@ ul {
   justify-content: center; 
 }
 .weeks {
-  background-color: rgb(152, 152, 192);
+  background-color: rgb(48, 32, 32);
   height: 100%;
-  align-items: center;
+  text-align: center;
+}
+.weeks li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.weeks li::before {
+  content: "\003a"; /* Unicode character for a bullet (adjust if needed) */
+  font-size: 20px; /* Adjust the font size of the bullet as needed */
+  margin-right: 5px; /* Adjust the space between the bullet and the text */
+  color: rgb(244, 242, 242);
+  font-weight: bold;
 }
