@@ -26,6 +26,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    background-color: rgb(202, 199, 199);
   }
   nav ul li {
       flex: 1 1 100%;
@@ -34,12 +35,12 @@
     list-style-type: none;
   }
   li > a {
-    color: rgb(149, 34, 34);
+    color: rgb(6, 5, 5);
+    font-size: large;
   }
   .image1 {
     max-width: 180px;
-    margin-left: -20px;
-    margin-right: 50px;
+    margin: 0 auto;
   }
   .image1-name {
     color: rgb(9, 8, 8);
@@ -47,59 +48,59 @@
   .sub-container4 {
     display: flex;
     flex-direction: column;
-     align-items: center; 
+    align-items: center; 
     justify-content: center;
     align-items: center;
     background-color: rgb(5, 5, 90);
-}
-.weeks {
+  }
+  .weeks {
     background-color: rgb(48, 32, 32);
     height: 100%;
     text-align: center;
-}
-.weeks li {
+  }
+  .weeks li {
     margin-top: 10px;
     margin-bottom: 10px;
-}
-.weeks li::before {
+  }
+  .weeks li::before {
     content: "\003a"; 
     font-size: 20px; 
     margin-right: 5px;
     color: rgb(244, 242, 242);
     font-weight: bold;
-}
-#lastModified {
+  }
+  #lastModified {
     color: white;
     font-weight: bolder;
     display: inline-block;
     width: 400px;
-}
-.copyright-logo, .page-author, .flag {
+  }
+  .copyright-logo, .page-author, .flag {
     color: white;
     display: block;
     text-align: center;
     width: 400px;
-}
-.paragraph1 {
+  }
+  .paragraph1 {
     display: block;
     width: 400px;
-}
-.page-author::after {
+  }
+  .page-author::after {
     content: url("../images/flower.jpeg");
     display: inline;
     margin-left: 20px;
-}
-.page-author::before {
+  }
+  .page-author::before {
     content: url("../images/flower.jpeg");
     display: inline;
     margin-right: 20px;
-}
-.flag::after {
+  }
+  .flag::after {
     content: url("../images/naija.png");
     display: inline;
     margin-left: 20px;
-}
-li a span {
+  }
+  li a span {
     font-size: 100px;
-}
+  }
 }
