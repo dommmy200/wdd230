@@ -21,12 +21,14 @@
 }
 .sub-container1 {
   background: rgb(38, 7, 118);
+  font-family: sans-serif;
+  font-size: large;
 }
 .sub-container1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 40vh;
+  height: 40vh;
   margin-bottom: -20px;
 }
 .image1 {
@@ -42,6 +44,7 @@
   font-family: salsa, sans-serif;
   font-size: larger;
   background-color: black;
+  height: 60vh;
 }
 #remove {
   list-style-type: none;
@@ -56,6 +59,7 @@ li > a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 }
 .line {
   width: 97%;
@@ -64,6 +68,8 @@ li > a {
   margin-top: -20px;
 }
 .card {
+  flex: 1;
+
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 3fr;
@@ -120,8 +126,8 @@ ul {
 #lastModified {
   color: white;
   font-weight: bolder;
-  display: block;
-  width: 200px;
+  display: inline-block;
+  width: 400px;
 }
 .copyright-logo, .page-author, .flag {
   color: white;
@@ -147,4 +153,7 @@ ul {
   content: url("../images/naija.png");
   display: inline;
   margin-left: 20px;
+}
+li a span {
+  font-size: 100px;
 }

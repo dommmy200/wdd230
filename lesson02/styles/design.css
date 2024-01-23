@@ -49,3 +49,9 @@ footer {
 	font-size: smaller;
 	text-align: left;
 }
+#dateContainer {
+	font-size: 18px;
+}
+.icon {
+	margin-right: 5px;
+}
