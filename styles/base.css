@@ -19,40 +19,87 @@
   nav ul {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
-  .container {
-    font-family: montserrat, sans-serif;
-    color: black;
-  }
-  .sub-container1 {
-    background: rgb(38, 7, 118);
-    font-family: sans-serif;
-    font-size: large;
-  }
-  .image1 {
-    max-width: 180px;
-  }
-  .image1-name {
-    color: white;
-  }
-  .sub-container2 {
+  body {
     display: flex;
-    flex-direction: row;
-    font-family: salsa, sans-serif;
-    font-size: larger;
-    background-color: black;
-    height: 60vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
+  nav ul li {
+      flex: 1 1 100%;
+  } 
   #remove {
     list-style-type: none;
   }
   li > a {
+    color: rgb(149, 34, 34);
+  }
+  .image1 {
+    max-width: 180px;
+    margin-left: -20px;
+    margin-right: 50px;
+  }
+  .image1-name {
+    color: rgb(9, 8, 8);
+  }
+  .sub-container4 {
+    display: flex;
+    flex-direction: column;
+     align-items: center; 
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(5, 5, 90);
+}
+.weeks {
+    background-color: rgb(48, 32, 32);
+    height: 100%;
+    text-align: center;
+}
+.weeks li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.weeks li::before {
+    content: "\003a"; 
+    font-size: 20px; 
+    margin-right: 5px;
+    color: rgb(244, 242, 242);
+    font-weight: bold;
+}
+#lastModified {
     color: white;
-  }
-  .line {
-    width: 97%;
-    height: 0.5px; 
-    background-color: #130f0f;
-    margin-top: -20px;
-  }
+    font-weight: bolder;
+    display: inline-block;
+    width: 400px;
+}
+.copyright-logo, .page-author, .flag {
+    color: white;
+    display: block;
+    text-align: center;
+    width: 400px;
+}
+.paragraph1 {
+    display: block;
+    width: 400px;
+}
+.page-author::after {
+    content: url("../images/flower.jpeg");
+    display: inline;
+    margin-left: 20px;
+}
+.page-author::before {
+    content: url("../images/flower.jpeg");
+    display: inline;
+    margin-right: 20px;
+}
+.flag::after {
+    content: url("../images/naija.png");
+    display: inline;
+    margin-left: 20px;
+}
+li a span {
+    font-size: 100px;
+}
 }

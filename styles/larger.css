@@ -16,13 +16,13 @@
         font-weight: 800;
         src: url(/styles/fonts/salsa-regular-webfont.woff) format('woff')
     }
-
     nav ul {
         display: flex;
+        justify-content: space-around;
     }
-    nav ul li {
+    nav ul a {
         flex: 1 1 100%;
-    }
+    } 
     .container {
         font-family: montserrat, sans-serif;
         color: black;
@@ -34,8 +34,8 @@
     }
     .sub-container1 {
         display: flex;
-        justify-content:space-around;
-        /* align-items: center; */
+        justify-content: center;
+        align-items: center; 
         height: 40vh;
         margin-bottom: -20px;
     }
@@ -50,11 +50,11 @@
     .sub-container2 {
         display: flex;
         flex-direction: row;
-        /* justify-content:space-around; */
-        /* text-align: center; */
+        justify-content:space-between;
+        text-align: center;
         font-family: salsa, sans-serif;
         font-size: larger;
-        background-color: black;
+        background-color: rgb(37, 32, 32);
         height: 60vh;
     }
     #remove {
@@ -113,7 +113,7 @@
     .sub-container4 {
         display: flex;
         flex-direction: column;
-        /*   align-items: center; */
+         align-items: center; 
         justify-content: center;
         align-items: center;
         background-color: rgb(5, 5, 90);
