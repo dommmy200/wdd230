@@ -1,159 +1,58 @@
-@font-face {
-  font-family: 'confortaa';
-  font-weight: 600;
-  src: url(/styles/fonts/comforter-regular-webfont.woff2) format('woff2'),
-      url(/styles/fonts/comforter-regular-webfont.woff) format('woff')
-}
-@font-face {
-  font-family: 'montserrat';
-  font-weight: 600;
-  src: url(/styles/fonts/montserrat-variablefont_wght-webfont.woff2) format('woff2'),
-      url(/styles/fonts/montserrat-variablefont_wght-webfont.woff) format('woff')
-}
-@font-face {
-  font-family: 'salsa';
-  font-weight: 800;
-  src: url(/styles/fonts/salsa-regular-webfont.woff) format('woff')
-}
-.container {
-  font-family: montserrat, sans-serif;
-  color: black;
-}
-.sub-container1 {
-  background: rgb(38, 7, 118);
-  font-family: sans-serif;
-  font-size: large;
-}
-.sub-container1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40vh;
-  margin-bottom: -20px;
-}
-.image1 {
-  max-width: 180px;
-  margin-left: -20px;
-  margin-right: 50px;
-}
-.image1-name {
-  color: white;
-}
-.sub-container2 {
-  text-align: center;
-  font-family: salsa, sans-serif;
-  font-size: larger;
-  background-color: black;
-  height: 60vh;
-}
-#remove {
-  list-style-type: none;
-}
-li > a {
-  color: white;
-}
-#remove li {
-  padding: 30px;
-}
-.sub-container3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-}
-.line {
-  width: 97%;
-  height: 0.5px; 
-  background-color: #130f0f;
-  margin-top: -20px;
-}
-.card {
-  flex: 1;
-
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 3fr;
-  align-items: center; 
-  justify-content: center;
-  border: 1px solid black;
-  border-radius: 5px;
-  width: 97%;
-  margin-top: 10px;
-}
-.sub-container4 {
-  min-height: 30vh;
-  border: 1px solid black;
-  margin-top: 20px;
-}
-.sub-card1, .sub-card2{
-  width:100%;
-  color: white;
-  font-size:xx-large;
-  background: rgb(55, 55, 150);
-  text-align: center;
-  height: 100%;
-  margin: auto;
-}
-ul {
-  list-style-type: decimal-leading-zero;
-  color: rgb(245, 241, 241);
-  padding-inline: 650px;
-}
-.sub-container4 {
-  display: flex;
-  flex-direction: column;
-/*   align-items: center; */
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(5, 5, 90);
-}
-.weeks {
-  background-color: rgb(48, 32, 32);
-  height: 100%;
-  text-align: center;
-}
-.weeks li {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.weeks li::before {
-  content: "\003a"; 
-  font-size: 20px; 
-  margin-right: 5px;
-  color: rgb(244, 242, 242);
-  font-weight: bold;
-}
-#lastModified {
-  color: white;
-  font-weight: bolder;
-  display: inline-block;
-  width: 400px;
-}
-.copyright-logo, .page-author, .flag {
-  color: white;
-  display: block;
-  text-align: center;
-  width: 400px;
-}
-.paragraph1 {
-  display: block;
-  width: 400px;
-}
-.page-author::after {
-  content: url("../images/flower.jpeg");
-  display: inline;
-  margin-left: 20px;
-}
-.page-author::before {
-  content: url("../images/flower.jpeg");
-  display: inline;
-  margin-right: 20px;
-}
-.flag::after {
-  content: url("../images/naija.png");
-  display: inline;
-  margin-left: 20px;
-}
-li a span {
-  font-size: 100px;
+@media screen and (max-width: 767.98px) {
+  @font-face {
+    font-family: 'confortaa';
+    font-weight: 600;
+    src: url(/styles/fonts/comforter-regular-webfont.woff2) format('woff2'),
+    url(/styles/fonts/comforter-regular-webfont.woff) format('woff')
+  }
+  @font-face {
+    font-family: 'montserrat';
+    font-weight: 600;
+    src: url(/styles/fonts/montserrat-variablefont_wght-webfont.woff2) format('woff2'),
+    url(/styles/fonts/montserrat-variablefont_wght-webfont.woff) format('woff')
+  }
+  @font-face {
+    font-family: 'salsa';
+    font-weight: 800;
+    src: url(/styles/fonts/salsa-regular-webfont.woff) format('woff')
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    font-family: montserrat, sans-serif;
+    color: black;
+  }
+  .sub-container1 {
+    background: rgb(38, 7, 118);
+    font-family: sans-serif;
+    font-size: large;
+  }
+  .image1 {
+    max-width: 180px;
+  }
+  .image1-name {
+    color: white;
+  }
+  .sub-container2 {
+    display: flex;
+    flex-direction: row;
+    font-family: salsa, sans-serif;
+    font-size: larger;
+    background-color: black;
+    height: 60vh;
+  }
+  #remove {
+    list-style-type: none;
+  }
+  li > a {
+    color: white;
+  }
+  .line {
+    width: 97%;
+    height: 0.5px; 
+    background-color: #130f0f;
+    margin-top: -20px;
+  }
 }
