@@ -24,13 +24,19 @@
   body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color: rgb(202, 199, 199);
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    background-color: rgba(129, 132, 130, 0.641);
   }
-  nav ul li {
+  .sub-container1 {
+    text-align: center;
+  }
+  .sub-container3 {
+    text-align: center;
+  }
+  /* nav ul li {
       flex: 1 1 100%;
-  } 
+  }  */
   #remove {
     list-style-type: none;
   }
@@ -53,10 +59,17 @@
     align-items: center;
     background-color: rgb(5, 5, 90);
   }
+  .card {
+    width: 100%;
+    margin: 0 auto;
+  }
   .weeks {
-    background-color: rgb(48, 32, 32);
+    background-color: rgba(129, 132, 130, 0.641);
     height: 100%;
     text-align: center;
+  }
+  .weeks  a {
+    color: #050505;
   }
   .weeks li {
     margin-top: 10px;
@@ -66,8 +79,9 @@
     content: "\003a"; 
     font-size: 20px; 
     margin-right: 5px;
-    color: rgb(244, 242, 242);
+    color: rgb(5, 5, 5);
     font-weight: bold;
+    list-style: none;
   }
   #lastModified {
     color: white;
@@ -102,5 +116,49 @@
   }
   li a span {
     font-size: 100px;
+  }
+  #menu::before {
+    content: "✅";
+  }
+  #menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #eee;
+    color: #000;
+  }
+  nav {
+    background: rgb(45, 93, 190);
+  }
+  .sub-container2 {
+    list-style: none;
+    margin: 0 auto;
+    width: 760px;
+    text-align: center;
+  } 
+  .sub-container2 li {
+    display: none;
+  }
+  .sub-container2 a {
+    display: block;
+    padding: .75rem;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(245, 243, 243);
+    font-weight: 700;
+    transition: .5s;
+    font-size: clam(1rem, 2vmin, 1.5rem);
+  }
+  .sub-container2 a:hover, .sub-container2 a:active {
+    color: rgb(71, 5, 5);
+    background-color: #f8f5f5;
+  }
+  .show li {
+    display: block;
+    }
+  #menu.show::before {
+    content: "❎";
   }
 }

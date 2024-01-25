@@ -57,8 +57,9 @@
     .sub-container2 {
         /* display: flex; */
         /* flex-direction: row; */
-        justify-content:space-between;
+        /* justify-content:space-between; */
         text-align: center;
+        /* justify-items: center; */
         font-family: salsa, sans-serif;
         font-size: larger;
         background-color: rgb(37, 32, 32);
@@ -71,11 +72,10 @@
     li > a {
         color: white;
     }
-    #remove li{
+    /* #remove li{
         margin: 65px;
         padding: 30px;
-        /* border: #cf4b4b 1px solid; */
-    }
+    } */
     .sub-container3 {
         display: flex;
         flex-direction: column;
@@ -177,5 +177,18 @@
     }
     li a span {
         font-size: 100px;
+    }
+    .sub-container2 {
+        display: flex;
+    }
+    .sub-container2 li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    .sub-container2 a {
+        text-align: center;
+    }
+    #menu {
+        display: none;
     }
 }
