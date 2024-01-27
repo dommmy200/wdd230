@@ -102,6 +102,16 @@
 
         position: relative;
     }
+    .mission p {
+        font-size: small;
+        color: var(--headline-color-on-color);
+        background-color: var(--accent1-color);
+        height: 50px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
     main h2 {
         color: aliceblue;
         font-size: 3rem;
