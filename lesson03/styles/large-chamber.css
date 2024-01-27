@@ -1,6 +1,23 @@
 @media screen and (min-width: 768px) {
     /* Import Google fonts from Google site for use in my website */
     @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Barlow:wght@200;400&family=Comfortaa&family=Open+Sans&display=swap');
+    @font-face {
+        font-family: 'confortaa';
+        font-weight: 600;
+        src: url(/styles/fonts/comforter-regular-webfont.woff2) format('woff2'),
+        url(/styles/fonts/comforter-regular-webfont.woff) format('woff')
+      }
+      @font-face {
+        font-family: 'montserrat';
+        font-weight: 600;
+        src: url(/styles/fonts/montserrat-variablefont_wght-webfont.woff2) format('woff2'),
+        url(/styles/fonts/montserrat-variablefont_wght-webfont.woff) format('woff')
+      }
+      @font-face {
+        font-family: 'salsa';
+        font-weight: 800;
+        src: url(/styles/fonts/salsa-regular-webfont.woff) format('woff')
+      }
 
     /* come back here and rearrange these colors to chosen ones */
     :root {
