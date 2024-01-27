@@ -54,7 +54,7 @@
     .logo {
         font-size: medium;
     }
-    header > p {
+    header > h1 {
         height: 100px;
         flex: 3;
         display: flex;
