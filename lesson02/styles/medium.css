@@ -1,5 +1,23 @@
 /* @media screen and (max-width: 780px) and (min-width: 350px) { */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    @font-face {
+        font-family: 'confortaa';
+        font-weight: 600;
+        src: url(/styles/fonts/comforter-regular-webfont.woff2) format('woff2'),
+        url(/styles/fonts/comforter-regular-webfont.woff) format('woff')
+      }
+      @font-face {
+        font-family: 'montserrat';
+        font-weight: 600;
+        src: url(/styles/fonts/montserrat-variablefont_wght-webfont.woff2) format('woff2'),
+        url(/styles/fonts/montserrat-variablefont_wght-webfont.woff) format('woff')
+      }
+      @font-face {
+        font-family: 'salsa';
+        font-weight: 800;
+        src: url(/styles/fonts/salsa-regular-webfont.woff) format('woff')
+      }
+
     body {
         display: grid;
         grid-template-columns: 2fr;
