@@ -1,6 +1,6 @@
 @media screen and (max-width: 767.98px) {
     /* Import Google fonts from Google site for use in my website */
-    @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Barlow:wght@200;400&family=Comfortaa&family=Open+Sans&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Barlow:wght@200;400&family=Comfortaa&family=Open+Sans&display=swap'); */
     @font-face {
         font-family: 'confortaa';
         font-weight: 600;
@@ -29,9 +29,9 @@
 
     
         /* Chosen fonts */
-        --heading-font: "Bad Script", Arial, sans-serif;
+        --heading-font: salsa, Arial, sans-serif;
         --paragraph-font: Comfortaa, Helvetica, sans-serif;
-        --other-font: Barlow, Arial, sans-serif;
+        --other-font: montserrat, Arial, sans-serif;
     
         /* Chosen from palette colors */
         --headline-color-on-white: #c2c2c3;  /* headlines on a white background */ 

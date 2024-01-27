@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
     /* Import Google fonts from Google site for use in my website */
-    @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Barlow:wght@200;400&family=Comfortaa&family=Open+Sans&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Barlow:wght@200;400&family=Comfortaa&family=Open+Sans&display=swap'); */
     @font-face {
         font-family: 'confortaa';
         font-weight: 600;
