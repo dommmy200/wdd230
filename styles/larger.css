@@ -123,7 +123,7 @@
     .sub-container4 {
         display: flex;
         flex-direction: column;
-         align-items: center; 
+        align-items: center; 
         justify-content: center;
         align-items: center;
         background-color: rgb(5, 5, 90);
@@ -144,6 +144,7 @@
         color: rgb(244, 242, 242);
         font-weight: bold;
     }
+    /* Footer rules */
     #lastModified {
         color: white;
         font-weight: bolder;

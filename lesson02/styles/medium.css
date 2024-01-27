@@ -1,0 +1,44 @@
+/* @media screen and (max-width: 780px) and (min-width: 350px) { */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 100px 1fr 1.3fr 70px;
+        grid-template-areas: 
+            "header1 header1"
+            "top middle"
+            "bottom bottom"
+            "footer1 footer1";
+        row-gap: 2px;
+        background-color: lightgreen;
+        font-size: 16px;
+    }
+    header {
+        grid-area: header1;
+        height: 150px;
+        border: 2px solid gray;
+        color: brown;
+        background-color: coral;
+    }
+    
+    .top {
+        grid-area: top;
+        border: 2px solid rgb(234, 13, 13);
+        color: rgb(84, 46, 46);
+    }
+    .middle {
+        grid-area: middle;
+        border: 2px solid rgb(235, 12, 12);
+        color: rgb(16, 152, 95);
+    }
+    .bottom {
+        grid-area: bottom;
+        border: 2px solid rgb(174, 10, 10);
+        color: rgb(58, 8, 175);
+    }
+    footer {
+        grid-area: footer1;
+        border: 2px solid gray;
+        color: rgb(29, 143, 69);
+    }
+}

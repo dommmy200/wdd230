@@ -1,0 +1,36 @@
+/* @media screen and (max-width: 300px) { */
+@media only screen and (max-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px repeat(3, 1fr) 70px;
+        grid-template-areas: 
+            "header"
+            "main"
+            "main"
+            "main"
+            "footer";
+        /* row-gap: 20px; */
+        background-color: lightblue;
+        font-size: 14px;
+    }
+    img {
+        width: 200px;
+    }
+    header {
+        grid-area: header;
+        border: 2px solid gray;
+        color: brown;
+        background-color: aqua;
+    }
+    main {
+        grid-area: main;
+        border: 2px solid gray;
+        color: rgb(84, 46, 46);
+    }
+    footer {
+        grid-area: footer;
+        border: 2px solid gray;
+        color: rgb(29, 143, 69);
+    }
+}
