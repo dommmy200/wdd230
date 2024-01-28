@@ -17,7 +17,30 @@
         font-weight: 800;
         src: url(/styles/fonts/salsa-regular-webfont.woff) format('woff')
       }
+      :root {
+        /* Color Palette */
+        --primary-color: #ffffff;
+        --secondary-color: #c2c2c3;
+        --accent1-color: #79797c;
+        --accent2-color: #27272b;
 
+    
+        /* Chosen fonts */
+        --heading-font: "Bad Script", Arial, sans-serif;
+        --paragraph-font: Comfortaa, Helvetica, sans-serif;
+        --other-font: Barlow, Arial, sans-serif;
+    
+        /* Chosen from palette colors */
+        --headline-color-on-white: #c2c2c3;  /* headlines on a white background */ 
+        --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
+        --paragraph-color-on-white: #27272b; /* paragraph text on a white background */ 
+        --paragraph-color-on-color: #ffffff; /* paragraph text on a colored background */ 
+        --paragraph-background-color: #79797c;
+        --nav-link-color: #c2c2c3;
+        --nav-background-color: #27272b;
+        --nav-hover-link-color: #27272b;
+        --nav-hover-background-color: #c2c2c3;
+    }
     body {
         display: grid;
         grid-template-columns: 1fr;
@@ -27,7 +50,7 @@
             "main"
             "footer";
         row-gap: 5px;
-        background-color: lightcoral;
+        background-color: var(--paragraph-background-color);
         font-size: 18px;
     }
     header {
@@ -99,7 +122,7 @@
         font-weight: 500;
     }
     .p-top, .p-middle, .p-bottom {
-        color: black;
+        color: var(--headline-color-on-color);
         padding: 10px;
         margin: 0;
         font-size: large;
