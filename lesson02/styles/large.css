@@ -100,7 +100,6 @@
     .top {
         grid-area: top;
         border: 2px solid gray;
-        
     }
 
     .top p:first-child, .middle p:first-child, .bottom p:first-child {
