@@ -43,6 +43,29 @@ function insertTextAndModifiedDate() {
     dateContainer.appendChild(lastModifiedDate);
     dateContainer.appendChild(dateTextNode);
 }
+// Create a new Image object
+var image = new Image();
+// Set the source (URL) of the image
+image.src = '/lesson03/images/id-city.jpeg';
+
+image.onload = function() {
+    // Get the placeholder element by its ID
+    var dynamicImage = document.getElementById('dynamicImage');
+
+    // Update the src attribute of the image element with the loaded image
+    // imageElement.src = image.src;
+    
+    // You can also set other attributes or styles if needed
+    // imageElement.alt = 'Description of the image';
+    // imageElement.style.width = '100%';
+    // imageElement.style.height = 'auto';
+    // Set the background image of the container
+    dynamicImage.style.backgroundImage = 'url(' + image.src + ')';
+};
+
+// Append the image object to the body (this triggers the image loading)
+// document.body.appendChild(image);
+
 // Call the function to insert the date and icon when the page is loaded
 document.addEventListener('DOMContentLoaded', insertDateAndIcon);
 // Call the function to insert the date and text when the page is loaded
