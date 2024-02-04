@@ -2,8 +2,7 @@
     @font-face {
         font-family: sensation-light;
         src: url(../styles/fonts/sensation-lite/Sansation-Lite/Sansation-lite.woff2),
-        url(../styles/fonts/sensation-lite/Sansation-Lite/Sansation-lite.woff),
-        ;
+        url(../styles/fonts/sensation-lite/Sansation-Lite/Sansation-lite.woff);
     }
     @font-face {
         font-family: besans;
