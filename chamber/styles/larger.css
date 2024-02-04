@@ -156,6 +156,11 @@
         display: flex;
         gap: 5px;
     }
+    #nav-section h2 {
+        flex: .3;
+        padding-top: 70px;
+        text-align: center;
+    }
     .nav-title {
         flex: 1;
         color: #080707;

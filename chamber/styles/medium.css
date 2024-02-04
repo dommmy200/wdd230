@@ -139,6 +139,11 @@
         max-width: 100%;
         height: auto;
     }
+    #nav-section h2 {
+        flex: .3;
+        padding-top: 70px;
+        text-align: center;
+    }
     #nav-links {
         grid-row: auto;
         background-color:#262629;
