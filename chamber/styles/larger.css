@@ -138,14 +138,14 @@
         margin: 5px;
         padding: 20px 0 0 15px;
         background-color: #5d0f09;
-        text-justify: center;
+        /* text-justify: center; */
     }
     .company-name {
-        font-family: var(--paragraph-font);
+        font-family: Comfortaa;
         font-weight: calc(700* var(--font-weight-multiplier, 2));
         font-size: 1.8rem;
         text-align: center;
-        text-justify: center;
+        /* text-justify: center; */
     }
     /* nav section CSS rules */
     #nav-section {
