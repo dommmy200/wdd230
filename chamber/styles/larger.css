@@ -81,9 +81,7 @@
             "footer footer";
         gap: 5px;
     }
-    /* #page-head {
-        grid-area: header;
-    } */
+
     #pseudo-main {
         grid-area: main;
         font-size: large;
@@ -115,15 +113,6 @@
         margin-bottom: 5px;
         border-radius: 5px;
     }
-    /* .middle-sections {
-        grid-area: mid-center;
-    }
-    .container4 {
-        grid-area: mid-right;
-    }
-    .container5 {
-        grid-area: base;
-    } */
 
     /* Header CSS rules */
     #page-head {
