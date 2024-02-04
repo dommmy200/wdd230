@@ -1,0 +1,228 @@
+@media only screen and (max-width: 600px) {
+    @font-face {
+        font-family: sensation-light;
+        src: url(../styles/fonts/sensation-lite/Sansation-Lite/Sansation-lite.woff2),
+        url(../styles/fonts/sensation-lite/Sansation-Lite/Sansation-lite.woff),
+        ;
+    }
+    @font-face {
+        font-family: besans;
+        src: url(../styles/fonts/besans/Besans/Besans.woff2),
+        url(../styles/fonts/besans/Besans/Besans.woff);
+    }
+    @font-face {
+        font-family: sansi;
+        src: url(../styles/fonts/sansi/SANSI/SANSI.woff2),
+        url(../styles/fonts/sansi/SANSI/SANSI.woff);
+    }
+    @font-face {
+        font-family: comfortaa;
+        src: url(../styles/fonts/comfortaa/Comfortaa/Comfortaa.woff2),
+        url(../styles/fonts/comfortaa/Comfortaa/Comfortaa.woff);
+    }
+    :root {
+        /* Color Palette */
+        --primary-color: #ffffff;
+        --secondary-color: #c2c2c3;
+        --accent1-color: #79797c;
+        --accent2-color: #27272b;
+
+    
+        /* Chosen fonts */
+        --heading-font: "Bad Script", Arial, sans-serif;
+        --paragraph-font: Comfortaa, Helvetica, sans-serif;
+        --other-font: Barlow, Arial, sans-serif;
+    
+        /* Chosen from palette colors */
+        --headline-color-on-white: #c2c2c3;  /* headlines on a white background */ 
+        --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
+        --paragraph-color-on-white: #27272b; /* paragraph text on a white background */ 
+        --paragraph-color-on-color: #ffffff; /* paragraph text on a colored background */ 
+        --paragraph-background-color: #79797c;
+        --nav-link-color: #c2c2c3;
+        --nav-background-color: #27272b;
+        --nav-hover-link-color: #27272b;
+        --nav-hover-background-color: #c2c2c3;
+    }
+    #white-background { 
+        font-size: 14px;
+        background-color: #fff;
+        max-width: 601px;
+
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 15% 1fr 15%;
+        /* display: grid; */
+        /* grid-template-columns: 150px min(80%, 63.75rem) 300px; */
+    }
+    #black-body {
+        font-family: sans-serif;
+        background-color: #111;
+        color: white;
+        margin: 0;
+
+        grid-column: 2;
+        
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "side side"
+            "main main"
+            "main main"
+            "footer footer";
+        /* min-height: 100%; */
+        gap: 5px;
+    }
+
+    /* Header CSS rules */
+    #page-head {
+        grid-area: header;
+        background-color: #2e2e34;
+        border-radius: 5px;
+    
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "left right";
+        /* column-gap: 5px; */
+    }
+    .header-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .bottom-header{
+        grid-area: right;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 20px 0 0 15px;
+        background-color: #5d0f09;
+        text-justify: center;
+    }
+    .company-name {
+        font-family: var(--paragraph-font);
+        font-weight: calc(700* var(--font-weight-multiplier, 2));
+        font-size: 1.8rem;
+        text-align: center;
+        text-justify: center;
+    }
+
+    /* nav section CSS rules */
+    #nav-section {
+        grid-area: side;
+        background-color: #1c1d22;
+        height: 200px;
+
+        display: flex;
+        /* flex-direction: column; */
+        /* grid-template-columns: 1fr;
+        grid-template-rows: 100px auto; */
+        gap: 5px;
+    }
+    .nav-title {
+        flex: 1;
+        color: #080707;
+        background-color: #fdffff;
+
+        position: relative;
+        width: 100px;
+    }
+    .click-me {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .nav-picture {
+        /* position: absolute;
+        top: 0;
+        right: 0; */
+        object-fit: cover;
+        /* object-position: center; */
+        width: 100%;
+        height: 200px;
+        display: block;
+    }
+    .click-me a {
+        color: rgb(187, 182, 182);
+        text-decoration: none;
+        font-weight: bold;
+    }
+    #nav-links {
+        flex: 2;
+        background-color:#262629;
+    }   
+    li a {
+        color: var(--headline-color-on-color);
+    }
+    li {
+        list-style-type: none;
+    }
+    #pseudo-main {
+        grid-area: main;
+        font-size: large;
+        padding: .6rem;
+
+    }
+
+    #page-foot {
+        grid-area: footer;
+        height: auto;
+        margin: 10px;
+
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40px 40px 60px 40px;
+        grid-template-areas:
+            "top-most"
+            "top"
+            "middle"
+            "bottom";
+        gap: 5px;
+    }
+    #copy-date {
+        grid-area: top-most;
+        background-color: #5d0f09;
+
+        border-radius: 7px;
+    }
+    #author-name {
+        grid-area: middle;
+        background-color: #5d0f09;
+    }
+    .course-name {
+        grid-area: top;
+        background-color: #5d0f09;
+    }
+    #lastModified {
+        grid-area: bottom;
+        background-color: #5d0f09;
+    }
+    .course-name, #lastModified, #author-name, #copy-date {
+        /* Use a flexbox layout */
+	display: flex;
+    border-radius: 7px;
+	
+	/* Make a horizontal flexbox (the default) */
+	flex-direction: row;
+	
+	/* The important part: vertically center the items */
+	align-items: center;
+    justify-content: center;
+    }
+    #author-name {
+        font-size: x-large;
+    }
+    .full-bleed {
+        max-width: 100%;
+        height: auto;
+    }
+}

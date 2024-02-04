@@ -126,7 +126,9 @@
         margin: auto;
     }
     ul {
-        list-style-type: decimal-leading-zero;
+        list-style: none;
+        counter-reset: mai;
+        /* list-style-type: decimal-leading-zero; */
         color: rgb(245, 241, 241);
         padding-inline: 450px;
     }
@@ -148,8 +150,9 @@
         margin-bottom: 10px;
     }
     .weeks li::before {
-        content: "\003a"; 
-        font-size: 20px; 
+        counter-increment: mai;
+        content: "0" counter(mai) ": "; /* content: "\003a"; */ 
+        font-size:large; 
         margin-right: 5px;
         color: rgb(244, 242, 242);
         font-weight: bold;

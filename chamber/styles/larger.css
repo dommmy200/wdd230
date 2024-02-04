@@ -1,0 +1,279 @@
+@media only screen and (min-width: 1025px) {
+    @font-face {
+        font-family: sensation-light;
+        src: url(../styles/fonts/sensation-lite/Sansation-Lite/Sansation-lite.woff2),
+        url(../styles/fonts/sensation-lite/Sansation-Lite/Sansation-lite.woff),
+        ;
+    }
+    @font-face {
+        font-family: besans;
+        src: url(../styles/fonts/besans/Besans/Besans.woff2),
+        url(../styles/fonts/besans/Besans/Besans.woff);
+    }
+    @font-face {
+        font-family: sansi;
+        src: url(../styles/fonts/sansi/SANSI/SANSI.woff2),
+        url(../styles/fonts/sansi/SANSI/SANSI.woff);
+    }
+    @font-face {
+        font-family: comfortaa;
+        src: url(../styles/fonts/comfortaa/Comfortaa/Comfortaa.woff2),
+        url(../styles/fonts/comfortaa/Comfortaa/Comfortaa.woff);
+    }
+    :root {
+        /* Color Palette */
+        --primary-color: #ffffff;
+        --secondary-color: #c2c2c3;
+        --accent1-color: #79797c;
+        --accent2-color: #27272b;
+
+    
+        /* Chosen fonts */
+        --heading-font: "Bad Script", Arial, sans-serif;
+        --paragraph-font: Comfortaa, Helvetica, sans-serif;
+        --other-font: Barlow, Arial, sans-serif;
+    
+        /* Chosen from palette colors */
+        --headline-color-on-white: #c2c2c3;  /* headlines on a white background */ 
+        --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
+        --paragraph-color-on-white: #27272b; /* paragraph text on a white background */ 
+        --paragraph-color-on-color: #ffffff; /* paragraph text on a colored background */ 
+        --paragraph-background-color: #79797c;
+        --nav-link-color: #c2c2c3;
+        --nav-background-color: #27272b;
+        --nav-hover-link-color: #27272b;
+        --nav-hover-background-color: #c2c2c3;
+    }
+    * { 
+        font-size: 16px;
+    }
+    body {
+       font-family: sans-serif;
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+    }
+    #white-background {
+        background-color: #fff;
+
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "body";
+    }
+    /* Body CSS rules */
+    #black-body {
+        background-color: #111;
+        color: var(--headline-color-on-color);
+        margin: 5px 15% 5px 15%;
+        border-radius: 12px;
+        padding: 20px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto ;
+        min-height: 100%;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main main"
+            "footer footer";
+        gap: 5px;
+    }
+    /* #page-head {
+        grid-area: header;
+    } */
+    #pseudo-main {
+        grid-area: main;
+        font-size: large;
+        padding: .6rem;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "top-main"
+            "mid-main"
+            "base-main";
+    }
+    .top-sections {
+        grid-area: top-main;
+        border: 2px solid #6d1d17;
+       
+    }
+    .middle-sections {
+        grid-area: mid-main;
+        border: 2px solid #5d0f09;
+    }
+    .bottom-sections {
+        grid-area: base-main;
+        border: 2px solid #5d0f09;
+    }
+    .top-sections, .bottom-sections, .middle-sections {
+        padding: .5rem;
+        font-size: 10px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+    }
+    /* .middle-sections {
+        grid-area: mid-center;
+    }
+    .container4 {
+        grid-area: mid-right;
+    }
+    .container5 {
+        grid-area: base;
+    } */
+
+    /* Header CSS rules */
+    #page-head {
+        grid-area: header;
+        background-color: #2e2e34;
+        border-radius: 5px;
+    
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "left right";
+        /* column-gap: 5px; */
+    }
+    .header-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .bottom-header{
+        grid-area: right;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 20px 0 0 15px;
+        background-color: #5d0f09;
+        text-justify: center;
+    }
+    .company-name {
+        font-family: var(--paragraph-font);
+        font-weight: calc(700* var(--font-weight-multiplier, 2));
+        font-size: 1.8rem;
+        text-align: center;
+        text-justify: center;
+    }
+    /* nav section CSS rules */
+    #nav-section {
+        grid-area: nav;
+        background-color: #1c1d22;
+        height: 200px;
+
+        display: flex;
+        gap: 5px;
+    }
+    .nav-title {
+        flex: 1;
+        color: #080707;
+        background-color: #fdffff;
+
+        position: relative;
+        width: 100px;
+    }
+    .click-me {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .nav-picture {
+        object-fit: cover;
+       
+        width: 100%;
+        height: 200px;
+        display: block;
+    }
+    .click-me a {
+        color: rgb(187, 182, 182);
+        text-decoration: none;
+        font-weight: bold;
+    }
+    #nav-links {
+        flex: 2;
+        background-color:#262629;
+        padding: 0;
+    }
+    .link-box {
+        display: flex;
+        margin: 0;
+        gap: 15px;
+        padding-top: 80px;
+        text-align: center;
+        justify-content: center;
+
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .link-box li {
+        margin-bottom: 10px;
+        padding: 0;
+        text-align: center;
+    }
+    li a {
+        color: var(--headline-color-on-color);
+    }
+    li {
+        list-style-type: none;
+    }
+    /* footer CSS rules */
+    #page-foot {
+        grid-area: footer;
+        height: 100px;
+
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto ;
+        grid-template-areas:
+            "bottom-left top-right middle-right bottom-right";
+        gap: 5px;
+    }
+    #copy-date {
+        grid-area: bottom-left;
+        background-color: #5d0f09;
+        /* height: 100px; */
+    }
+    #author-name {
+        grid-area: middle-right;
+        background-color: #5d0f09;
+    }
+    .course-name {
+        grid-area: top-right;
+        background-color: #5d0f09;
+    }
+    #lastModified {
+        grid-area: bottom-right;
+        background-color: #5d0f09;
+    }
+    .course-name, #lastModified, #author-name, #copy-date {
+        /* Use a flexbox layout */
+	display: flex;
+    border-radius: 7px;
+	
+	/* Make a horizontal flexbox (the default) */
+	flex-direction: row;
+	
+	/* The important part: vertically center the items */
+	align-items: center;
+    justify-content: center;
+    }
+    #author-name {
+        font-size: x-large;
+    }
+    .full-bleed {
+        max-width: 100%;
+        height: auto;
+    }
+}
