@@ -269,4 +269,18 @@
         max-width: 100%;
         height: auto;
     }
+    /* Styling for Hamburger */
+    #menu {
+        display: none;
+    }
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100% ;
+    }
+    .navigation {
+        text-align: center;
+    }
 }

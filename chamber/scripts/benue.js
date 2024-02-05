@@ -47,3 +47,18 @@ function insertTextAndModifiedDate() {
 document.addEventListener('DOMContentLoaded', insertDateAndIcon);
 // Call the function to insert the date and text when the page is loaded
 document.addEventListener('DOMContentLoaded', insertTextAndModifiedDate);
+
+// Learn from this one when necessary
+
+// function toggleMenu() {
+//     var menu = document.querySelector('.menu');
+//     menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+// }
+
+const mainnav = document.querySelector(".navigation");
+const hambutton = document.querySelector("#menu");
+
+hambutton.addEventListener("click", () => {
+    mainnav.classList.toggle("show");
+    hambutton.classList.toggle("show");
+});

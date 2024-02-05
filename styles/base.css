@@ -16,6 +16,13 @@
     font-weight: 800;
     src: url(/styles/fonts/salsa-regular-webfont.woff) format('woff')
   }
+  @font-face {
+    font-family: 'dosis';
+    font-weight: 800;
+    src: url(/chamber/styles/fonts/Dosis.woff2) format('woff2'),
+    url(/chamber/styles/fonts/Dosis.woff) format('woff')
+  }
+
   nav ul {
     display: flex;
     flex-direction: column;
@@ -90,6 +97,7 @@
   .copyright-logo, .page-author, .flag {
     color: white;
     display: block;
+    font-family: dosis;
     text-align: center;
     width: 400px;
   }
