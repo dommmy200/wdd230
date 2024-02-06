@@ -205,22 +205,11 @@
         justify-content: center;
 
     }
-    ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-    .link-box li {
-        margin-bottom: 10px;
-        padding: 0;
-        text-align: center;
-    }
+    
     li a {
         color: var(--headline-color-on-color);
     }
-    li {
-        list-style-type: none;
-    }
+    
     /* footer CSS rules */
     #page-foot {
         grid-area: footer;
@@ -280,7 +269,20 @@
         display: block;
         flex: 1 1 100% ;
     }
-    .navigation {
+    /* .navigation {
         text-align: center;
+    } */
+    .navigation {
+        padding: 70px;
+        text-align: center;
+        /* justify-items: center; */
+    }
+    .navigation a:hover, .navigation a:active {
+        color: #f5f1f1;
+        /* background-color: rgb(173, 145, 135); */
+        width: 45px;
+        border-radius: 5px;
+        text-decoration: none;
+        cursor: pointer;
     }
 }
