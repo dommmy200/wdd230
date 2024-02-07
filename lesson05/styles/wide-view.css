@@ -1,0 +1,84 @@
+@media only screen and (min-width: 1025px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	main {
+		display: inline-block;
+		width: auto;
+		height: auto;
+		margin-top: 18rem;
+		margin-left: 30rem;
+		
+	}
+	main:nth-child(1) {
+		/* background-color: rgb(240, 243, 243); */
+		background-color: darkgray;
+		border-radius: 7px;
+		border: coral 2px solid;
+		padding: 20px;
+	}
+	
+	#form > #fav-chap{
+		font-size: medium;
+		color: black;
+		font-weight: 700;
+	  }
+	  #form {
+		display: flex;
+		flex-direction: column;
+	  }
+	  /* .item {
+		margin-bottom: 10px;
+	  }
+	  .delete-btn {
+		margin-left: 10px;
+		cursor: pointer;
+	} */
+	body {
+		background-color: rgb(240, 243, 243);
+		align-items: center;
+	}
+	#container {
+		margin: 20px;
+		min-height: 15px;
+		width: 250px;
+		color: black;
+		background-color: rgb(246, 241, 241);
+		border-radius: 7px;
+		border: coral 2px solid;
+	}
+	.item {
+		margin-bottom: 5px;
+		/* background-color: bisque; */
+		width: auto;
+		box-sizing: border-box;
+		list-style: none;
+	}
+	.item span {
+		background-color: rgb(85, 85, 151);
+		color: #fff;
+		/* margin-left: 10px; */
+		border-radius: 3px;
+		padding: 5px;
+	}
+	.delete-btn {
+		margin-left: 10px;
+		cursor: pointer;
+		padding: 5px;
+	}
+	#message {
+		margin-left: 10px;
+		text-align: center;
+		font: italic small-caps bold 16px/10px Georgia, serif;
+
+	}
+	#fav-chap, button {
+		border-radius: 5px;
+		padding: 5px;
+		border: coral 2px solid;
+	}
+	button {
+		cursor: pointer;
+	}
+}

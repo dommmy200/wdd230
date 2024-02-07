@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abah Dominic Odeh" >
+    <meta
+        name="Book of Mormon Top10"
+        content="Manipulating the HTML DOM with Javascript. Specifically, we are adding and deleting chapters from the 
+                Book of Mormon" >
+    <meta property="og:title" content="My Book of Mormon Top10 Chapters" >
+    <meta property="og:description" content="Manipulating the HTML DOM with Javascript. Specifically, we are adding and 
+                                            deleting chapters from the Book of Mormon" >
+    <meta property="og:url" content="https://dommmy200.github.io/" >
+    <meta property="og:image" content="" >
+    <link rel="canonical" href="https://dommmy200.github.io/">
+    <link type="text/css" rel="stylesheet" href="../lesson05/styles/normalize.css" >
+    <link type="text/css" rel="stylesheet" href="../lesson05/styles/small-view.css" media="screen and (max-width: 600px)" >
+    <link type="text/css" rel="stylesheet" href="../lesson05/styles/mid-view.css" media="screen and (max-width: 1024px) and (min-width: 601px)" >
+    <link type="text/css" rel="stylesheet" href="../lesson05/styles/wide-view.css" media="screen and (min-width: 1025px)" >
+    <link rel="icon" href="favicon.ico" >
+    <title>Book of Mormon Top10</title>
+</head>
+<body>
+    
+    <main>
+        <h1>📖 Book of Mormon - Top 10</h1>
+        <div>
+            <form id="form">
+                <label for="fav-chap">Enter Book and Chapter:</label>
+                <input type="text" id="fav-chap" name="fav-chap" placeholder="e.g. Alma 5">
+                <button type="submit">Add Chapter</button>
+            </form>
+            <div id="container">
+                <p id="message"></p>
+                <ul id="list"></ul>
+            </div>
+        </div>
+    </main>
+    <script src="/lesson05/scripts/bom.js"></script>
+</body>
+</html>
