@@ -28,7 +28,7 @@ form.addEventListener('submit', function(event) {
         deleteBtn.className = 'delete-btn';
         deleteBtn.textContent = '❌';
         // Defines a string value that explain the emoji '❌'.
-        console.log(deleteBtn.ariaLabel); // "Close"
+        document.querySelector('.delete-btn').setAttribute('aria-label', 'Delete Button');
         // Define the delete function and within the event listener
         deleteBtn.addEventListener('click', function() {
             unordered.removeChild(newItem);
