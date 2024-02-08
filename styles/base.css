@@ -155,7 +155,7 @@
     color: rgb(245, 243, 243);
     font-weight: 700;
     transition: .5s;
-    font-size: clam(1rem, 2vmin, 1.5rem);
+    font-size: clamp(1rem, 2vmin, 1.5rem);
   }
   .sub-container2 a:hover, .sub-container2 a:active {
     color: rgb(71, 5, 5);
