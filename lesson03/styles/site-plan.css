@@ -134,18 +134,17 @@ nav a:hover {
   display: grid;
   justify-content: center;
 
-  grid-template-columns: repeat(6, 15%);
+  grid-template-columns: repeat(8, 12.5%);
   grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
+  grid-template-areas: ". . . home home . . ."
+    ". . . . top . . ."
+    ". left left left right right right ."
+    "page2 page2 . center center . page3 page3";
 }
 .sitemap > div {
-
   text-align: center;
-
 }
+
 .sm-home {
   grid-area: home;
   background-color: var(--paragraph-color-on-white);
@@ -161,7 +160,11 @@ nav a:hover {
   background-color: var(--paragraph-color-on-white);
   line-height: 3em;
 }
-
+.sm-page4 {
+  grid-area: center;
+  background-color: var(--paragraph-color-on-white);
+  line-height: 3em;
+}
 .top {
   grid-area: top;
   border-left: 1px solid;
@@ -171,6 +174,7 @@ nav a:hover {
   grid-area: left;
   border-top: 1px solid;
   border-left: 1px solid;
+  border-right: 1px solid;
 }
 
 .right {
@@ -268,12 +272,21 @@ button {
   display: flex;
   font-size: medium;
 }
+.scenario ul li {
+  border: var(--nav-background-color) 2px solid;
+  margin: 2px;
+}
 .scenario h3{
   font-family: var(--paragraph-font);
 }
-/* .purpose, .audience {
-  display: block;
-} */
 .paragraph1 span {
   display: block;
+}
+.sub-container4 p span {
+  color: var(--headline-color-on-color);
+  font-size: larger;
+  font-family: var(--heading-font);
+}
+.sub-container4 p {
+  padding: 0;
 }
