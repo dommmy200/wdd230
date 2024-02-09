@@ -1,0 +1,279 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+/* @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato'); */
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Barlow:wght@200;400&family=Comfortaa&family=Open+Sans&display=swap');
+
+:root {
+
+   /* Color Palette */
+   --primary-color: #ffffff;
+   --secondary-color: #c2c2c3;
+   --accent1-color: #c7c7c9;
+   --accent2-color: #27272b;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Bad Script", Arial, sans-serif;
+  --paragraph-font: Comfortaa, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #27272b;  /* headlines on a white background */ 
+  --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #c2c2c3; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #ffffff; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #c7c7c9;
+  --nav-link-color: #c2c2c3;
+  --nav-background-color: #79797c;
+  --nav-hover-link-color: #ffffff;
+  --nav-hover-background-color: #27272b;
+}
+
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--accent2-color);
+}
+h2 {
+  text-align: center;
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--nav-background-color);
+}
+header, footer {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--nav-background-color);
+}
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+footer > h1, footer > h2 {
+  color: var(--headline-color-on-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--accent2-color);
+  padding: 1em;
+}
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors th {
+  background-color: var(--nav-background-color);
+}
+.colors td{
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--accent2-color);
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav  {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.sitemap {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";
+}
+.sitemap > div {
+
+  text-align: center;
+
+}
+.sm-home {
+  grid-area: home;
+  background-color: var(--paragraph-color-on-white);
+  line-height: 3em;
+}
+.sm-page2 {
+  grid-area: page2;
+  background-color: var(--paragraph-color-on-white);
+  line-height: 3em;
+}
+.sm-page3 {
+  grid-area: page3;
+  background-color: var(--paragraph-color-on-white);
+  line-height: 3em;
+}
+
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+/*  Below are the styling for the FORM in the CONTACT US html file */
+
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid var(--paragraph-color-on-white);
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid var(--nav-hover-background-color);
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: 0.5em;
+}
+#feedback {
+  background-color: var(--paragraph-color-on-white);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .5em;
+  /* make this element invisible until we are ready for it */
+  display: none;      
+}
+.moveDown {
+  margin-top: 3em;
+}
+.scenario {
+  display: flex;
+  padding: 10px;
+  gap: 5px;
+  background-color: var(--paragraph-background-color);
+}
+.scenario ul {
+  display: flex;
+  font-size: medium;
+}
+.scenario h3{
+  font-family: var(--paragraph-font);
+}
+/* .purpose, .audience {
+  display: block;
+} */
+.paragraph1 span {
+  display: block;
+}

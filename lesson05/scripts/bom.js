@@ -17,6 +17,7 @@ form.addEventListener('submit', function(event) {
         // newItem.className = 'item';
 
         const newItem = document.createElement('li');
+
         newItem.className = 'item';
         
         const itemText = document.createElement('span');
@@ -35,6 +36,7 @@ form.addEventListener('submit', function(event) {
             // In situation where lists container is empty
             if (list.children.length === 0) {
                 message.textContent = 'No items yet.';
+                newItemInput.focus();
             }
         });
         // Append delete button to the list element as well
@@ -43,5 +45,6 @@ form.addEventListener('submit', function(event) {
         unordered.appendChild(newItem);
         newItemInput.value = '';
         message.textContent = '';
+        newItemInput.focus();
     }
 });
