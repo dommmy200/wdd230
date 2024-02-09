@@ -62,3 +62,28 @@ hambutton.addEventListener("click", () => {
     mainnav.classList.toggle("show");
     hambutton.classList.toggle("show");
 });
+
+const modeButton = document.querySelector("#mode");
+const main = document.querySelector("#black-body");
+const headerBg = document.querySelector(".bottom-header");
+const footerBg = document.querySelector("#page-foot");
+const companyName =document.querySelector(".company-name");
+
+modeButton.addEventListener("click", () => {
+	if (modeButton.textContent.includes("🕶️")) {
+		main.style.background = "#000";
+		main.style.color = "#fff";
+        headerBg.style.background = "#825b58";
+        footerBg.style.background =  "#825b58";
+        companyName.style.color = "#000";
+		modeButton.textContent = "🔆";
+	} else {
+		main.style.background = "#eee";
+		main.style.color = "#000";
+        headerBg.style.background = "#5d0f09";
+        footerBg.style.background =  "#825b58";
+        companyName.style.color = "#fff";
+        footerBg.style.color = "#fff";
+		modeButton.textContent = "🕶️";
+	}
+});

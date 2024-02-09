@@ -285,4 +285,12 @@
         text-decoration: none;
         cursor: pointer;
     }
+    #mode {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        font-size: 3rem;
+        cursor: pointer;
+        font-size: 2rem;
+    }
 }
