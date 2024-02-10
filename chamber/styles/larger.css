@@ -352,7 +352,7 @@
         margin-left: 30px;
         color: #000;
     }
-    .dark-mode {
+    /* .dark-mode {
         #black-body {
             background-color: #000;
             color: var(--headline-color-on-color);
@@ -378,5 +378,30 @@
         #nav-section li a {
             color: #fff;
         }
+    } */
+    .dark-mode #black-body {
+        background-color: #000;
+        color: var(--headline-color-on-color);
+    }
+    .dark-mode #modeText {
+        color: white;
+    }
+    .dark-mode #page-head {
+        background-color: #dddde8;
+    }
+    .dark-mode .course-name, .dark-mode #lastModified, .dark-mode #author-name, .dark-mode #copy-date, .dark-mode .bottom-header, .dark-mode .company-name {
+        background-color: #807c7c;
+        color: #000;
+    }
+    .dark-mode #nav-section {
+        background-color: #000;
+        color: #fff;
+    }
+    .dark-mode #nav-section li {
+        background-color: #000;
+        color: #fff;
+    }
+    .dark-mode #nav-section li a {
+        color: #fff;
     }
 }
