@@ -53,7 +53,8 @@
     }
     #white-background { 
         font-size: 14px;
-        background-color: #fff;
+        /* background-color: #fff; */
+        background-color: #807c7c;
         max-width: 1024px;
 
         display: grid;
@@ -64,9 +65,11 @@
     }
     #black-body {
         font-family: sans-serif;
-        background-color: #111;
-        color: white;
-        margin: 0;
+        background-color: var(--headline-color-on-color);
+        color: var(--secondary-color);
+        /* margin: 0; */
+        border-radius: 5px;
+        margin: 5px 5px 0 5px;
 
         grid-column: 2;
         
@@ -84,7 +87,7 @@
     }
     #page-head {
         grid-area: header;
-        background-color: #2e2e34;
+        /* background-color: #2e2e34; */
         border-radius: 5px;
     
         display: grid;
@@ -104,6 +107,8 @@
     .header-image {
         max-width: 100%;
         height: auto;
+        border-radius: 5px;
+        margin: 5px 5px 0 5px;
     }
     .bottom-header{
         grid-area: right;
@@ -118,10 +123,11 @@
         font-weight: calc(400* var(--font-weight-multiplier, 1));
         text-align: center;
         /* text-justify: center; */
+        color: var(--headline-color-on-color);
     }
     #nav-section {
         grid-area: side;
-        background-color: #1c1d22;
+        /* background-color: #1c1d22; */
 
         display: grid;
         grid-template-columns: auto;
@@ -141,19 +147,21 @@
     .nav-title {
         grid-area: mid-nav;
         color: #fff;
-        background-color: #262629;
+        /* background-color: #262629; */
     }
     .nav-picture {
         max-width: 100%;
         height: auto;
+        border-radius: 5px;
+        margin: 5px 5px 0 5px;
     }
     #nav-links {
         grid-area: base-nav;
-        background-color:#262629;
+        /* background-color:#262629; */
     }
     li a {
-        color: var(--headline-color-on-color);
-        /* text-decoration: none; */
+        color: var(--secondary-color);
+        text-decoration: none;
         font-size: 16px;
         padding: 0;
     }
@@ -174,7 +182,7 @@
         padding: 0;
         border: 1px slategrey solid;
         border-radius: 5px;
-        background-color: #a13030;
+        background-color: #bd3c3c;
     }
     #pseudo-main {
         grid-area: main;
@@ -185,6 +193,7 @@
     #page-foot {
         grid-area: footer;
         margin: 12px;
+        color: var(--headline-color-on-color);
 
         display: grid;
         grid-template-columns: 25% auto;
@@ -232,6 +241,8 @@
     .full-bleed {
         max-width: 100%;
         height: auto;
+        border-radius: 5px;
+        margin: 5px 5px 0 5px;
     }
     /* Hamburger Rules */
     #menu {
@@ -245,5 +256,88 @@
         border-radius: 5px;
         text-decoration: none;
         cursor: pointer;
+    }
+   /* The switch - the box around the slider */
+   .switch {
+    position: fixed;
+    top: 4rem;
+    right: 1rem;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    }
+    .switch-container {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        height: 100px;
+        width: 80px;
+        /* background-color: #79797c; */
+    }
+    /* Hide default HTML checkbox */
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #2196F3;
+        transition: 0.4s;
+        border-radius: 34px;
+    }
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+    input:checked + .slider:before {
+        transform: translateX(26px);
+        background-color: #000;
+    }
+    #modeText {
+        display: block;
+        margin-top: 10px;
+        margin-left: 30px;
+        color: #000;
+    }
+    .dark-mode {
+        #black-body {
+            background-color: #000;
+            color: var(--headline-color-on-color);
+        }
+        #modeText {
+            color: white;
+        }
+        #page-head {
+            background-color: #dddde8;
+        }
+        .course-name, #lastModified, #author-name, #copy-date, .bottom-header, .company-name {
+            background-color: #807c7c;
+            color: #000;
+        }
+        li {
+            background-color: #070606;
+        }
+        li a {
+            color: #fff;
+        }
     }
 }

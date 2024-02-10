@@ -63,27 +63,69 @@ hambutton.addEventListener("click", () => {
     hambutton.classList.toggle("show");
 });
 
-const modeButton = document.querySelector("#mode");
-const main = document.querySelector("#black-body");
-const headerBg = document.querySelector(".bottom-header");
-const footerBg = document.querySelector("#page-foot");
-const companyName =document.querySelector(".company-name");
+// const modeButton = document.querySelector("#mode");
+// const main = document.querySelector("#black-body");
+// const headerBg = document.querySelector(".bottom-header");
+// const footerBg = document.querySelector("#page-foot");
+// const companyName = document.querySelector(".company-name");
+// // const joinUs = document.querySelector("#nav-section h2, li a");
+// const navBg = document.querySelector("#nav-section");
+// const shadow = document.querySelector("img.full-bleed");
 
-modeButton.addEventListener("click", () => {
-	if (modeButton.textContent.includes("🕶️")) {
-		main.style.background = "#000";
-		main.style.color = "#fff";
-        headerBg.style.background = "#825b58";
-        footerBg.style.background =  "#825b58";
-        companyName.style.color = "#000";
-		modeButton.textContent = "🔆";
-	} else {
-		main.style.background = "#eee";
-		main.style.color = "#000";
-        headerBg.style.background = "#5d0f09";
-        footerBg.style.background =  "#825b58";
-        companyName.style.color = "#fff";
-        footerBg.style.color = "#fff";
-		modeButton.textContent = "🕶️";
-	}
+// modeButton.addEventListener("click", () => {
+// 	if (modeButton.textContent.includes("🔆")) {
+// 		main.style.background = "#000";
+// 		main.style.color = "#fff";
+//         headerBg.style.background = "#825b58";
+//         footerBg.style.background =  "#825b58";
+//         footerBg.style.color = "#000";
+//         companyName.style.color = "#000";
+//         navBg.style.background = "#000";
+//         navBg.style.color = "#fff";
+//         shadow.style.boxShadow = "5px 5px 13px rgb(93, 94, 94)";
+// 		modeButton.textContent = "🕶️";
+// 	} else {
+// 		main.style.background = "#eee";
+// 		main.style.color = "#000";
+//         headerBg.style.background = "#5d0f09";
+//         footerBg.style.background =  "#000";
+//         companyName.style.color = "#fff";
+//         footerBg.style.color = "#fff";
+//         navBg.style.color = "#000";
+//         navBg.style.background = "#fff";
+//         shadow.style.boxShadow = "5px 5px 7px rgb(179, 71, 32)";
+// 		modeButton.textContent = "🔆";
+// 	}
+// });
+// const lightAndDark = document.querySelector(".switch");
+// let isToggled = false;
+// lightAndDark.addEventListener('click', () => {
+//   isToggled = !isToggled;
+//   this.classList.toggle('active');
+//   // You may also want to trigger other actions based on the value of isToggled
+//     main.style.background = "#000";
+//     main.style.color = "#fff";
+//     headerBg.style.background = "#825b58";
+//     footerBg.style.background =  "#825b58";
+//     footerBg.style.color = "#000";
+//     companyName.style.color = "#000";
+//     navBg.style.background = "#000";
+//     navBg.style.color = "#fff";
+//     shadow.style.boxShadow = "5px 5px 13px rgb(93, 94, 94)";
+//     modeButton.textContent = "🕶️";
+// });
+
+
+
+const modeSwitch = document.getElementById('modeSwitch');
+const modeText = document.getElementById('modeText');
+
+modeSwitch.addEventListener('change', () => {
+    if (modeSwitch.checked) {
+        document.body.classList.add('dark-mode');
+        modeText.textContent = 'Dark Mode';
+    } else {
+        document.body.classList.remove('dark-mode');
+        modeText.textContent = 'Light Mode';
+    }
 });
