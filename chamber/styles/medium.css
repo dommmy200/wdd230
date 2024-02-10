@@ -53,15 +53,12 @@
     }
     #white-background { 
         font-size: 14px;
-        /* background-color: #fff; */
         background-color: #807c7c;
         max-width: 1024px;
 
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: 15% 1fr 15%;
-        /* display: grid; */
-        /* grid-template-columns: 150px min(80%, 63.75rem) 300px; */
     }
     #black-body {
         font-family: sans-serif;
@@ -87,7 +84,6 @@
     }
     #page-head {
         grid-area: header;
-        /* background-color: #2e2e34; */
         border-radius: 5px;
     
         display: grid;
@@ -102,7 +98,6 @@
         max-width: 100%;
         height: auto;
         border-radius: 5px;
-        /* margin: 5px; */
     }
     .header-image {
         max-width: 100%;
@@ -116,19 +111,15 @@
         margin: 5px;
         padding: 20px 0 0 15px;
         background-color: #5d0f09;
-        /* text-justify: center; */
     }
     .company-name {
         font-family: sansi;
         font-weight: calc(400* var(--font-weight-multiplier, 1));
         text-align: center;
-        /* text-justify: center; */
         color: var(--headline-color-on-color);
     }
     #nav-section {
         grid-area: side;
-        /* background-color: #1c1d22; */
-
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: 30px 150px 200px;
@@ -147,7 +138,6 @@
     .nav-title {
         grid-area: mid-nav;
         color: #fff;
-        /* background-color: #262629; */
     }
     .nav-picture {
         max-width: 100%;
@@ -157,7 +147,6 @@
     }
     #nav-links {
         grid-area: base-nav;
-        /* background-color:#262629; */
     }
     li a {
         color: var(--secondary-color);
@@ -170,12 +159,6 @@
         text-align: center;
         justify-items: center;
     }
-    /* .navigation {
-        list-style: none;
-        margin: 0;
-        max-width: 700px;
-        border-radius: 5px;
-    } */
     li {
         list-style-type: none;
         margin: 16px;
@@ -251,7 +234,6 @@
     }
     .navigation a:hover, .navigation a:active {
         color: #f5f1f1;
-        /* background-color: rgb(173, 145, 135); */
         width: 45px;
         border-radius: 5px;
         text-decoration: none;
@@ -275,7 +257,6 @@
         grid-template-rows: repeat(2, 1fr);
         height: 100px;
         width: 80px;
-        /* background-color: #79797c; */
     }
     /* Hide default HTML checkbox */
     .switch input {
@@ -318,26 +299,29 @@
         margin-left: 30px;
         color: #000;
     }
-    .dark-mode {
-        #black-body {
-            background-color: #000;
-            color: var(--headline-color-on-color);
-        }
-        #modeText {
-            color: white;
-        }
-        #page-head {
-            background-color: #dddde8;
-        }
-        .course-name, #lastModified, #author-name, #copy-date, .bottom-header, .company-name {
-            background-color: #807c7c;
-            color: #000;
-        }
-        li {
-            background-color: #070606;
-        }
-        li a {
-            color: #fff;
-        }
+    .dark-mode #black-body {
+        background-color: #000;
+        color: var(--headline-color-on-color);
+    }
+    .dark-mode #modeText {
+        color: white;
+    }
+    .dark-mode #page-head {
+        background-color: #dddde8;
+    }
+    .dark-mode .course-name, .dark-mode #lastModified, .dark-mode #author-name, .dark-mode #copy-date, .dark-mode .bottom-header, .dark-mode .company-name {
+        background-color: #807c7c;
+        color: #000;
+    }
+    .dark-mode #nav-section {
+        background-color: #000;
+        color: #fff;
+    }
+    .dark-mode #nav-section li {
+        background-color: #000;
+        color: #fff;
+    }
+    .dark-mode #nav-section li a {
+        color: #fff;
     }
 }
