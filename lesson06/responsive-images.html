@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abah Dominic Odeh" >
+    <meta
+        name="description"
+        content="Demonstration of responsive images to address both the Art Direction Problem and the Resolution Switching Problem" >
+    <meta property="og:title" content="Responsive Images in lesson06" >
+    <meta property="og:description" content="Demonstration of responsive images to address both the Art Direction Problem and the Resolution Switching Problem" >
+    <meta property="og:url" content="https://dommmy200.github.io/" >
+    <meta property="og:type" content="images" >
+    <meta property="og:image" content="https://github.com/dommmy200/dommmy200.github.io/blob/wdd230x/images/gboko-market.jpeg" >
+    <link rel="canonical" href="https://dommmy200.github.io/">
+    <link type="text/css" rel="stylesheet" href="styles/normalize.css" >
+    <link type="text/css" rel="stylesheet" href="styles/responsive-images.css" >
+    <title>Responsive Images</title>
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="../lesson06/images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="../lesson06/images/hero-medium.webp" media="(max-width:1000px)">
+                <img src="../lesson06/images/hero-large.webp" alt="Image of Aba Temple of Latter-Day Saints" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>
