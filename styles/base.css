@@ -22,7 +22,11 @@
     src: url(/chamber/styles/fonts/Dosis.woff2) format('woff2'),
     url(/chamber/styles/fonts/Dosis.woff) format('woff')
   }
-
+  @font-face {
+    font-family: 'great vibes';
+    font-weight: 800;
+    src: url(/styles/fonts/GreatVibes-Regular.woff2) format('woff2')
+}
   nav ul {
     display: flex;
     flex-direction: column;

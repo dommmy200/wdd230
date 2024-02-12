@@ -23,64 +23,78 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-Zz5nUWm+YO1wXxI3+8M0chM+ntA35I/bJs1Q5FpfXFY9PD5UjORz9HqqQ8dJ+C1Q" crossorigin="anonymous"> -->
     <title>Abah Dominic - WDD 230 - Web Frontend Development</title>
 </head>
-<body class="container">
-    <header class="sub-container1">
-        <div class="my-div"><img class="image1" src="images/wdd230-image.jpg" alt="abah dominic odeh profile picture"></div>
-        <h1 class="image1-name">Abah O. Dominic</h1>
+<body id="wrapper">
+    <header class="top container">
+        <div class="header image">
+            <picture>
+                <img src=".//images/dom-owerri.webp" alt="abah dominic odeh profile picture" width="140" height="200">
+            </picture>
+        </div>
+        <div>
+            <h1 class="header name">Abah O. Dominic</h1>
+        </div>
     </header>
-    <a id="menu" href="#"></a>
-    <nav class="sub-container2">
-        <ul id="remove">
-            <li><a href="#">Home</a></li>
-            <li><a href=".//lesson03/chamber-site-plan2.html">Site Plan</a></li>
-            <li><a href="chamber/">Benue South-West Chamber of Commerce</a></li>
-            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/6?lang=eng&id=p4#p4" target="_blank">
-                Scripture</a></li>
-            <li><a href="https://codepen.io/Dominic-Abah/pen/poYajYj">My Codepen</a></li>
-        </ul>
-    </nav>
-    <main class="sub-container3">
+    <div id="navigation">
+        <a id="menu" href="#"></a>
+        <nav class="first navigation">
+            <ul class="top nav">
+                <li><a href="#">Home</a></li>
+                <li><a href=".//lesson03/chamber-site-plan2.html">Site Plan</a></li>
+                <li><a href="chamber/">Benue South-West Chamber of Commerce</a></li>
+                <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/6?lang=eng&id=p4#p4" target="_blank">
+                    Scripture</a></li>
+                <li><a href="https://codepen.io/Dominic-Abah/pen/poYajYj">My Codepen</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="mid container">
+        <div class="hero image">
+            <picture>
+                <source srcset=".//lesson06/images/salt-lake-temple-small.webp" media="(max-width: 400px)">
+                <source srcset=".//lesson06/images/salt-lake-temple-large.webp" media="(max-width:960px)">
+                <img src=".//lesson06/images/salt-lake-temple-large.webp" alt="Image of Aba Temple of Latter-Day Saints" width="960" height="450">
+            </picture>
+        </div>
+        <div class="hero label">
+			<p>Salt Lake Temple</p>
+		</div>
         <h2>WDD 230: Web Frontend Development</h2>
         <div class="line"></div>
-        <section class="card">
+        <section class="alpha card">
             <h3 class="sub-card1">Learning Activities</h3>
-            <ul class="weeks">
-                <li><a href="">A</a></li>
-                <li><a href=".//lesson02/design-principles.html">Design Principles Documents</a></li>
-                <li><a href=".//lesson03/child-combinator.png">Lesson03</a></li>
-                <li><a href=".//lesson05/bom.html">Lesson05</a></li>
-                <li><a href=".//lesson03/images/landscape.webp">WebP</a></li>
-                <li><a href=".//lesson06/responsive-images.html">Responsive Images</a></li>
-                <li><a href="">G</a></li>
-                <li><a href="">H</a></li>
-                <li><a href="">I</a></li>
-                <li><a href="">J</a></li>
-            </ul>
+            <nav class="second navigation">
+                <ul class="bottom nav">
+                    <li><a href="">A</a></li>
+                    <li><a href=".//lesson02/design-principles.html">Design Principles Documents</a></li>
+                    <li><a href=".//lesson03/child-combinator.png">Lesson03</a></li>
+                    <li><a href=".//lesson05/bom.html">Lesson05</a></li>
+                    <li><a href=".//lesson03/images/landscape.webp">WebP</a></li>
+                    <li><a href=".//lesson06/responsive-images.html">Responsive Images</a></li>
+                    <li><a href="">G</a></li>
+                    <li><a href="">H</a></li>
+                    <li><a href="">I</a></li>
+                    <li><a href="">J</a></li>
+                </ul>
+            </nav>
+            <section class="beta card">
+                <h3 class="sub-card2">Information</h3>
+                <div><h4>placeholder1</h4></div>
+                <div><h4>placeholder2</h4></div>
+                <div><h4>placeholder3</h4></div>
+                <div><h4>placeholder4</h4></div>
+            </section>
         </section>
-        <section class="card">
-            <h3 class="sub-card2">Information</h3>
-            <div></div>
-            <div></div>
-            <div></div>
-        </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d506969.00348871195!2d8.013911302180269!3d6.926973179915459!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105b057677699bc7%3A0x41c7f523497b23b4!2sSt%20Francis%20catholic%20church!5e0!3m2!1sen!2sng!4v1706882508212!5m2!1sen!2sng" 
+            width="960"
+            height="460"
+            style="border:0;"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </main>
-    <!-- <iframe
-        width="1420"
-        height="450"
-        style="border:0"
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps/embed?pb=!3m1!4b1!4m6!3m5!1s0x104258d2c067b35b:0x7661ab295c4e390c!8m2!3d5.437808!4d7.0592553!16s%2Fg%2F11b6hsr6rk?entry=ttu"
-    </iframe> -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d506969.00348871195!2d8.013911302180269!3d6.926973179915459!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105b057677699bc7%3A0x41c7f523497b23b4!2sSt%20Francis%20catholic%20church!5e0!3m2!1sen!2sng!4v1706882508212!5m2!1sen!2sng" 
-        width="1420"
-        height="450"
-        style="border:0;"
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-    <footer class="sub-container4">
+    <footer class="bottom container">
         <p class="paragraph1">
             <span class="copyright-logo"></span>
             <span class="page-author">Dominic Odeh Abah</span>
