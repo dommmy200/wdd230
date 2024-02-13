@@ -36,6 +36,7 @@
         --heading-font: "Bad Script", Arial, sans-serif;
         --paragraph-font: Comfortaa, Helvetica, sans-serif;
         --other-font: Barlow, Arial, sans-serif;
+        --woff2-font-salsa: 'salsa', Arial, sans-serif;
     
         /* Chosen from palette colors */
         --headline-color-on-white: #c2c2c3;  /* headlines on a white background */ 
@@ -91,7 +92,7 @@
         border-radius: 8px;
     }
     .header.name {
-        font-family: var(--paragraph-font);
+        font-family: var(--woff2-font-salsa);
         font-size: xx-large;
         font-weight: 1000;
         color: #491520;
