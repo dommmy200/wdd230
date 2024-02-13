@@ -65,17 +65,16 @@
 
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 220px 200px 1250px 220px;
+        grid-template-rows: 220px 240px 1250px 220px;
         grid-template-areas: 
-            "a"
-            "b"
-            "c"
-            "d";
-
+            "laman"
+            "lemuel"
+            "sam"
+            "nephi";
         box-sizing: border-box;
     }
     header.container {
-        grid-area: a;
+        grid-area: laman;
         height: 250px;
         width: 100%;
 
@@ -86,32 +85,38 @@
         background-color: #6d6d6f;
         box-sizing: border-box;
     }
+    .header.image picture img{
+        border: 3px solid gray;
+        padding: 0;
+        border-radius: 8px;
+    }
     .header.name {
         font-family: var(--paragraph-font);
         font-size: xx-large;
         font-weight: 1000;
+        color: #491520;
     }
     #menu {
         display: none;
     }
     #navigation {
-        grid-area: b;
-        height: 240px;
+        grid-area: lemuel;
+        height: 230px;
     }
-    .top {
+    .topnav {
         box-sizing: border-box;
         background-color: #99999c;
         list-style: none;
         padding: 20px;
     }
-    .top li a {
+    .topnav li a {
         font-family: 'salsa', Arial, Helvetica, sans-serif;
         font-size: x-large;
         text-decoration: none;
         color: #491520;
     }
     .mid.container {
-        grid-area: c;
+        grid-area: sam;
         width: auto;
         height: 500px;
 
@@ -131,6 +136,12 @@
         height: 100%;
 
         position: relative;
+    }
+    .hero picture img {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
     }
     .hero.label {
         position: absolute;
@@ -181,10 +192,11 @@
     .sub-card1 {
         grid-area: top;
         font-family: 'great vibes';
-        font-size: x-large;
+        font-size: xx-large;
         width: 30%;
         text-align: center;
-        margin: 0;
+        margin-top: 30px;
+        margin-left: -20px;
     }
     .sub-card2 {
         font-size: xx-large;
@@ -214,7 +226,7 @@
         background-color: aqua;
     }
     .bottom.container {
-        grid-area: d;
+        grid-area: nephi;
         width: 100%;
         height: auto;
         background-color: #848283;
@@ -233,10 +245,17 @@
         text-decoration: none;
         font-size: larger;
         color: #000;
-    } 
+    }
     .bottom li:hover {
         background-color: #a3a3a9;
         width: 60%;
+    }
+    .bottom span:hover, #lastModified:hover {
+        cursor: pointer;
+        background-color: #7b7878;
+        color: #fff;
+        padding-bottom: 5px;
+        border-radius: 5px;
     }
     .bottom li a:hover {
         color: #f1f1f3;
