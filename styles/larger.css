@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
     @font-face {
-        font-family: 'confortaa';
+        font-family: 'comfortaa';
         font-weight: 600;
         src: url(/styles/fonts/comforter-regular-webfont.woff2) format('woff2'),
             url(/styles/fonts/comforter-regular-webfont.woff) format('woff')
@@ -34,9 +34,10 @@
     
         /* Chosen fonts */
         --heading-font: "Bad Script", Arial, sans-serif;
-        --paragraph-font: Comfortaa, Helvetica, sans-serif;
+        --paragraph-font: 'comfortaa', Helvetica, sans-serif;
         --other-font: Barlow, Arial, sans-serif;
         --woff2-font-salsa: 'salsa', Arial, sans-serif;
+        --woff2-font-great-vibes: 'great vibes', Helvetica, sans-serif;
     
         /* Chosen from palette colors */
         --headline-color-on-white: #c2c2c3;  /* headlines on a white background */ 
@@ -111,7 +112,7 @@
         padding: 20px;
     }
     .topnav li a {
-        font-family: 'salsa', Arial, Helvetica, sans-serif;
+        font-family: var(--woff2-font-salsa), Arial, Helvetica, sans-serif;
         font-size: x-large;
         text-decoration: none;
         color: #491520;
@@ -153,7 +154,7 @@
         padding: 1.5rem;
         box-shadow: 0 0 3rem #fff;
         opacity: 0.75;
-        font-family: 'great vibes';
+        font-family: var(--woff2-font-great-vibes), Arial, Helvetica, sans-serif;
         border-radius: 5px;
     }
     .hero.label + h2 {
@@ -192,7 +193,7 @@
     }
     .sub-card1 {
         grid-area: top;
-        font-family: 'great vibes';
+        font-family: var(--woff2-font-great-vibes), Verdana, 'Geneva', Tahoma, sans-serif;
         font-size: xx-large;
         width: 30%;
         text-align: center;
@@ -212,7 +213,7 @@
 
         display: flex;
         flex-direction: column;
-        font-family: 'salsa';
+        font-family: var(--woff2-font-salsa), Arial, Helvetica, sans-serif;
         text-decoration: none;
         font-size: x-large;
         color: #000;
