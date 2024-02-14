@@ -111,7 +111,7 @@
         font-family: var(--woff2-font-salsa);
         font-size: xx-large;
         font-weight: 1000;
-        color: #491520;
+        color: #dbd8d9;
     }
     #menu {
         display: none;
@@ -130,7 +130,7 @@
         font-family: var(--woff2-font-salsa), Arial, Helvetica, sans-serif;
         font-size: x-large;
         text-decoration: none;
-        color: #491520;
+        color: #040303;
     }
     .mid.container {
         grid-area: sam;
@@ -214,6 +214,7 @@
         text-align: center;
         margin-top: 30px;
         margin-left: 20px;
+        color: #fff;
     }
     .sub-card2 {
         font-size: xx-large;
