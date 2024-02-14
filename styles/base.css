@@ -2,25 +2,40 @@
   @font-face {
     font-family: 'confortaa';
     font-weight: 600;
-    src: url(/styles/fonts/comforter-regular-webfont.woff2) format('woff2'),
-        url(/styles/fonts/comforter-regular-webfont.woff) format('woff')
+    src: url(..//styles/fonts/comforter-regular-webfont.woff2) format('woff2'),
+        url(..//styles/fonts/comforter-regular-webfont.woff) format('woff')
   }
   @font-face {
       font-family: 'montserrat';
       font-weight: 600;
-      src: url(/styles/fonts/montserrat-variablefont_wght-webfont.woff2) format('woff2'),
-      url(/styles/fonts/montserrat-variablefont_wght-webfont.woff) format('woff')
+      src: url(..//styles/fonts/montserrat-variablefont_wght-webfont.woff2) format('woff2'),
+      url(..//styles/fonts/montserrat-variablefont_wght-webfont.woff) format('woff')
   }
   @font-face {
       font-family: 'salsa';
       font-weight: 800;
-      src: url(/styles/fonts/salsa-regular-webfont.woff) format('woff')
+      src: url(..//styles/fonts/salsa-regular-webfont.woff) format('woff')
   }
   @font-face {
       font-family: 'great vibes';
       font-weight: 800;
-      src: url(/styles/fonts/GreatVibes-Regular.woff2) format('woff2')
+      src: url(..//styles/fonts/GreatVibes-Regular.woff2) format('woff2')
   }
+  @font-face {
+    font-family: 'open sans';
+    font-weight: 800;
+    src: url(..//styles/fonts/OpenSans-Italic-Variable.ttf) format('ttf')
+}
+@font-face {
+  font-family: 'satisfy';
+  font-weight: 800;
+  src: url(../styles/fonts/Satisfy-Regular.ttf) format('tff')
+}
+@font-face {
+  font-family: 'work sans';
+  font-weight: 800;
+  src: url(../styles/fonts/WorkSans-VariableFont.ttf) format('tff')
+}
   :root {
     background-color: #fff;
    
@@ -138,7 +153,7 @@
     /* padding: 20px; */
   }
   .topnav li a {
-    font-family: 'salsa', Arial, Helvetica, sans-serif;
+    font-family: 'work sans', Arial, Helvetica, sans-serif;
     font-size: large;
     text-decoration: none;
     color: #020202;
@@ -308,7 +323,7 @@
 
   nav ul a {
     flex: 1 1 100%;
-    font-family: 'salsa';
+    font-family: 'work sans';
     text-decoration: none;
     font-size: larger;
     color: #000;

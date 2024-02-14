@@ -1,25 +1,40 @@
 @media screen and (min-width: 768px) {
     @font-face {
-        font-family: 'comfortaa';
+        font-family: 'confortaa';
         font-weight: 600;
-        src: local('comfortaa') url(/styles/fonts/comforter-regular-webfont.woff2) format('woff2'),
-            url(/styles/fonts/comforter-regular-webfont.woff) format('woff')
+        src: url(..//styles/fonts/comforter-regular-webfont.woff2) format('woff2'),
+            url(..//styles/fonts/comforter-regular-webfont.woff) format('woff')
     }
     @font-face {
         font-family: 'montserrat';
         font-weight: 600;
-        src: local('montserrat'), url(/styles/fonts/montserrat-variablefont_wght-webfont.woff2) format('woff2'),
-        url(/styles/fonts/montserrat-variablefont_wght-webfont.woff) format('woff')
+        src: url(..//styles/fonts/montserrat-variablefont_wght-webfont.woff2) format('woff2'),
+        url(..//styles/fonts/montserrat-variablefont_wght-webfont.woff) format('woff')
     }
     @font-face {
         font-family: 'salsa';
         font-weight: 800;
-        src: local("salsa-regular"), url(/styles/fonts/salsa-regular-webfont.woff) format('woff')
+        src: url(..//styles/fonts/salsa-regular-webfont.woff) format('woff')
     }
     @font-face {
         font-family: 'great vibes';
         font-weight: 800;
-        src: local('great vibes'), url(/styles/fonts/GreatVibes-Regular.woff2) format('woff2')
+        src: url(..//styles/fonts/GreatVibes-Regular.woff2) format('woff2')
+    }
+    @font-face {
+        font-family: 'open sans';
+        font-weight: 800;
+        src: url(..//styles/fonts/OpenSans-Italic-Variable.ttf) format('ttf')
+    }
+    @font-face {
+      font-family: 'satisfy';
+      font-weight: 800;
+      src: url(../styles/fonts/Satisfy-Regular.ttf) format('tff')
+    }
+    @font-face {
+      font-family: 'work sans';
+      font-weight: 800;
+      src: url(../styles/fonts/WorkSans-VariableFont.ttf) format('tff')
     }
     :root {
         background-color: #fff;
