@@ -112,7 +112,7 @@
     font-family: var(--paragraph-font);
     font-size: xx-large;
     font-weight: 1000;
-    color: #491520;
+    color: #030303;
     margin: 0;
   }
   .top.container {
@@ -254,6 +254,7 @@
     grid-area: top;
     font-family: 'great vibes';
     font-size: xx-large;
+    color: #fff;
     width: 100%;
     text-align: center;
     margin: 0 auto;
