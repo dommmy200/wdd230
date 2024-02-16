@@ -56,13 +56,14 @@
         background-color: #b5acac;
 
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 7% auto 7%;
         grid-template-rows: auto;
         grid-template-areas:
-            "body";
+            "left body right";
     }
     /* Body CSS rules */
     #black-body {
+        grid-area: body;
         background-color: #fff;
         margin: 5px 15% 5px 15%;
         border-radius: 12px;
@@ -151,13 +152,31 @@
         padding: 0;
     }
     li {
-        
         padding: 0;
         display: block;
         
         border-radius: 5px;
         width: 17px;
-        
+    }
+    /* Hero image and overlay */
+    .hero-image {
+        position: relative;
+    }
+    
+    .image-label {
+        position: absolute;
+
+        top: 10px;
+        left: 10px;
+        height: 10px;
+        width: 40px;
+        background: radial-gradient(#fff, #4D5B97);
+        border: 1px solid rgba(0,0,0,.75);
+        padding: 1.5rem;
+        box-shadow: 0 0 3rem #fff;
+        opacity: 0.75;
+        font-family: var(--woff2-font-great-vibes), Arial, Helvetica, sans-serif;
+        border-radius: 5px;
     }
     /* nav section CSS rules */
     #nav-section {

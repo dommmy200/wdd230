@@ -167,6 +167,26 @@
         border-radius: 5px;
         background-color: #bd3c3c;
     }
+     /* Hero image and overlay */
+     .hero-image {
+        position: relative;
+
+    }
+    .image-label {
+        position: absolute;
+
+        top: 10px;
+        left: 10px;
+        height: 10px;
+        width: 40px;
+        background: radial-gradient(#fff, #4D5B97);
+        border: 1px solid rgba(0,0,0,.75);
+        padding: 1.5rem;
+        box-shadow: 0 0 3rem #fff;
+        opacity: 0.75;
+        font-family: var(--woff2-font-great-vibes), Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+    }
     #pseudo-main {
         grid-area: main;
         font-size: large;
