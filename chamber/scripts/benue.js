@@ -77,7 +77,7 @@ const images = hero.querySelectorAll("picture source");
 images.forEach(image => {
   const parent = image.parentElement;
   const sourceLarge = parent.querySelector("source[media='(min-width: 1025px)']");
-  const sourceMedium = parent.querySelector("source[media='(min-width: 768px)]");
+  const sourceMedium = parent.querySelector("source[media='(min-width: 768px)']");
   const sourceSmall = parent.querySelector("source[media='(max-width: 767px)']");
 
   // One method of media querying
