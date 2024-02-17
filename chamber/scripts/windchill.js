@@ -25,7 +25,7 @@ function computeResult(temperature, windSpeed) {
 const result = document.querySelector(".result-wrap");
 const para = document.createElement("p");
 para.className = "clear-button";
-para.textContent = "Clear Button!"
+para.textContent = "Clear Result!"
 result.appendChild(para);
 
 para.addEventListener("click", () => {

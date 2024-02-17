@@ -76,20 +76,20 @@ const images = hero.querySelectorAll("picture source");
 
 images.forEach(image => {
   const parent = image.parentElement;
-  const sourceLarge = parent.querySelector("source[media='(min-width: 1200px)']");
+  const sourceLarge = parent.querySelector("source[media='(min-width: 1025px)']");
   const sourceMedium = parent.querySelector("source[media='(min-width: 768px)]");
-  // const sourceSmall = parent.querySelector("source[media='(max-width: 400px)']");
+  const sourceSmall = parent.querySelector("source[media='(max-width: 767px)']");
 
   // One method of media querying
   const overlay = document.createElement("p");
-  overlay.classList.add("image-label");
+  overlay.className = "image-label";
 
   function updateLabel() {
     if (matchMedia(sourceLarge.media).matches) {
       overlay.textContent = "Large";
     } else if (matchMedia(sourceMedium.media).matches) {
       overlay.textContent = "Medium";
-    } else {
+    } else if (matchMedia(sourceSmall.media).matches){
       overlay.textContent = "Small";
     }
   }

@@ -77,7 +77,65 @@
             "footer footer";
         gap: 5px;
     }
-
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    label.container {
+        display: block;
+        margin-bottom: 5px;
+    }
+    #temp-input, #wind-input {
+        padding: 5px;
+        border: 1px solid #f6f7f69c;
+        border-radius: 4px;
+    }
+    #wind-chill {
+        background-color: #d2d2d2;
+        color: rgb(8, 7, 7);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .wind.result {
+        background-color: #c4c0c0;
+        color: rgb(7, 7, 7);
+        height: 30px;
+        padding: 20px 20px 10px 20px;
+        border: none;
+        border-radius: 4px;
+        /* margin: 0; */
+    }
+    input[type='reset'] {
+        padding: 5px;
+        border-radius: 6px;
+    }
+    #wind-chill:hover {
+        background-color: #d8ded8;
+    }
+    div.final-section {
+        margin: 0;
+    }
+    .final-section {
+        background-color: #f7f5f5;
+        border: #fff 2px solid;
+        color: #010101;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .clear-button {
+        background-color: #9f0f0f;
+        color: rgb(246, 244, 244);
+        height: 20px;
+        padding: 10px;
+        border: none;
+        text-align: center;
+        border-radius: 4px;
+        margin: 0;
+        cursor: pointer;
+    }
     /* Header CSS rules */
     #page-head {
         grid-area: header;
@@ -209,22 +267,23 @@
      .hero-image {
         position: relative;
 
+        transition: opacity 0.2s ease-in-out;
     }
     .image-label {
         position: absolute;
 
         top: 10px;
         left: 10px;
-        height: 3%;
-        width: 5%;
+        height: 7%;
+        width: 7%;
         text-align: center;
-        background: radial-gradient(#fff, #4D5B97);
+        background: radial-gradient(#bbb5b5, #273fa9);
         border: 1px solid rgba(0,0,0,.75);
-        padding: 1.5rem;
+        padding: 4px;
         box-shadow: 0 0 3rem #fff;
         opacity: 0.75;
-        font-family: "sansi", Arial, Helvetica, sans-serif;
-        font-size: small;
+        font-family: "comfortaa", Arial, Helvetica, sans-serif;
+        font-size:x-small;
         border-radius: 5px;
     }
     #pseudo-main {
@@ -386,7 +445,6 @@
     .dark-mode li a {
         color: #fff;
     }
-    }
     .dark-mode #black-body {
         background-color: #000;
         color: var(--headline-color-on-color);
@@ -397,3 +455,9 @@
     .dark-mode #page-head {
         background-color: #dddde8;
     }
+    .dark-mode .final-section {
+        background-color: #000;
+        border: #fff 2px solid;
+        color: #fff;
+    }
+}

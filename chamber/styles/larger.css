@@ -223,6 +223,8 @@
     /* Hero image and overlay */
     .hero-image {
         position: relative;
+
+        transition: opacity 0.2s ease-in-out;
     }
     
     .image-label {
@@ -233,12 +235,12 @@
         height: 5%;
         width: 8%;
         text-align: center;
-        background: radial-gradient(#fff, #4D5B97);
+        background: radial-gradient(#bbb5b5, #273fa9);
         border: 1px solid rgba(0,0,0,.75);
-        padding: 1.5rem;
+        padding: 15px;
         box-shadow: 0 0 3rem #fff;
         opacity: 0.75;
-        font-family: "sansi", Arial, Helvetica, sans-serif;
+        font-family: "comfortaa", Arial, Helvetica, sans-serif;
         font-size: large;
         border-radius: 5px;
     }
