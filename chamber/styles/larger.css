@@ -112,7 +112,69 @@
         margin-bottom: 5px;
         border-radius: 5px;
     }
-
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    label.container {
+        display: block;
+        margin-bottom: 5px;
+    }
+    #temp-input, #wind-input {
+        padding: 5px;
+        border: 1px solid #f6f7f69c;
+        border-radius: 4px;
+    }
+    #wind-chill {
+        background-color: #d2d2d2;
+        color: rgb(8, 7, 7);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .wind.result {
+        background-color: #c4c0c0;
+        color: rgb(7, 7, 7);
+        height: 30px;
+        padding: 20px 20px 10px 20px;
+        border: none;
+        border-radius: 4px;
+        /* margin: 0; */
+    }
+    input[type='reset'] {
+        padding: 5px;
+        border-radius: 6px;
+    }
+    #wind-chill:hover {
+        background-color: #d8ded8;
+    }
+    div.final-section {
+        margin: 0;
+    }
+    .final-section {
+        background-color: #f7f5f5;
+        border: #fff 2px solid;
+        color: #010101;
+        padding: 10px;
+        border-radius: 8px;
+    }
+    .clear-button {
+        background-color: #9f0f0f;
+        color: rgb(246, 244, 244);
+        height: 20px;
+        padding: 10px;
+        border: none;
+        text-align: center;
+        border-radius: 4px;
+        margin: 0;
+        cursor: pointer;
+    }
+    /* .result {
+        font-weight: bold;
+        margin-top: 10px;
+    } */
     /* Header CSS rules */
     #page-head {
         grid-area: header;
@@ -168,14 +230,16 @@
 
         top: 10px;
         left: 10px;
-        height: 10px;
-        width: 40px;
+        height: 5%;
+        width: 8%;
+        text-align: center;
         background: radial-gradient(#fff, #4D5B97);
         border: 1px solid rgba(0,0,0,.75);
         padding: 1.5rem;
         box-shadow: 0 0 3rem #fff;
         opacity: 0.75;
-        font-family: var(--woff2-font-great-vibes), Arial, Helvetica, sans-serif;
+        font-family: "sansi", Arial, Helvetica, sans-serif;
+        font-size: large;
         border-radius: 5px;
     }
     /* nav section CSS rules */
@@ -382,6 +446,11 @@
         color: #fff;
     }
     .dark-mode #nav-section li a {
+        color: #fff;
+    }
+    .dark-mode .final-section {
+        background-color: #000;
+        border: #fff 2px solid;
         color: #fff;
     }
 }

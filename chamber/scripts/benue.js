@@ -77,8 +77,8 @@ const images = hero.querySelectorAll("picture source");
 images.forEach(image => {
   const parent = image.parentElement;
   const sourceLarge = parent.querySelector("source[media='(min-width: 1200px)']");
-  const sourceMedium = parent.querySelector("source[media='(max-width: 1199px)']");
-  const sourceSmall = parent.querySelector("source[media='(max-width: 400px)']");
+  const sourceMedium = parent.querySelector("source[media='(min-width: 768px)]");
+  // const sourceSmall = parent.querySelector("source[media='(max-width: 400px)']");
 
   // One method of media querying
   const overlay = document.createElement("p");
@@ -93,8 +93,8 @@ images.forEach(image => {
       overlay.textContent = "Small";
     }
   }
-
-  // Initial update
+  // if (matchMedia(sourceSmall.media).matches) 
+  // Initial update 
   updateLabel();
 
   // Update label on window resize
@@ -143,3 +143,25 @@ images.forEach(image => {
 
 // // Add label to the image container
 // hero.appendChild(overlay);
+
+// const getTemp = document.getElementById("temp-input");
+// const getWind = document.getElementById("wind-input");
+// const chillButton = document.getElementById("wind-chill");
+// const displayResult = document.querySelector(".result");
+
+// chillButton.addEventListener('click', () => {
+//   const temperature = parseFloat(getTemp.value);
+//   const windSpeed = parseFloat(getWind.value);
+
+//   if (!isNaN(temperature) && !isNaN(windSpeed)) {
+//     const windChill = computeResult(temperature, windSpeed);
+//     displayResult.textContent = `Wind chill: ${windChill.toFixed(2)}°F`;
+//   } else {
+//     displayResult.textContent = 'Invalid Text! Please, re-enter.';
+//   }
+//   event.preventDefault();
+// });
+
+// function computeResult(temperature, windSpeed) {
+//   return 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
+// }

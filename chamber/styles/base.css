@@ -215,14 +215,16 @@
 
         top: 10px;
         left: 10px;
-        height: 10px;
-        width: 40px;
+        height: 3%;
+        width: 5%;
+        text-align: center;
         background: radial-gradient(#fff, #4D5B97);
         border: 1px solid rgba(0,0,0,.75);
         padding: 1.5rem;
         box-shadow: 0 0 3rem #fff;
         opacity: 0.75;
-        font-family: var(--woff2-font-great-vibes), Arial, Helvetica, sans-serif;
+        font-family: "sansi", Arial, Helvetica, sans-serif;
+        font-size: small;
         border-radius: 5px;
     }
     #pseudo-main {
