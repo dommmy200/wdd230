@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+}
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+img {
+    width: 100%;
+    background-color: chocolate;
+    animation-duration: 5s;
+    animation: kitten 15s;
+    /* animation-name: kittens;
+    animation-timing-function:ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 5; */
+}
+@keyframes kitten {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
