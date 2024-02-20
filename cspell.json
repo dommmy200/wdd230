@@ -5,7 +5,10 @@
     "dictionaries": [],
     "words": [
         "deletebutton",
-        "favchap"
+        "favchap",
+        "hambutton",
+        "mainnav",
+        "topnav"
     ],
     "ignoreWords": [],
     "import": []
