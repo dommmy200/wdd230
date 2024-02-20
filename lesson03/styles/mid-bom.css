@@ -35,11 +35,13 @@ input {
     grid-row: 2/3;
     grid-column: 3/4;
 }
-button {
+button[type="submit"] {
     grid-row: 4/5;
     grid-column: 2/4;
     margin-bottom: 5px;
     cursor: pointer;
+    background-color: red;
+    color: #fff;
 }
 ul {
     grid-row: 5/6;
