@@ -48,15 +48,13 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-     }
-    #white-background { 
         font-size: 12px;
         background-color: #807c7c;
-        max-width: 601px;
+        /* width: 700px; */
 
-        display: grid;
+        /* display: grid;
         grid-template-rows: auto;
-        grid-template-columns: 15% 1fr 15%;
+        grid-template-columns: 15% 1fr 15%; */
     
     }
     #black-body {

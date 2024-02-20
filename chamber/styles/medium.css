@@ -51,14 +51,15 @@
         --hover-color: #fdffff;
         --hover-background-color: #8f8f9c;
     }
-    #white-background { 
-        font-size: 14px;
-        background-color: #807c7c;
-        max-width: 1024px;
+    body {
+        font-family: sans-serif;
+        box-sizing: border-box;
+        background-color: #b5acac;
 
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 15% 1fr 15%;
+        /* min-width: 700px; */
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
     }
     #black-body {
         font-family: sans-serif;
