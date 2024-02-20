@@ -60,3 +60,17 @@ hambutton.addEventListener('click', () => {
     mainnav.classList.toggle('show');
     hambutton.classList.toggle('show');
 });
+
+const visitsDisplay = document.querySelector('.visits');
+const span = document.querySelector('span');
+const txtNode = document.createTextNode('Page visits: ');
+let numVisits = Number(window.localStorage.getItem('numbVisits-ls')) || 0;
+if (numVisits !== 0) {
+    span.textContent = numVisits;
+} else {
+    span.textContent = `This is your first visit. 🥳 Welcome!`;
+}
+visitsDisplay.appendChild(txtNode);
+visitsDisplay.appendChild(span);
+numVisits++;
+localStorage.setItem('numbVisits-ls', numVisits);

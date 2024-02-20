@@ -466,5 +466,7 @@
   #menu.show::before {
     content: "X";
   }
-
+  .visits:hover {
+    color: white;
+}
 }
