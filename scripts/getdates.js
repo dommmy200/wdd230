@@ -61,6 +61,7 @@ hambutton.addEventListener('click', () => {
     hambutton.classList.toggle('show');
 });
 
+// Javascript for local Storage
 const visitsDisplay = document.querySelector('.visits');
 const span = document.querySelector('span');
 const txtNode = document.createTextNode('Page visits: ');

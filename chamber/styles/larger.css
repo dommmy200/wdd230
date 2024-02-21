@@ -49,7 +49,7 @@
     body {
         font-family: sans-serif;
         box-sizing: border-box;
-        background-color: #b5acac;
+        background-color: #646365;
 
         width: 1025px;
         height: auto;
@@ -201,19 +201,7 @@
         background-color: #5d0f09;
         color: var(--headline-color-on-color);
     }
-    li a {
-        color: var(--paragraph-color-on-white);
-        text-decoration: none;
-        font-size: 16px;
-        padding: 0;
-    }
-    li {
-        padding: 0;
-        display: block;
-        
-        border-radius: 5px;
-        width: 17px;
-    }
+    
     /* Hero image and overlay */
     .hero-image {
         position: relative;
@@ -247,10 +235,13 @@
         display: flex;
         gap: 5px;
     }
-    #nav-section h2 {
+    #nav-section a, #nav-section h2  {
         flex: .3;
-        padding-top: 70px;
+        padding-top: 80px;
         text-align: center;
+        color: #000;
+        text-decoration: none;
+        font-size: large;
     }
     
     .nav-title {
@@ -433,38 +424,85 @@
         background-color: #807c7c;
         color: #000;
     }
-    .dark-mode #nav-section {
+    /* .dark-mode #nav-section {
+        background-color: #000;
+        color: #fff;
+    } */
+    .dark-mode #nav-section li, .dark-mode #nav-section {
         background-color: #000;
         color: #fff;
     }
-    .dark-mode #nav-section li {
+    .dark-mode #nav-section li a, .dark-mode #nav-section a  {
+        color: #fff;
+    }
+    /* .dark-mode .final-section {
         background-color: #000;
+        border: #fff 2px solid;
         color: #fff;
-    }
-    .dark-mode #nav-section li a {
-        color: #fff;
-    }
-    .dark-mode .final-section {
+    } */
+    .dark-mode .sidebar div, .dark-mode .final-section {
         background-color: #000;
         border: #fff 2px solid;
         color: #fff;
     }
-    .discovery.main {
-        width: 760px;
-        display: grid;
-        grid-template-columns: 25% auto;
-        grid-template-rows: auto;
+    .dark-mode .images-area div {
+        background-color: #131313;
     }
-    div.sidebar {
+    /* Discover Rules */
+    .discover {
+        width: 1025px;
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: auto;
+        /* column-gap: 10px; */
+        border-radius: 7px;
+        /* border: #27272b 2px solid; */
+        box-sizing: border-box;
+        margin: 10px 0;
+    }
+    .sidebar {
         grid-column: 1/2;
         grid-row: auto;
-        height: 250px;
-        width: auto;
+        width: 100%;
+        
     }
-    picture.image-area {
+    .sidebar div {
+        background-color: #a5a2a7;
+        border-radius: 7px;
+        border: #27272b 2px solid;
+        margin-right: 8px;
+        padding: 5px;
+        color: #080808;
+    }
+    .images-area {
         grid-column: 2/3;
-        grid-row: auto;
-        height: auto;
-        width: auto;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        /* background-color: #fff; */
+        /* box-sizing: border-box; */
+        border-radius: 7px;
+       
+    }
+    .images-area div {
+        height: 400px;
+        width: 100%;
+
+        border-radius: 7px;
+        border-bottom: #27272b 2px solid;
+        display: grid;
+        place-items: center;
+        background-color: #828084;
+        margin: 0 0 5px 0;
+        border: #121010 2px solid;
+    }
+    img {
+        width: 480px;
+        border-radius: 7px;
+        border: #776868 2px solid;
+        box-shadow: 10px 10px 5px rgb(178, 178, 178, .25);
+        /* margin: 0; */
     }
 }
