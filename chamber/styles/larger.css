@@ -474,6 +474,13 @@
         padding: 5px;
         color: #080808;
     }
+    #messages {
+        color: #040404;
+        font-size: large;
+        min-height: 20px;
+        border: 0;
+        background-color: #828084;
+    }
     .images-area {
         grid-column: 2/3;
         width: 100%;
@@ -484,7 +491,6 @@
         /* background-color: #fff; */
         /* box-sizing: border-box; */
         border-radius: 7px;
-       
     }
     .images-area div {
         height: 400px;
@@ -504,5 +510,12 @@
         border: #776868 2px solid;
         box-shadow: 10px 10px 5px rgb(178, 178, 178, .25);
         /* margin: 0; */
+    }
+    .images-area img {
+        transition: all ease;
+        cursor: pointer;
+    }
+    .images-area img:hover {
+        transform: scale(1.5);
     }
 }

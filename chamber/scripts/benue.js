@@ -165,3 +165,48 @@ images.forEach(image => {
 // function computeResult(temperature, windSpeed) {
 //   return 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
 // }
+
+
+
+// const currentTime = Date.now();
+
+// const visitTimes = getHoursSinceLastVisit();
+// if (visitTimes === 0) {
+//   localStorage.setItem('visitTime', currentTime);
+//   visitMessage.textContent = 'Welcome! Let us know if you have any questions.';
+// } else if (visitTimes < 24) {
+//   visitMessage.textContent = 'Back so soon! Awesome!';
+// } else {
+//   const days = getDays(visitTimes);
+//   const plural = getPlural(days);
+//   visitMessage.textContent = `You last visited ${days} day${plural} ago.`;
+// }
+
+// function getHoursSinceLastVisit() {
+//   const lastVisitTimeString = localStorage.getItem('visitTime');
+//   if (lastVisitTimeString) {
+//     try {
+//       const lastVisitTime = new Date(lastVisitTimeString);
+//       const timeDifference = Date.now() - lastVisitTime.getTime();
+//       const hoursElapsed = Math.round(timeDifference / 3600000); //ms to hours is equivalent to 3600000
+//       return hoursElapsed;
+//     } catch (e) {
+//       console.error('Error retrieving or calculating hours since last visit:', e);
+//       return 0; // Return 0 in case of errors
+//     }
+//   } else {
+//     // Handle case where no last visit time is stored
+//     return 0;
+//   }
+// }
+// function getDays(hours) {
+//   const days = Math.round(hours / 24);
+//   return days
+// }
+// function getPlural(numbOfDays) {
+//   if (numbOfDays > 1){
+//     return 's';
+//   } else {
+//     return '';
+//   }
+// }
