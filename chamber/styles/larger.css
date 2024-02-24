@@ -464,7 +464,11 @@
         grid-column: 1/2;
         grid-row: auto;
         width: 100%;
-        
+    }
+    .sidebar h2 {
+        width: fit-content;
+        padding-left: 17px;
+
     }
     .sidebar div {
         background-color: #a5a2a7;
