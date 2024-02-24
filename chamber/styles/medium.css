@@ -382,7 +382,7 @@
         margin-left: 30px;
         color: #000;
     }
-    .dark-mode #black-body {
+    .dark-mode #white-background {
         background-color: #000;
         color: var(--headline-color-on-color);
     }
@@ -412,6 +412,10 @@
         border: #fff 2px solid;
         color: #fff;
     }
+    .dark-mode figcaption {
+        text-align: center;
+        color: #f9f7f7;
+    }
 
     .discover {
         min-width: 601px;
@@ -434,6 +438,10 @@
         /* background-color: #fff; */
         /* box-sizing: border-box; */
         border-radius: 7px;
+    }
+    figcaption {
+        text-align: center;
+        color: #010101;
     }
     .images-area div {
         height: 400px;

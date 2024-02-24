@@ -208,7 +208,23 @@
 
         transition: opacity 0.2s ease-in-out;
     }
-    
+    figcaption {
+        text-align: center;
+        color: #010101;
+    }
+    .dark-mode figcaption {
+        text-align: center;
+        color: #f9f7f7;
+    }
+    .dark-mode .sidebar div {
+        background-color: #040404;
+        color: #f3f1f1;
+    }
+    .dark-mode .sidebar h2 {
+        background-color: #040404;
+        color: #f3f1f1;
+        padding: 7px;
+    }
     .image-label {
         position: absolute;
 
@@ -414,7 +430,7 @@
         background-color: #000;
         color: var(--headline-color-on-color);
     }
-    .dark-mode #modeText {
+    .dark-mode #modeText, .dark-mode .images-area h2 {
         color: white;
     }
     .dark-mode #page-head {
@@ -468,7 +484,6 @@
     .sidebar h2 {
         width: fit-content;
         padding-left: 17px;
-
     }
     .sidebar div {
         background-color: #a5a2a7;
