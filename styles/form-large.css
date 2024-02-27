@@ -109,8 +109,8 @@
 		padding-top: 75px;
 	}
 	#range-value {
-		font-size: larger;
-		color: rgb(21, 15, 77);
+		font-size: var(--font-size-3x-large);
+		color:var( --headline-color-on-color);
 	}
 
 	/* Header Rules */
