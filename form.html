@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="author" content="Abah Dominic Odeh" >
+    <meta name="description" content="Home page for WDD 230 - Web Frontend Development. This page will serve as a course assignment portal. Links within this page will be updated each week with activities and revisions for Abah Dominic Odeh." >
+    <meta property="og:title" content="Winter course activities for WDD230: building form" >
+    <meta property="og:type" content="website" >
+    <meta property="og:description" content="Links to weekly activities in Web Design and Development can be found here." >
+    <meta property="og:url" content="https://dommmy200.github.io/" >
+    <meta property="og:image" content="https://github.com/dommmy200/dommmy200.github.io/blob/wdd230x/images/gboko-market.jpeg" >
+    <link rel="canonical" href="https://dommmy200.github.io/">
+    <link type="text/css" rel="stylesheet" href=".//styles/normalize.css" >
+    <link type="text/css" rel="stylesheet" href=".//styles/form-small.css" media="screen and (max-width: 767.98px)" >
+    <link rel="stylesheet" href="styles/form-large.css" media="screen and (min-width: 768px)" >
+    <link rel="icon" href="favicon.ico" >
+    <title>Abah Dominic - WDD 230 - Building Form</title>
+</head>
+<body>
+    <header class="top container">
+        <div class="header image">
+            <picture>
+                <img src=".//images/dom-owerri.webp" alt="abah dominic odeh profile picture" width="157" height="200">
+            </picture>
+        </div>
+        <div>
+            <h1 class="header name">Abah O. Dominic</h1>
+        </div>
+    </header>
+    <div id="navigation">
+        <a id="menu"></a>
+        <nav class="first navigation">
+            <ul class="topnav">
+                <li><a href="#">Home</a></li>
+                <li><a href=".//lesson03/chamber-site-plan2.html">Site Plan</a></li>
+                <li><a href=".//chamber/">Benue South-West Chamber of Commerce</a></li>
+                <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/6?lang=eng&id=p4#p4" target="_blank">
+                    Scripture</a></li>
+                <li><a href="https://codepen.io/Dominic-Abah/pen/poYajYj">My Codepen</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="form-body">
+        <form method="get" action="record.html">
+            <div id="form-message"></div>
+            <fieldset class="fieldset one">
+                <legend>Username & Password</legend>
+                <label>Username* <input type="text" name="username" id="username" required></label>
+                <label>Password* <input type="password" name="password2" id="password1" pattern="[a-zA-Z0-9]{8,}" placeholder="At least eight alphanumeric characters long." required></label>
+                <label>Confirmation Password* <input type="password" name="password2" id="password2" required></label>
+            </fieldset>
+            <fieldset class="fieldset two">
+                <legend>Email</legend>
+                <label for="email">Email*</label>
+                <input type="email" name="email" id="email" placeholder="someone@gmail.com" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required>
+            </fieldset>
+            <fieldset class="fieldset three">
+                <legend>Please rate us</legend>
+                <label for="rating">Select (1 - 10) to rate us</label>
+                <div id="range-value">1</div>
+                <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="range-values" required>
+                <datalist id="range-values">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer class="bottom container">
+        <p class="paragraph1">
+            <span class="copyright-logo"></span>
+            <span class="page-author">Dominic Odeh Abah</span>
+            <span class="flag">Nigeria</span></p>
+        <p id="lastModified"></p>
+    </footer>
+    <!-- <script src="scripts/ratings.js"></script> -->
+    <script src="scripts/form.js"></script>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
