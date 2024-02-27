@@ -68,7 +68,8 @@
         /* Chosen from palette colors */
         --headline-color-on-white: #c2c2c3;  /* headlines on a white background */ 
         --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
-        --paragraph-color-on-white: #27272b; /* paragraph text on a white background */ 
+        --paragraph-color-on-white1: #27272b; /* paragraph text on a white background */ 
+		--paragraph-color-on-white2: #444448; /* paragraph text on a white background */ 
         --paragraph-color-on-color: #ffffff; /* paragraph text on a colored background */ 
         --paragraph-background-color: #929295;
         --form-message-color: #fe1201;
@@ -118,7 +119,7 @@
 		width: 960px;
 		height: auto;
 		margin: 0 auto;
-		background-color: var(--paragraph-color-on-white);
+		background-color: var(--paragraph-color-on-white1);
 		/* background-color: var(--paragraph-background-color); */
 
 		display: grid;
@@ -143,7 +144,7 @@
 		align-items: center;
 		justify-content: center;
 		column-gap: 20px;
-		background-color: var(--paragraph-color-on-white);
+		background-color: var(--paragraph-color-on-white2);
 		box-sizing: border-box;
 		border-radius: 5px;
 	}
@@ -182,7 +183,7 @@
 	}
 	.topnav {
 		box-sizing: border-box;
-		background-color: var(--paragraph-color-on-white);
+		background-color: var(--paragraph-color-on-white1);
 		list-style: none;
 		padding: 20px;
 		border-radius: 5px;
@@ -199,7 +200,7 @@
 	.form-body {
 		width: 90%;
 		margin: 0 auto;
-		background-color: var(--paragraph-color-on-white);
+		background-color: var(--paragraph-color-on-white2);
 		border-radius: 5px;
 		padding: 7px;
 		color: #f6f5f5;
@@ -217,7 +218,7 @@
 	}
 	input[type="submit"] {
 		color: white;
-		background-color: var(--paragraph-color-on-white);
+		background-color: var(--paragraph-color-on-white2);
 		cursor: pointer;
 		font-size: larger;
 		border: #060606 2px solid;
@@ -248,7 +249,7 @@
 		justify-content: center;
 		align-items: center;
 		font-size: large;
-		background-color: var(--paragraph-color-on-white);
+		background-color: var(--paragraph-color-on-white1);
 		border-radius: 5px;
 	}
 	#lastModified {
