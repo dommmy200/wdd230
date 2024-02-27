@@ -1,6 +1,10 @@
 * {
     color: aliceblue;
 }
+body {
+    width: 300px;
+    margin: 25vh auto;
+}
 table {
     border: none;
     border-spacing: 0;
