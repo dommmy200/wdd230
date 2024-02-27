@@ -1,13 +1,291 @@
-input:focus,
-textarea:focus {
-	outline: none;
-}
-input::placeholder {
-	font-size: 3px;
-}
-#form-message {
-	visibility: none;
-	margin: 10px;
-	padding: 0.5rem;
-	color: red;
+@media screen and (min-width: 768px) {
+    @font-face {
+        font-family: 'confortaa';
+        font-weight: 600;
+        src: url(..//styles/fonts/comforter-regular-webfont.woff2) format('woff2'),
+            url(..//styles/fonts/comforter-regular-webfont.woff) format('woff')
+    }
+    @font-face {
+        font-family: 'montserrat';
+        font-weight: 600;
+        src: url(..//styles/fonts/montserrat-variablefont_wght-webfont.woff2) format('woff2'),
+        url(..//styles/fonts/montserrat-variablefont_wght-webfont.woff) format('woff')
+    }
+    @font-face {
+        font-family: 'salsa';
+        font-weight: 800;
+        src: url(..//styles/fonts/salsa-regular-webfont.woff) format('woff')
+    }
+    @font-face {
+        font-family: 'great vibes';
+        font-weight: 800;
+        src: url(..//styles/fonts/GreatVibes-Regular.woff2) format('woff2')
+    }
+    @font-face {
+        font-family: 'open sans';
+        font-weight: 800;
+        src: url(..//styles/fonts/OpenSans-Italic-Variable.ttf) format('ttf')
+    }
+    @font-face {
+      font-family: 'satisfy';
+      font-weight: 800;
+      src: url(../styles/fonts/Satisfy-Regular.ttf) format('tff')
+    }
+    @font-face {
+      font-family: 'work sans';
+      font-weight: 800;
+      src: url(../styles/fonts/WorkSans-VariableFont.ttf) format('tff')
+    }
+    :root {
+        background-color: #fff;
+       
+        /* Color Palette */
+        --primary-color: #ffffff;
+        --secondary-color: #c2c2c3;
+        --accent1-color: #79797c;
+        --accent2-color: #27272b;
+        --root-color: #99999c;
+
+    
+        /* Chosen fonts */
+        --heading-font: "Bad Script", Arial, sans-serif;
+        --paragraph-font: 'comfortaa', Helvetica, sans-serif;
+        --other-font: Barlow, Arial, sans-serif;
+        --woff2-font-salsa: 'salsa', Arial, sans-serif;
+        --woff2-font-great-vibes: 'great vibes', Helvetica, sans-serif;
+
+        /* Line heights */
+        --line-height: 1.5;
+
+        /* Font Size */
+        --font-size-small: 12px;
+        --font-size-medium: 16px;
+        --font-size-large: 20px;
+        --font-size-x-large: 24px;
+        --font-size-2x-large: 28px;
+        --font-size-3x-large: 32px;
+    
+        /* Chosen from palette colors */
+        --headline-color-on-white: #c2c2c3;  /* headlines on a white background */ 
+        --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
+        --paragraph-color-on-white: #27272b; /* paragraph text on a white background */ 
+        --paragraph-color-on-color: #ffffff; /* paragraph text on a colored background */ 
+        --paragraph-background-color: #929295;
+        --form-message-color: #AA4A44;
+        --nav-link-color: #c2c2c3;
+        --nav-background-color: #27272b;
+        --nav-hover-link-color: #27272b;
+        --nav-hover-background-color: #c2c2c3;
+        --root-background-color: #99999c;
+
+        
+    }
+
+
+	input:focus,
+	textarea:focus {
+		outline: none;
+	}
+	input::placeholder {
+		font-size: var(--font-size-small);
+	}
+	#form-message {
+		visibility: none;
+		margin: 10px;
+		padding: 0.5rem;
+		font-size: x-large;
+        font-family: var(--woff2-font-salsa);
+		color: var(--form-message-color);
+		text-shadow: #efecec;
+	}
+	#record {
+		background-color: dimgray;
+		border: 2px solid grey;
+		border-radius: 10px;
+		color: aliceblue;
+		width: 600px;
+		margin: 25vh auto;
+		height: 15rem;
+		padding: 0;
+	}
+	#record h1 {
+		text-align: center;
+		padding-top: 75px;
+	}
+	#range-value {
+		font-size: larger;
+		color: rgb(21, 15, 77);
+	}
+
+	/* Header Rules */
+	body {
+		width: 960px;
+		height: auto;
+		margin: 0 auto;
+		background-color: #b8b4b6;
+		/* background-color: var(--paragraph-background-color); */
+
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: 220px 240px auto 220px;
+		grid-template-areas: 
+			"laman"
+			"lemuel"
+			"sam"
+			"nephi";
+		box-sizing: border-box;
+		row-gap: 15px;
+	}
+
+	/* Header Rules */
+	header.container {
+		grid-area: laman;
+		height: 250px;
+		width: 100%;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 20px;
+		background-color: #737381;
+		box-sizing: border-box;
+		border-radius: 5px;
+	}
+	.header.image picture img{
+		border: 3px solid gray;
+		padding: 0;
+		border-radius: 8px;
+	}
+	.header.name {
+		font-family: var(--woff2-font-salsa);
+		font-size: var(--font-size-3x-large);
+		font-weight: 1000;
+		color: #f6f5f5;
+	}
+	.navigation {
+		grid-area: lemel;
+		box-sizing: border-box;
+		border-radius: 5px;
+		
+	}
+	.form-body {
+		grid-area: sam;
+	}
+	.bottom {
+		grid-area: nephi;
+	}
+
+	/* Navigation Rules */
+	#menu {
+		display: none;
+	}
+	#navigation {
+		grid-area: lemuel;
+		height:auto;
+		margin-top: 10px;
+	}
+	.topnav {
+		box-sizing: border-box;
+		background-color: #737381;
+		list-style: none;
+		padding: 20px;
+		border-radius: 5px;
+		
+	}
+	.topnav li a {
+		font-family: var(--woff2-font-salsa), Arial, Helvetica, sans-serif;
+		font-size: x-large;
+		text-decoration: none;
+		color: #f6f5f5;
+	}
+
+	/* Main Section Rules */
+	.form-body {
+		width: 90%;
+		margin: 0 auto;
+		background-color: #737381;
+		border-radius: 5px;
+		padding: 7px;
+		color: #f6f5f5;
+	}
+	.fieldset.one label input{
+		display: block;
+		margin-bottom: 10px;
+		border-radius: 5px;
+		font-size: larger;
+
+	}
+	.fieldset {
+		border-radius: 5px;
+		margin-bottom: 10px;
+	}
+	input[type="submit"] {
+		color: white;
+		background-color: #737381;
+		cursor: pointer;
+		font-size: larger;
+		border: #060606 2px solid;
+		border-radius: 5px;
+	}
+	input[type="range"] {
+		font-size: x-large;
+	}
+	/* Footer Rules */
+	.bottom li:hover {
+		background-color: #a3a3a9;
+		width: 60%;
+	}
+	.bottom span:hover, #lastModified:hover {
+		cursor: pointer;
+		background-color: #7b7878;
+		color: #fff;
+		padding-bottom: 5px;
+		border-radius: 5px;
+	}
+	.bottom li a:hover {
+		color: #f1f1f3;
+	}
+	.bottom.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center; 
+		justify-content: center;
+		align-items: center;
+		font-size: large;
+		background-color: #737381;
+		border-radius: 5px;
+	}
+	#lastModified {
+		
+		font-weight: bolder;
+		display: inline-block;
+	}
+	#lastModified, .copyright-logo, .page-author, .flag {
+		color: rgb(248, 244, 244);
+		width: auto;
+	}
+	.copyright-logo, .page-author, .flag {
+		display: block;
+		text-align: center;
+		color: #f6f5f5;
+	}
+	.paragraph1 {
+		display: block;
+		width: 400px;
+	}
+	.page-author::after {
+		content: url("../images/flower.jpeg");
+		display: inline;
+		margin-left: 20px;
+	}
+	.page-author::before {
+		content: url("../images/flower.jpeg");
+		display: inline;
+		margin-right: 20px;
+	}
+	.flag::after {
+		content: url("../images/naija.png");
+		display: inline;
+		margin-left: 20px;
+	}
 }
