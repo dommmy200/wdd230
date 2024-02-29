@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <meta name="author" content="Abah Dominic Odeh" >
+        <meta name="description" content="The new member page offers new members the opportunity to join the chamber by filling out the form with their credentials." >
+        <meta property="og:title" content="New membership join page" >
+        <meta property="og:type" content="website" >
+        <meta property="og:description" content="Links to weekly activities in Web Design and Development can be found here." >
+        <meta property="og:url" content="https://dommmy200.github.io/" >
+        <meta property="og:image" content="https://github.com/dommmy200/dommmy200.github.io/blob/wdd230x/images/gboko-market.jpeg" >
+        <link rel="canonical" href="https://dommmy200.github.io/">
+        <link type="text/css" rel="stylesheet" href=".//styles/normalize.css" >
+        <link type="text/css" rel="stylesheet" href=".//styles/base.css" media="screen and (max-width: 767.98px)" >
+        <link rel="stylesheet" href=".//styles/larger.css" media="screen and (min-width: 768px)" >
+        <link rel="icon" href="favicon.ico" >
+        <title>Join page for new members</title>
+    </head>
+<body>
+    <header class="top container">
+        <div class="header image">
+            <picture>
+                <img src="..//images/dom-owerri.webp" alt="abah dominic odeh profile picture" width="157" height="200">
+            </picture>
+        </div>
+        <div>
+            <h1 class="header name">Abah O. Dominic</h1>
+        </div>
+    </header>
+    <div id="navigation">
+        <a id="menu"></a>
+        <nav class="first navigation">
+            <ul class="topnav">
+                <li><a href="#">Home</a></li>
+                <li><a href="..//lesson03/chamber-site-plan2.html">Site Plan</a></li>
+                <li><a href="..//chamber/">Benue South-West Chamber of Commerce</a></li>
+                <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/6?lang=eng&id=p4#p4" target="_blank">
+                    Scripture</a></li>
+                <li><a href="https://codepen.io/Dominic-Abah/pen/poYajYj">My Codepen</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="new-members">
+        <h1>Member Form</h1>
+        <div id="form-message"></div>
+        <form method="get" action="..//thankyou.html">
+            <fieldset class="fieldset top">
+                <legend>Personal Information</legend>
+                <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Details</legend>
+                <label>Title/Position* <input type="text" name="title" id="title" pattern="[A-Za-z/s/-]{7,}" required></label>
+                <label>Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                <label>Telephone* <input type="tel" name="phone" id="phone" placeholder="08012345678" required></label>
+                <label>Organization/Business Name* <input type="text" name="organization" id="organization" required></label>
+            </fieldset>
+            <fieldset>
+                <legend></legend>
+                <label>Membership Level<br>Please, select your preferred choice. <abbr title="This field is mandatory" aria-label="required">*</abbr><input type="text" id="level" name="level" list="levels" required></label>
+            </fieldset>
+            <fieldset>
+                <legend></legend>
+                <label for="biz">Organization/Business Description:</label>
+                <textarea id="biz" cols="40" rows="5" name="description" placeholder="Enter your description here..." required readonly></textarea>
+            </fieldset>
+            <datalist id="levels">
+                <option>Non Profit Membership</option>
+                <option>Bronze Membership</option>
+                <option>Silver Membership</option>
+                <option>Gold Membership</option>
+            </datalist>
+
+        </form>
+    </main>
+    <footer class="bottom container">
+        <p class="paragraph1">
+            <span class="copyright-logo"></span>
+            <span class="page-author">Dominic Odeh Abah</span>
+            <span class="flag">Nigeria</span></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="../scripts/form.js"></script>
+    <script src="../scripts/getdates.js"></script>
+</body>
+</html>
