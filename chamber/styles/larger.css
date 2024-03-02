@@ -58,7 +58,6 @@
     }
     /* Body CSS rules */
     #black-body {
-        /* grid-area: body; */
         background-color: #fff;
         border-radius: 12px;
         padding: 20px;
@@ -102,11 +101,9 @@
     }
     .benefits {
         grid-area: main1;
-        height: auto;
     }
     .member-form {
         grid-area: main2;
-        height: auto;
     }
     .top-sections {
         grid-area: top-main;
@@ -156,7 +153,6 @@
         padding: 20px 20px 10px 20px;
         border: none;
         border-radius: 4px;
-        /* margin: 0; */
     }
     input[type='reset'] {
         padding: 5px;
@@ -497,10 +493,6 @@
         background-color: #c0b9b9;
         color: #000;
     }
-    /* .dark-mode #nav-section {
-        background-color: #000;
-        color: #fff;
-    } */
     .dark-mode #nav-section li, .dark-mode #nav-section {
         background-color: #000;
         color: #fff;
@@ -508,11 +500,6 @@
     .dark-mode #nav-section li a, .dark-mode #nav-section a  {
         color: #fff;
     }
-    /* .dark-mode .final-section {
-        background-color: #000;
-        border: #fff 2px solid;
-        color: #fff;
-    } */
     .dark-mode .sidebar div, .dark-mode .final-section {
         background-color: #000;
         border: #fff 2px solid;
@@ -564,8 +551,6 @@
         display: flex;
         flex-direction: column;
         place-items: center;
-        /* background-color: #fff; */
-        /* box-sizing: border-box; */
         border-radius: 7px;
     }
     .images-area div {

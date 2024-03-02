@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', insertTextAndModifiedDate);
 // Call the function to insert the date and icon when the page is loaded
 document.addEventListener('DOMContentLoaded', insertDateAndIcon);
 
+// 
 const mainnav = document.querySelector('.topnav');
 const hambutton = document.querySelector('#menu');
 
