@@ -313,12 +313,45 @@
         font-size:x-small;
         border-radius: 5px;
     }
-    #pseudo-main {
+    #pseudo-main, .new-members {
         grid-area: main;
         font-size: large;
         padding: .6rem;
     }
-
+    /* Form Rules */
+     /* Form Section Rules */
+     .new-members{
+        background-color: #404046;
+    }
+    .new-members h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .new-members, form fieldset {
+        border: 2px solid #929295;
+        border-radius: 7px;
+        padding: 10px;
+        margin: 10px 0 10px 0;
+        color: #fff;
+    }
+    form fieldset {
+       width: auto;
+       display: flex;
+       flex-direction: column;
+    }
+    label input{
+        margin: 4px 0 4px 10px;
+        border-radius: 5px;
+    }
+    fieldset button {
+        border-radius: 50px;
+        width: 50%;
+        background-color: #6d1d17;
+        color: white;
+        line-height: 2rem;
+        align-self: center;
+        cursor: pointer;
+    }
     #page-foot {
         grid-area: footer;
         height: auto;

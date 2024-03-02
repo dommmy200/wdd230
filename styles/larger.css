@@ -72,7 +72,7 @@
     * { 
         font-size: 16px;
     }
-
+    /* Body rules */
     body {
         width: 960px;
         height: auto;
@@ -90,6 +90,7 @@
             "nephi";
         box-sizing: border-box;
     }
+    /* Header Rules */
     header.container {
         grid-area: laman;
         height: 250px;
@@ -113,9 +114,11 @@
         font-weight: 1000;
         color: #040303;
     }
+    /* Hamburger Rules */
     #menu {
         display: none;
     }
+    /* Navigation Section Rules */
     #navigation {
         grid-area: lemuel;
         height: 230px;
@@ -132,6 +135,7 @@
         text-decoration: none;
         color: #040303;
     }
+    /* Main Section Rules */
     .mid.container {
         grid-area: sam;
         width: auto;
@@ -264,6 +268,7 @@
         font-size: larger;
         color: #000;
     }
+    /* Footer Rules */
     .bottom li:hover {
         background-color: #a3a3a9;
         width: 60%;
@@ -287,7 +292,6 @@
         font-size: large;
     }
     #lastModified {
-        
         font-weight: bolder;
         display: inline-block;
     }
@@ -296,10 +300,8 @@
         width: auto;
     }
     .copyright-logo, .page-author, .flag {
-       
         display: block;
         text-align: center;
-       
     }
     .paragraph1 {
         display: block;

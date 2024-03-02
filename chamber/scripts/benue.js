@@ -70,7 +70,7 @@ modeSwitch.addEventListener('change', () => {
 });
 
 const hero = document.querySelector(".hero-image")
-const images = hero.querySelectorAll("picture source");
+const images = hero?.querySelectorAll("picture source");
 
 // const overlay = document.querySelector(".image-label");
 

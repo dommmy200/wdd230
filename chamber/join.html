@@ -12,41 +12,55 @@
         <meta property="og:image" content="https://github.com/dommmy200/dommmy200.github.io/blob/wdd230x/images/gboko-market.jpeg" >
         <link rel="canonical" href="https://dommmy200.github.io/">
         <link type="text/css" rel="stylesheet" href=".//styles/normalize.css" >
-        <link type="text/css" rel="stylesheet" href=".//styles/base.css" media="screen and (max-width: 767.98px)" >
-        <link rel="stylesheet" href=".//styles/larger.css" media="screen and (min-width: 768px)" >
+        <link type="text/css" rel="stylesheet" href=".//styles/base.css" media="screen and (max-width: 600px)" >
+        <link rel="stylesheet" href=".//styles/medium.css" media="screen and (max-width: 1024px) and (min-width: 601px)" >
+        <link rel="stylesheet" href=".//styles/larger.css" media="screen and (min-width: 1025px)" >
         <link rel="icon" href="favicon.ico" >
         <title>Join page for new members</title>
     </head>
-<body>
-    <header class="top container">
-        <div class="header image">
-            <picture>
-                <img src="..//images/dom-owerri.webp" alt="abah dominic odeh profile picture" width="157" height="200">
-            </picture>
+<body id="black-body">
+    <header id="page-head">
+        <div class="top-header">
+            <img class="header-image" src="../chamber/images/b-S-W-chambers.webp" alt="company logo">
         </div>
-        <div>
-            <h1 class="header name">Abah O. Dominic</h1>
+        <div class="bottom-header">
+            <h1 class="company-name">
+                Benue South-West Chamber of Commerce
+            </h1>
+        </div>
+        <div class="switch-container">
+            <label class="switch">
+                <input type="checkbox" id="modeSwitch">
+                <span class="slider"></span>
+            </label>
+            <span id="modeText">Light Mode</span>
         </div>
     </header>
-    <div id="navigation">
-        <a id="menu"></a>
-        <nav class="first navigation">
-            <ul class="topnav">
-                <li><a href="#">Home</a></li>
-                <li><a href="..//lesson03/chamber-site-plan2.html">Site Plan</a></li>
-                <li><a href="..//chamber/">Benue South-West Chamber of Commerce</a></li>
-                <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/6?lang=eng&id=p4#p4" target="_blank">
-                    Scripture</a></li>
-                <li><a href="https://codepen.io/Dominic-Abah/pen/poYajYj">My Codepen</a></li>
-            </ul>
-        </nav>
-    </div>
+    <section id="nav-section">
+        <h2>JoinUs</h2>
+        <div class="nav-title">
+            <img class="nav-picture" src="../chamber/images/join-us.webp" alt="navigation picture">
+        </div>
+        <div id="nav-links">
+            <a id="menu" class="hamburger-anchor" href="#"></a>
+            <nav class="hamburger">
+                <!-- Navigation menu -->
+                <ul class="navigation">
+                    <li><a href=".//discover.html">Discover</a></li>
+                    <li><a href="">Link two</a></li>
+                    <li><a href="">Link three</a></li>
+                    <li><a href="">Link four</a></li>
+                    <li><a href="">Link five</a></li>
+                    <li><a href="">Link six</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
     <main class="new-members">
-        <h1>Member Form</h1>
+        <h1>Membership Form</h1>
         <div id="form-message"></div>
-        <form method="get" action="..//thankyou.html">
-            <fieldset class="fieldset top">
+        <form id="join-form" method="get" action="..//thankyou.html" autocomplete="on">
+            <fieldset>
                 <legend>Personal Information</legend>
                 <label>First Name* <input type="text" name="fname" id="fname" required></label>
                 <label>Last Name* <input type="text" name="lname" id="lname" required></label>
@@ -59,13 +73,17 @@
                 <label>Organization/Business Name* <input type="text" name="organization" id="organization" required></label>
             </fieldset>
             <fieldset>
-                <legend></legend>
-                <label>Membership Level<br>Please, select your preferred choice. <abbr title="This field is mandatory" aria-label="required">*</abbr><input type="text" id="level" name="level" list="levels" required></label>
+                <legend>Membership Level</legend>
+                <label>Please, select your preferred choice. <abbr title="This field is mandatory" aria-label="required">*</abbr><input type="text" id="level" name="level" list="levels" required></label>
             </fieldset>
             <fieldset>
-                <legend></legend>
-                <label for="biz">Organization/Business Description:</label>
-                <textarea id="biz" cols="40" rows="5" name="description" placeholder="Enter your description here..." required readonly></textarea>
+                <legend>Organization/Business Description</legend>
+                <label><textarea id="biz" cols="40" rows="5" name="description" placeholder="Please, describe your organization/business." required></textarea></label>
+            </fieldset>
+            <fieldset>
+                <input type="hidden" id="submit-time" name="submit-time">
+                <input type="hidden" id="submit-date" name="submit-date">
+                <button type="submit">Membership Upload</button>
             </fieldset>
             <datalist id="levels">
                 <option>Non Profit Membership</option>
@@ -73,17 +91,23 @@
                 <option>Silver Membership</option>
                 <option>Gold Membership</option>
             </datalist>
-
         </form>
     </main>
-    <footer class="bottom container">
-        <p class="paragraph1">
-            <span class="copyright-logo"></span>
-            <span class="page-author">Dominic Odeh Abah</span>
-            <span class="flag">Nigeria</span></p>
-        <p id="lastModified"></p>
+    <footer id="page-foot">
+        <div id="copy-date"></div>
+        <div id="author-name">
+            Abah O. Dominic
+        </div>
+        <div class="course-name">
+            <p>WDD230 PROJECT</p>
+        </div>
+        <div id="lastModified"></div>
     </footer>
+    <script src="../chamber/scripts/benue.js"></script>
+    <script src="../chamber/scripts/windchill.js"></script>
+</body>
     <script src="../scripts/form.js"></script>
     <script src="../scripts/getdates.js"></script>
+    <script src="..//chamber/scripts/join.js"></script>
 </body>
 </html>

@@ -69,7 +69,7 @@
         border-radius: 5px;
         margin: 5px 5px 0 5px;
 
-        grid-column: 2;
+        /* grid-column: 2; */
         
         display: grid;
         grid-template-rows: auto;
@@ -182,7 +182,7 @@
         grid-area: side;
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 30px 150px 200px;
+        grid-template-rows: 30px 250px 200px;
         grid-template-areas:
             "top-nav"
             "mid-nav"
@@ -192,7 +192,7 @@
     #nav-section h2 {
         grid-area: top-nav;
         text-align: center;
-        color: #fff;
+        color: #0d0a0a;
         font-size: medium;
     }
     .nav-title {
@@ -250,12 +250,48 @@
         font-size: small;
         border-radius: 5px;
     }
-    #pseudo-main {
+    #pseudo-main, .new-members {
         grid-area: main;
         font-size: large;
         padding: .6rem;
 
     }
+    /* Form Rules */
+     /* Form Section Rules */
+     .new-members{
+        background-color: #404046;
+        margin: 10px;
+    }
+    .new-members h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .new-members, form fieldset {
+        border: 2px solid #929295;
+        border-radius: 7px;
+        padding: 10px;
+        margin: 10px 0 10px 0;
+        color: #fff;
+    }
+    form fieldset {
+       width: auto;
+       display: flex;
+       flex-direction: column;
+    }
+    label input{
+        margin: 4px 0 4px 10px;
+        border-radius: 5px;
+    }
+    fieldset button {
+        border-radius: 50px;
+        width: 50%;
+        background-color: #6d1d17;
+        color: white;
+        line-height: 2rem;
+        align-self: center;
+        cursor: pointer;
+    }
+    /* Footer Rules */
     #page-foot {
         grid-area: footer;
         margin: 12px;
