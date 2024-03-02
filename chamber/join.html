@@ -57,41 +57,116 @@
         </div>
     </section>
     <main class="new-members">
-        <h1>Membership Form</h1>
-        <div id="form-message"></div>
-        <form id="join-form" method="get" action="../thankyou.html" autocomplete="on">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label>First Name* <input type="text" name="fname" id="fname" required></label>
-                <label>Last Name* <input type="text" name="lname" id="lname" required></label>
-            </fieldset>
-            <fieldset>
-                <legend>Business Details</legend>
-                <label>Title/Position* <input type="text" name="title" id="title" pattern="[A-Za-z/s/-]{7,}" required></label>
-                <label>Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
-                <label>Telephone* <input type="tel" name="phone" id="phone" placeholder="08012345678" required></label>
-                <label>Organization/Business Name* <input type="text" name="organization" id="organization" required></label>
-            </fieldset>
-            <fieldset>
-                <legend>Membership Level</legend>
-                <label>Please, select your preferred choice.<input id="level" name="level" list="levels" required></label>
-            </fieldset>
-            <fieldset>
-                <legend>Organization/Business Description</legend>
-                <label><textarea id="description" rows="5" cols="40" name="description" placeholder="Please, describe your organization/business." required></textarea></label>
-            </fieldset>
-            <fieldset>
-                <!-- <input type="hidden" id="submit-time" name="submit-time"> -->
-                <input type="hidden" id="submit-date" name="submit-date">
-                <button type="submit">Membership Upload</button>
-            </fieldset>
-            <datalist id="levels">
-                <option>Non Profit Membership</option>
-                <option>Bronze Membership</option>
-                <option>Silver Membership</option>
-                <option>Gold Membership</option>
-            </datalist>
-        </form>
+        <section class="benefits">
+            <h1>Membership Level Benefits</h1>
+            <div>
+                <h2>Gold Membership</h2>
+                <p>Maximum Visibility:
+                    Prominent placement in all member directories (print and online)
+                    Priority listing in event marketing materials and website listings
+                    Opportunity to sponsor major events or programs</p>
+                <p>Enhanced Networking:
+                    Exclusive access to networking events with high-profile attendees
+                    Dedicated account manager for personalized support and guidance
+                    Invitations to board meetings or committee participation</p>
+                <p>Premium Resources:
+                    Discounts on all workshops, seminars, and training programs
+                    Access to exclusive webinars, reports, and industry data
+                    Free consultations with business advisors or legal counsel (limited)</p>
+                <p>Brand Recognition:
+                    Co-branding opportunities with the organization
+                    Logo placement on all marketing materials and website (premium spot)
+                    Public recognition for their contributions</p>
+            </div>
+            <div>
+                <h2>Silver Membership</h2>
+                <p>Increased Visibility:
+                    Featured placement in member directories
+                    Inclusion in event marketing materials and website listings
+                    Opportunity to sponsor mid-sized events or programs (discounted rates)
+                </p>
+                <p> Valuable Networking:
+                    Access to a variety of networking events
+                    Dedicated member support team for assistance
+                    Invitations to committee meetings (optional)
+                </p>
+                <p> Essential Resources:
+                    Discounts on select workshops, seminars, and training programs
+                    Access to industry reports and resources
+                    Free consultations with business advisors or legal counsel (limited time)</p>
+                <p> Brand Exposure:
+                    Logo placement on website and marketing materials (standard spot)
+                    Recognition in newsletters or publications (optional)</p>
+            </div>
+            <div>
+                <h2>Bronze Membership</h2>
+                <p> Basic Visibility:
+                    Listed in member directories
+                    Inclusion in general event marketing materials</p>
+                <p> Networking Opportunities:
+                    Access to select networking events (discounted rates)
+                    Connection with other members through online platforms</p>
+                <p> Introductory Resources:
+                    Discounted rates on a limited number of workshops or training programs
+                    Access to basic industry resources
+                </p>
+                <p> Brand Awareness:
+                    Logo listed in member directory (basic placement)
+                </p>
+            </div>
+            <div>
+                <h2>Non Profit Membership</h2>
+                <p> Discounted Membership Fees:
+                    Reduced membership fees to support their mission and work
+                </p>  
+                <p> Promotional Opportunities:
+                    Opportunity to showcase their work through chamber channels (website, newsletter)
+                    Free or discounted space at events (subject to availability)</p>
+                <p> Capacity Building Resources:
+                    Access to relevant workshops or training programs at reduced rates
+                    Connection to other non-profit organizations and community resources</p>
+                <p> Advocacy Support:
+                    Collaboration on advocacy efforts that benefit the non-profit sector
+                    Increased visibility and credibility within the community</p>
+            </div>
+        </section>
+        <section class="member-form">
+            <h1>Membership Form</h1>
+            <div id="form-message"></div>
+            <form id="join-form" method="get" action="../thankyou.html" autocomplete="on">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Details</legend>
+                    <label>Title/Position* <input type="text" name="title" id="title" pattern="[A-Za-z/s/-]{7,}" required></label>
+                    <label>Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                    <label>Telephone* <input type="tel" name="phone" id="phone" placeholder="08012345678" required></label>
+                    <label>Organization/Business Name* <input type="text" name="organization" id="organization" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label>Please, select your preferred choice.<input id="level" name="level" list="levels" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Organization/Business Description</legend>
+                    <label><textarea id="description" rows="5" cols="40" name="description" placeholder="Please, describe your organization/business." required></textarea></label>
+                </fieldset>
+                <fieldset>
+                    <!-- <input type="hidden" id="submit-time" name="submit-time"> -->
+                    <input type="hidden" id="submit-date" name="submit-date">
+                    <button type="submit">Membership Upload</button>
+                </fieldset>
+                <datalist id="levels">
+                    <option>Non Profit Membership</option>
+                    <option>Bronze Membership</option>
+                    <option>Silver Membership</option>
+                    <option>Gold Membership</option>
+                </datalist>
+            </form>
+        </section>
     </main>
     <footer id="page-foot">
         <div id="copy-date"></div>

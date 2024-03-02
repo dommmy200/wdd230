@@ -75,7 +75,7 @@
         gap: 5px;
     }
 
-    #pseudo-main, .new-members {
+    #pseudo-main {
         grid-area: main;
         font-size: large;
         padding: .6rem;
@@ -86,6 +86,27 @@
             "top-main"
             "mid-main"
             "base-main";
+    }
+    .new-members {
+        grid-area: main;
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100% ;
+        min-height: 100%;
+        grid-template-areas:
+            "main1 main2";
+        gap: 5px;
+        box-sizing: border-box;
+    }
+    .benefits {
+        grid-area: main1;
+        height: auto;
+    }
+    .member-form {
+        grid-area: main2;
+        height: auto;
     }
     .top-sections {
         grid-area: top-main;
