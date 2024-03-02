@@ -245,8 +245,8 @@
     }
     .hamburger-anchor {
         grid-area: on-top;
-        background-color: #67676c;
-        color: #000;
+        background-color: #313135;
+        color: #fcfafa;
         font-size:x-large;
         text-decoration: none;
         border: 1px solid rgb(244, 238, 238);
@@ -256,8 +256,8 @@
     }
     .hamburger-anchor.show {
         grid-area: on-top;
-        background-color: #67676c;
-        color: #000;
+        background-color: #313135;
+        color: #fcf9f9;
         font-size: x-large;
         text-decoration: none;
         border: 1px solid rgb(244, 238, 238);

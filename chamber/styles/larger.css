@@ -475,7 +475,7 @@
         background-color: #dddde8;
     }
     .dark-mode .course-name, .dark-mode #lastModified, .dark-mode #author-name, .dark-mode #copy-date, .dark-mode .bottom-header, .dark-mode .company-name {
-        background-color: #807c7c;
+        background-color: #c0b9b9;
         color: #000;
     }
     /* .dark-mode #nav-section {
