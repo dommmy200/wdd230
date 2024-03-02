@@ -124,7 +124,7 @@
         border-radius: 8px;
     }
     .clear-button {
-        background-color: #9f0f0f;
+        background-color: #5d0f09;
         color: rgb(246, 244, 244);
         height: 20px;
         padding: 10px;
@@ -284,7 +284,7 @@
         padding: 0;
         border: 1px slategrey solid;
         border-radius: 5px;
-        background-color: #952626;
+        background-color: #5d0f09;
     }
      /* Hero image and overlay */
      .hero-image {
