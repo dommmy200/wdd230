@@ -376,6 +376,8 @@
         grid-template-rows: repeat(2, 1fr);
         height: 100px;
         width: 80px;
+        background-color: #000;
+        border-radius: 10px;
     }
     /* Hide default HTML checkbox */
     .switch input {
@@ -390,7 +392,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #030303;
+        background-color: #f4f2f2;
         transition: 0.4s;
         border-radius: 34px;
     }
@@ -401,16 +403,16 @@
         width: 26px;
         left: 4px;
         bottom: 4px;
-        background-color: white;
+        background-color: rgb(6, 5, 5);
         transition: 0.4s;
         border-radius: 50%;
     }
     input:checked + .slider {
-        background-color: #050505;
+        background-color: #faf9f9;
     }
     input:checked + .slider:before {
         transform: translateX(26px);
-        background-color: #f7f4f4;
+        background-color: #0b0a0a;
     }
     #modeText {
         display: block;
