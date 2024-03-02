@@ -390,7 +390,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #2196F3;
+        background-color: #030303;
         transition: 0.4s;
         border-radius: 34px;
     }
@@ -406,17 +406,17 @@
         border-radius: 50%;
     }
     input:checked + .slider {
-        background-color: #2196F3;
+        background-color: #133f62;
     }
     input:checked + .slider:before {
         transform: translateX(26px);
-        background-color: #ef0e0e;
+        background-color: #f7f4f4;
     }
     #modeText {
         display: block;
         margin-top: 10px;
         margin-left: 30px;
-        color: #08f37e;
+        color: #f7f7f7;
     }
     .dark-mode #white-background {
         background-color: #000;

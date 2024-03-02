@@ -487,13 +487,13 @@
     }
     input:checked + .slider:before {
         transform: translateX(26px);
-        background-color: #ef0e0e;
+        background-color: #f5f3f3;
     }
     #modeText {
         display: block;
         margin-top: 10px;
         margin-left: 30px;
-        color: #08f37e;
+        color: #f7f7f7;
     }
     .dark-mode .course-name, .dark-mode #lastModified, .dark-mode #author-name, .dark-mode #copy-date, .dark-mode .bottom-header, .dark-mode .company-name {
         background-color: #807c7c;
