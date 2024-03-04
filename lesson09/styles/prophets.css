@@ -1,0 +1,53 @@
+body { 
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(207, 205, 205);
+  font-size: 16px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+}
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  background-color: #969595;
+  padding: 20px;
+  box-shadow: 0 0 40px #434343;
+}
+section {
+  margin: 0.15rem;
+  padding: 0.35rem;
+  background-color: #626685;
+  border: 1px solid #3317a3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img {
+  width: auto;
+  max-width: 325px;
+  box-shadow: 0 0 30px #777;
+  height: 200px;
+  border: 1px solid #333;
+}
+h4 {
+  margin: 0;
+}
+h2 {
+  margin: 10px;
+  color: rgb(25, 25, 78);
+}
+header {
+  position: relative;
+  top: 0;
+  left: 30rem ;
+  color: rgb(25, 25, 78);
+}
+footer {
+  position: relative;
+  bottom: 0;
+  left: 30rem;
+  line-height: 40px;
+}

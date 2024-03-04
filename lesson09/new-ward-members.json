@@ -1,0 +1,45 @@
+{
+    "wardMember": {
+        "movedIn": "2011-04-01",
+        "population": 6,
+        "isVisited": false,
+        "members": [
+            {
+                "name": "Dominic Abah",
+                "gender": "Male",
+                "birthday": "new Date('1967-11-14T09:00:00Z')",
+                "position": "Father"
+            },
+            {
+                "name": "Doris DominicAbah",
+                "gender": "Female",
+                "birthday": "new Date('1979-11-05T09:00:00Z')",
+                "position": "Mother"
+            },
+            {
+                "name": "Gills DominicAbah",
+                "gender": "Male",
+                "birthday": "new Date('2007-08-30T09:00:00Z')",
+                "position": "First Child"
+            },
+            {
+                "name": "Ophiney DominicAbah",
+                "gender": "Male",
+                "birthday": "new Date('2009-10-18T09:00:00Z')",
+                "position": "Second Child"
+            },
+            {
+                "name": "Omae DominicAbah",
+                "gender": "Male",
+                "birthday": "new Date('2011-12-17T09:00:00Z')",
+                "position": "Third Child"
+            },
+            {
+                "name": "Onyejae DominicAbah",
+                "gender": "Male",
+                "birthday": "new Date('2016-10-03T09:00:00Z')",
+                "position": "Fourth Child"
+            }
+        ]
+    }
+}
