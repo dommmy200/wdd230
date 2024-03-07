@@ -4,12 +4,8 @@
             "lesson":"01",
             "links": [
                 {
-                    "url": "/nothing-within.html",
+                    "url": ".//nothing-within.html",
                     "title ": "Empty Link"
-                },
-                {
-                    "url": ".//lesson02/design.html",
-                    "title ": "Course Homepage Build"
                 }
             ]
         },
@@ -109,7 +105,7 @@
             "lesson":"10",
             "links": [
                 {
-                    "url": "/nothing-within.html",
+                    "url": "./nothing-within.html",
                     "title ": "Empty Link"
                 }
             ]
