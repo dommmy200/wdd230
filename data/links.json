@@ -78,7 +78,7 @@
             "lesson":"07",
             "links": [
                 {
-                    "url": "/nothing-within.html",
+                    "url": "./nothing-within.html",
                     "title ": "Empty Link"
                 }
             ]
@@ -87,7 +87,7 @@
             "lesson":"08",
             "links": [
                 {
-                    "url": ".//lesson08/bom.html",
+                    "url": ".//lesson08/tablebuild.html",
                     "title": "Table Build"
                 }
             ]
