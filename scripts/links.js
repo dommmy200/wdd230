@@ -19,8 +19,8 @@ const displayLinks = (weeks) => {
     h3.textContent = 'Learning Activities';
     section.appendChild(h3);
 
-    nav.classList.add('second navigation');
-    ul.classList.add('bottom nav');
+    nav.classList.add('navigation');
+    ul.classList.add('nav');
 
     weeks.forEach(week => {
         let wks = week.links;
