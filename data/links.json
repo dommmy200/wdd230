@@ -51,7 +51,7 @@
             "lesson":"04",
             "links": [
                 {
-                    "url": "/nothing-within.html",
+                    "url": ".//nothing-within.html",
                     "title ": "Empty Link"
                 }
             ]
@@ -78,7 +78,7 @@
             "lesson":"07",
             "links": [
                 {
-                    "url": "./nothing-within.html",
+                    "url": ".//nothing-within.html",
                     "title ": "Empty Link"
                 }
             ]
