@@ -4,11 +4,11 @@
             "lesson":"01",
             "links": [
                 {
-                    "url": "",
-                    "title ": "Course Homepage Build"
+                    "url": "/nothing-within.html",
+                    "title ": "Empty Link"
                 },
                 {
-                    "url": "/lesson02/design.html",
+                    "url": ".//lesson02/design.html",
                     "title ": "Course Homepage Build"
                 }
             ]
@@ -17,11 +17,11 @@
             "lesson":"02",
             "links": [
                 {
-                    "url": "/lesson02/design-principles.html",
+                    "url": ".//lesson02/design-principles.html",
                     "title": "Design Principles Document"
                 },
                 {
-                    "url": "/lesson02/design.html",
+                    "url": ".//lesson02/design.html",
                     "title": "Design Principles Document"
                 }
             ]
@@ -30,23 +30,23 @@
             "lesson":"03",
             "links": [
                 {
-                    "url": "/lesson03/chamber-site-plan.html",
+                    "url": ".//lesson03/chamber-site-plan.html",
                     "title": "Chamber Site Plan 1"
                 },
                 {
-                    "url": "/lesson03/chamber-site-plan2.html",
+                    "url": ".//lesson03/chamber-site-plan2.html",
                     "title": "Chamber Site Plan 2"
                 },
                 {
-                    "url": "/lesson03/directory.html",
+                    "url": ".//lesson03/directory.html",
                     "title": "Directory"
                 },
                 {
-                    "url": "/lesson03/discover.html",
+                    "url": ".//lesson03/discover.html",
                     "title": "Discover"
                 },
                 {
-                    "url": "/lesson03/lazy-load.html",
+                    "url": ".//lesson03/lazy-load.html",
                     "title": "Image Lazy Loading"
                 }
             ]
@@ -54,15 +54,17 @@
         {
             "lesson":"04",
             "links": [
-                "url",
-                "title: Chamber Home Page Start"
+                {
+                    "url": "/nothing-within.html",
+                    "title ": "Empty Link"
+                }
             ]
         },
         {
             "lesson":"05",
             "links": [
                 {
-                    "url": "/lesson05/bom.html",
+                    "url": ".//lesson05/bom.html",
                     "title": "Book of Mormon"
                 }
             ]
@@ -71,7 +73,7 @@
             "lesson":"06",
             "links": [
                 {
-                    "url": "/lesson06/responsive-images",
+                    "url": ".//lesson06/responsive-images",
                     "title": "Responsive Images"
                 }
             ]
@@ -79,15 +81,17 @@
         {
             "lesson":"07",
             "links": [
-                "url",
-                "title: Chamber Discover Page"
+                {
+                    "url": "/nothing-within.html",
+                    "title ": "Empty Link"
+                }
             ]
         },
         {
             "lesson":"08",
             "links": [
                 {
-                    "url": "/lesson08/bom.html",
+                    "url": ".//lesson08/bom.html",
                     "title": "Table Build"
                 }
             ]
@@ -96,7 +100,7 @@
             "lesson":"09",
             "links": [
                 {
-                    "url": "/lesson09/prophets.html",
+                    "url": ".//lesson09/prophets.html",
                     "title": "Latter-Day Prophets"
                 }
             ]
@@ -105,8 +109,8 @@
             "lesson":"10",
             "links": [
                 {
-                    "url": "",
-                    "title": ""
+                    "url": "/nothing-within.html",
+                    "title ": "Empty Link"
                 }
             ]
         }
