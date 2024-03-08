@@ -24,14 +24,12 @@ const displayLinks = (weeks) => {
     let count = 1;
     weeks.forEach(week => {
         let wks = week.links;
-        const weekCount = `Week 0${count}:`;
+        const weekCount = countStyle(count);
 
         const li = document.createElement('li');
         const a = document.createElement('a');
         li.textContent = weekCount;
         wks.forEach(wk => {
-            // const li = document.createElement('li');
-            // const a = document.createElement('a');
             
             a.setAttribute('href', `${wk.url}`);
             a.innerHTML = `${wk.title}`;
@@ -59,6 +57,13 @@ function createPipe() {
     pipe.classList.add("pipe");
   
     return pipe;
+}
+function countStyle(count) {
+    if (count.length < 2) {
+        weekCount = `Week 0${count}:`;
+        return weekCount;
+    }
+    return `Week ${count}:`;;
 }
 
 getLinks();
