@@ -21,7 +21,7 @@ const displayLinks = (weeks) => {
     nav.classList.add('navigation');
     ul.classList.add('nav');
 
-    const count = 1;
+    let count = 1;
     weeks.forEach(week => {
         let wks = week.links;
         const weekCount = `Week 0${count}:`;
