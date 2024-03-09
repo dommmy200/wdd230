@@ -134,7 +134,8 @@
     }
     .directory-grid h2 {
         font-family: "Caveat", cursive;
-        font-size: x-large;
+        font-size: large;
+        color: navy;
     }
     .directory-list {
         display: flex;
@@ -149,7 +150,7 @@
     .directory-list section > * {
         margin: 0.3rem;
     }
-    section a {
+    .section2 a {
         font-family: "Roboto", Arial, sans-serif;
         font-size: 0.85rem;
         color: navy;
@@ -564,6 +565,10 @@
     }
     .dark-mode #modeText, .dark-mode .images-area h2 {
         color: white;
+    }
+    .dark-mode .directory-list section, .section2 a, .directory-grid section, .directory-grid h2 {
+        background-color: #171616;
+        color: #f3f1f1;
     }
     .dark-mode #page-head {
         background-color: #dddde8;

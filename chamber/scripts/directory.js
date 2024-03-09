@@ -31,6 +31,7 @@ const displayCoyMembership = (members) => {
     
     members.forEach(member => {
         const section2 = document.createElement("section");
+        section2.classList.add("section2");
         const h2 = document.createElement("h2");
 
         const image = document.createElement("img");
@@ -55,7 +56,7 @@ const displayCoyMembership = (members) => {
 
         anchor.setAttribute("href", `${member.url}`);
         anchor.setAttribute("target", "_blank");
-        anchor.textContent = "Company Link";
+        anchor.textContent = "Company Web-Link";
 
         section2.appendChild(h2);
         section2.appendChild(p3);

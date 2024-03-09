@@ -254,7 +254,85 @@
         grid-area: main;
         font-size: large;
         padding: .6rem;
+    }
+    .first-child {
+        width: 100%;
+        background-color: #7d7d80;
+        padding: 0.1rem;
+        text-align: center;
+        border-radius: 8px;
+    }
+    .directory-section {
+        grid-area: main;
+        min-height: 100%;
 
+        margin: 0 auto;
+        padding: 0.5rem;
+        max-width: 650px;
+        background-color: #fff;
+        font-family: Roboto, Helvetica, sans-serif;
+    }
+    #directory-grid, #directory-list {
+        padding: 1rem;
+        font-weight: 700;
+    }
+    .directory-grid section {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0.5rem;
+        background-color: #eee;
+
+        text-align: center;
+        height: 20rem;
+        border-radius: 8px;
+    }
+    .directory-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 5px;
+        align-items: center;
+    }
+    .directory-grid img {
+        border: 1px solid #fff;
+	    box-shadow: 0 0 10px #333;
+
+        height: 90px;
+        width: 90px;
+    }
+    .directory-grid section > * {
+        margin: 0.3rem;
+    }
+    .directory-grid h2 {
+        font-family: "Caveat", cursive;
+        font-size: x-large;
+    }
+    .directory-list {
+        display: flex;
+	    flex-direction: column;
+    }
+    .directory-list section {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr .5fr .5fr;
+        margin: 0;
+        padding: 0.25rem;
+    }
+    .directory-list section > * {
+        margin: 0.3rem;
+    }
+    .section2 a {
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 0.85rem;
+        color: navy;
+        letter-spacing: 1.1pt;
+    }
+    .directory-list section:nth-child(even) {
+        background-color: #bed;
+    }
+    .directory-list h2 {
+        font-family: var(--paragraph-font);
+        font-size: medium;
+    }
+    .directory-list section img {
+        display: none;
     }
     /* Form Rules */
      /* Form Section Rules */
@@ -424,7 +502,7 @@
         background-color: #000;
         color: var(--headline-color-on-color);
     }
-    .dark-mode #modeText {
+    .dark-mode #modeText, .dark-mode .section2 a, .dark-mode a[href="join.html"] {
         color: white;
     }
     .dark-mode #page-head {
@@ -454,7 +532,10 @@
         text-align: center;
         color: #f9f7f7;
     }
-
+    .dark-mode .directory-list section, .dark-mode .directory-grid section, .dark-mode .directory-grid h2 {
+        background-color: #171616;
+        color: #f3f1f1;
+    }
     .discover {
         min-width: 601px;
         display: grid;
