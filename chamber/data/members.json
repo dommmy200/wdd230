@@ -1,0 +1,93 @@
+{
+    "members": [
+        {
+            "name":"Lush Events",
+            "address":"Plot 7770 Lush Street, New G.R.A, Makurdi Benue State",
+            "phone":"(234) 806-964-3439",
+            "url":"https://www.iambenue.com/",
+            "images":"../chamber/images/lush-events-logo.webp",
+            "alternate": "image description",
+            "category":"Silver",
+            "status": [
+                "Active", "Not Active"
+            ]
+        },
+        {
+            "name":"Tito Yoghurt Company Limited",
+            "address":"1A Kashim Ibrahim Road, Makurdi, Benue, Nigeria",
+            "phone":"(234) 806-611-9865",
+            "url":"https://www.titoyoghurtplus.com",
+            "images":"../chamber/images/tito-yoghurt-logo.webp",
+            "category":"Gold",
+            "status": [
+                "Active", "Not Active"
+            ]
+        },
+        {
+            "name":"Tosema Specialist Diagnostic Laboratory",
+            "address":"No 33 Old Otukpo Road, High level Makurdi, Makurdi, Benue",
+            "phone":"(234) 902-420-3430",
+            "url":"https://web.facebook.com/tosemalab/?_rdc=1&_rdr",
+            "images":"../chamber/images/tosema-specialist-logo.webp",
+            "category":"Bronze",
+            "status": [
+                "Active", "Not Active"
+            ]
+        },
+        {
+            "name":"Avado Farms",
+            "address":"No.655 Atom Road, Ankpa Quarters, Makurdi, Benue",
+            "phone":"(234) 806-081-7023",
+            "url":"https://web.facebook.com/avadofarms/",
+            "images":"../chamber/images/avado-farms-logo.webp",
+            "category":"Gold",
+            "status": [
+                "Active", "Not Active"
+            ]
+        },
+        {
+            "name":"Mynmaster Corporate Designers",
+            "address":"Upper River Basin Development Authority, Makurdi, Benue",
+            "phone":"(234) 808-295-9549",
+            "url":"http://mahmudabds.wix.com/mynmastermcd",
+            "images":"../chamber/images/mynmaster-corp-logo.webp",
+            "category":"Silver",
+            "status": [
+                "Active", "Not Active"
+            ]
+        },
+        {
+            "name":"Waboke Global Services LTD",
+            "address":"13 gboko road markudi, Makurdi, Benue, Nigeria",
+            "phone":"(234) 706-553-1350",
+            "url":"https://web.facebook.com/wabokeglobalservices/?_rdc=1&_rdr",
+            "images":"../chamber/images/waboke-global-logo.webp",
+            "category":"Gold",
+            "status": [
+                "Active", "Not Active"
+            ]
+        },
+        {
+            "name":"Bushman Farms",
+            "address":"10, Kashim Ibrahim Road, Makurdi, Benue, Nigeria",
+            "phone":"(234) 706-057-5066",
+            "url":"http://www.facebook.com/BushmanFarms",
+            "images":"../chamber/images/bushman-farm-logo.webp",
+            "category":"",
+            "status": [
+                "Active", "Not Active"
+            ]
+        },
+        {
+            "name":"8o8wave Media",
+            "address":"No.6, Old Otukpo Road High Level, Makurdi, Benue State, Nigeria, Makurdi, Benue",
+            "phone":"(234) 815-718-1182",
+            "url":"https://www.8o8wave.com",
+            "images":"../chamber/images/8o8wave-media-logo.webp",
+            "category":"Gold",
+            "status": [
+                "Active", "Not Active"
+            ]
+        }
+    ]
+}
