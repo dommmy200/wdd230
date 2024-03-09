@@ -566,7 +566,7 @@
     .dark-mode #modeText, .dark-mode .images-area h2 {
         color: white;
     }
-    .dark-mode .directory-list section, .section2 a, .directory-grid section, .directory-grid h2 {
+    .dark-mode .directory-list section, .dark-mode .section2 a, .dark-mode .directory-grid section, .dark-mode .directory-grid h2 {
         background-color: #171616;
         color: #f3f1f1;
     }
