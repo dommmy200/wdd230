@@ -51,7 +51,7 @@ async function fetchData() {
   
 async function updatePage() {
     const data = await fetchData();
-    // console.log(data); // Display the json object for ease of reference
+    console.log(data); // Display the json object for ease of reference
     
     // Access the data after it's fetched
     const iconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
@@ -60,9 +60,24 @@ async function updatePage() {
     currentTemp.innerHTML = `${tempt}&deg;F`;
 
     let desc = `${data.weather[0].description}`;
+    let myDesc = capitalizedFirstLetters(desc);
     weatherIcon.setAttribute('src', iconSrc);
     weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = `${desc}`;
+    captionDesc.textContent = `${myDesc}`;
+}
+
+function capitalizedFirstLetters(words){
+    const mySentence = words.split(" ");
+
+    for (let i = 0; i < mySentence.length; i++) {
+        mySentence[i] = mySentence[i][0].toUpperCase() + mySentence[i].substr(1);
+    }
+    return mySentence.join(" ");
+    // OR
+
+    // mySentence.map((word) => { 
+    //     return word[0].toUpperCase() + word.substring(1); 
+    // }).join(" ");
 }
   
 updatePage();
