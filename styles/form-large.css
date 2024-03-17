@@ -37,7 +37,7 @@
       src: url(../styles/fonts/WorkSans-VariableFont.ttf) format('tff')
     }
     :root {
-        background-color: #fff;
+        background-color: #a5a3a3;
        
         /* Color Palette */
         --primary-color: #ffffff;
@@ -86,6 +86,24 @@
 	}
 	input::placeholder {
 		font-size: var(--font-size-small);
+	}
+	.weather0 > h1 {
+		color: #f1f1f3;
+		padding-top: 150px;
+		text-align: center;
+		font-family: var(--woff2-font-salsa);
+	}
+	.weather1, .weather2 {
+		width: auto;
+		text-align: center;
+		color: #f1f1f3;
+		font-size: xx-large;
+		font-family: var(--woff2-font-great-vibes);
+	}
+	.weather0 {
+		height: 100vh;
+		box-shadow: 5px 5px 13px #202031;
+		/* box-shadow: 7px #27272b; */
 	}
 	#form-message {
 		visibility: none;

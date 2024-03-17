@@ -82,7 +82,7 @@
 
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 220px 240px 1250px 220px;
+        grid-template-rows: 220px 270px 1250px 220px;
         grid-template-areas: 
             "laman"
             "lemuel"
@@ -121,7 +121,7 @@
     /* Navigation Section Rules */
     #navigation {
         grid-area: lemuel;
-        height: 230px;
+        height: 250px;
     }
     .topnav {
         box-sizing: border-box;
@@ -197,7 +197,8 @@
         margin-left: 31%;
 
     }
-    .alpha {
+
+    /* .alpha {
         grid-area: link;
         width: 100%;
         height: auto;
@@ -209,8 +210,8 @@
         grid-template-areas:
             "top top"
             "bottom-left bottom-right";
-    }
-    .sub-card1 {
+    } */
+    /* .sub-card1 {
         grid-area: top;
         font-family: var(--woff2-font-great-vibes), Verdana, 'Geneva', Tahoma, sans-serif;
         font-size: xx-large;
@@ -219,26 +220,67 @@
         margin-top: 30px;
         margin-left: 20px;
         color: #060606;
-    }
-    .sub-card2 {
-        font-size: xx-large;
-    }
-    .second {
+    } */
+    /* .second {
         grid-area: bottom-left;
         background-color: #a8a8b5;
-    }
+    } */
     .beta {
-        grid-area: bottom-right;
-        background-color: #b4b4b7;
+        grid-area: link;
+        /* grid-area: bottom-right; */
+        background-color: #acacc4;
+        height: 200px;
+        /* margin: 0 50px 10xp 50px; */
 
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 250px 1fr 250px;
+        grid-template-rows: 40px 80px 80px;
+        grid-template-areas:
+            ". sub ."
+            ". weather ."
+            ". visit .";
+
         font-family: var(--woff2-font-salsa), Arial, Helvetica, sans-serif;
-        text-decoration: none;
+        border: #0a0a0a 2px solid;
+        /* box-shadow: gray; */
+
+        text-align: center;
+        color: #fff;
+        padding-top: 10px;
+    }
+
+    .sub-card2 {
+        grid-area: sub;
+        background-color: #181845;
+
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-top: #5261ac 2px solid;
+        border-left: #5261ac 2px solid;
+        border-right: #5261ac 2px solid;
+        margin: 0;
         font-size: x-large;
-        color: #000;
-        padding-left: 20px;
-        border-left: #0a0a0a 2px solid;
+    }
+    .weather {
+        grid-area: weather;
+        background-color: #7b7b9d;
+
+        border-left: #5261ac 2px solid;
+        border-right: #5261ac 2px solid;
+        padding-top: 15px;
+    }
+    .visits {
+        grid-area: visit;
+        background-color: #7b7b9d;
+        padding-top: 10px;
+        
+        border-bottom: #5261ac 2px solid;
+        border-left: #5261ac 2px solid;
+        border-right: #5261ac 2px solid;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        margin-bottom: 10px;
     }
 
     iframe {
@@ -321,8 +363,5 @@
         content: url("../images/naija.png");
         display: inline;
         margin-left: 20px;
-    }
-    .visits:hover {
-        color: white;
     }
 }

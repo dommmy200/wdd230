@@ -151,21 +151,24 @@
                     <p>Seasonal cup blue mountain as percolator foam turkish fair trade. Plunger pot, bar carajillo dark black flavour latte. That, wings, skinny galão whipped mocha aroma. Americano, mug extraction café au lait, decaffeinated eu froth fair trade aromatic. Frappuccino aftertaste cup eu rich brewed cinnamon aroma.</p> -->
                 </div>
                 <hr>
-                <section class="final-section">
-                    <h1>Wind Chill in °F</h1>
-                    <form class="container">
-                        <label for="temp-input">Temperature (°F):</label>
-                        <input type="number" id="temp-input" name="temp-input" placeholder="Please Enter Temperature">
-                        <label for="wind-input">Wind Speed (mph):</label>
-                        <input type="number" id="wind-input" name="wind-input" placeholder="Please Enter Windspeed">
-                        <button id="wind-chill">Calculate Wind Chill</button>
-                        <input type="reset" value="Reset" />
-                    </form>
-                    <div class="result-wrap">
-                        <p class="wind result"></p>
-                    </div>
-                </section>
-                <hr>
+                <div class="wx-related">
+                    <section class="final-section">
+                        <h1>Wind Chill in °F</h1>
+                        <form class="container">
+                            <label for="temp-input">Temperature (°F):</label>
+                            <input type="number" id="temp-input" name="temp-input" placeholder="Please Enter Temperature">
+                            <label for="wind-input">Wind Speed (mph):</label>
+                            <input type="number" id="wind-input" name="wind-input" placeholder="Please Enter Windspeed">
+                            <button id="wind-chill">Calculate Wind Chill</button>
+                            <input type="reset" value="Reset" />
+                        </form>
+                        <div class="result-wrap">
+                            <p class="wind result"></p>
+                        </div>
+                    </section>
+                    <section class="userEnabled"></section>
+                    <section class="weather"></section>
+                </div>
             </section>
         </section>
     </main>
@@ -181,5 +184,6 @@
     </footer>
     <script src="../chamber/scripts/benue.js"></script>
     <script src="../chamber/scripts/windchill.js"></script>
+    <script src="../chamber/scripts/weather.js"></script>
 </body>
 </html>
