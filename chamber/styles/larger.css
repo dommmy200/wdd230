@@ -262,7 +262,6 @@
         grid-area: top-left;
 
         background-color: #f7f5f5;
-        border-right: #0e0d0d 2px solid;
         color: #010101;
         padding: 10px;
         border-top-left-radius: 8px;
@@ -272,7 +271,6 @@
         grid-area: bottom-left;
         background-color: #939abd;
         border-bottom-left-radius: 8px;
-        border-right: 2px solid black;
         height: 34rem;
     }
     .wx-forecast {
@@ -281,6 +279,7 @@
     .weather {
         grid-area: right;
         padding: 10px;
+        border-left: 2px black solid;
     }
     #close-btn {
         position: absolute;

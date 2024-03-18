@@ -116,6 +116,55 @@
         background-color: #f4f2f2;
         text-align: center;
     }
+    .final-section {
+        grid-area: top-left;
+
+        background-color: #f7f5f5;
+        border-right: #0e0d0d 2px solid;
+        color: #010101;
+        padding: 10px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    .userEnabled {
+        grid-area: bottom-left;
+        background-color: #939abd;
+        border-bottom-left-radius: 8px;
+        border-right: 2px solid black;
+        height: 34rem;
+    }
+    .wx-forecast {
+        padding: 10px;
+    }
+    .weather {
+        grid-area: right;
+        padding: 10px;
+    }
+    #close-btn {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        background-color: #ccc;
+        border: none;
+        border-radius: 5px;
+        color: #000;
+        cursor: pointer;
+        padding: 5px 10px;
+    }
+    #close-btn:hover {
+        background-color: #3b0202;
+        color: #eee;
+    }
+    #banner {
+        position: relative;
+        padding: 7rem;
+        font-family: var(--heading-font);
+        font-size: xx-large;
+    }
+    #banner span {
+        font-family: var(--paragraph-font);
+        color: #6e1818;
+    }
     input[type='reset'] {
         padding: 5px;
         border-radius: 6px;

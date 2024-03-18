@@ -64,7 +64,8 @@ hambutton.addEventListener('click', () => {
 
 // Javascript for local Storage
 const visitsDisplay = document.querySelector('.visits');
-const span = document.querySelector('span');
+const span = document.createElement('span');
+
 const txtNode = document.createTextNode('Page visits: ');
 let numVisits = Number(window.localStorage.getItem('numbVisits-ls')) || 0;
 if (numVisits !== 0) {

@@ -1,5 +1,5 @@
 const currentTemp = document.querySelector('.temperature');
-const weatherIcon = document.querySelector('.icon');
+const weatherIcon = document.querySelector('#wx-icon');
 const captionDesc = document.querySelector('.wx-description');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&appid=07723eae89f8687bda9ae582fd3d6585&units=imperial';
@@ -25,6 +25,7 @@ async function updatePage() {
     let myDesc = capitalizedFirstLetters(desc);
     weatherIcon.setAttribute('src', iconSrc);
     weatherIcon.setAttribute('alt', desc);
+
     captionDesc.textContent = `${myDesc}`;
 }
 

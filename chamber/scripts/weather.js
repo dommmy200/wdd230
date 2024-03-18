@@ -129,30 +129,31 @@ function capitalizedFirstLetters(words){
 function enableUser() {
     const userEnable = document.querySelector('.userEnabled');
     
-    const div = document.createElement('div');
-    div.setAttribute('id', 'banner');
-    div.innerHTML = `All members are hereby invited for Meet and Greet <span>Wednesdays by 7pm</span>`;
+    const user = document.createElement('div');
+    user.setAttribute('id', 'banner');
+    user.innerHTML = `All members are hereby invited for Meet and Greet <span>Wednesdays by 7pm</span>`;
 
     const button = document.createElement('button');
     button.setAttribute('id', 'close-btn');
     button.textContent = 'Close';
 
     button.addEventListener('click', function() {
-        div.style.display = 'none';
+        user.style.display = 'none';
     });
 
-    div.appendChild(button);
-    userEnable.appendChild(div);
+    user.appendChild(button);
+    userEnable.appendChild(user);
 }
 function showBanner() {
-    const banner = document.querySelector('#banner');
-    const timestamp = new Date();
-    let dayNumber = timestamp.getDay();
+    //const banner = document.querySelector('#banner');
+    const userEnable = document.querySelector('.userEnabled');
+    const stamp = new Date();
+    let dayNumber = stamp.getDay();
     if (dayNumber < 1 && dayNumber < 3) {
-        banner.style.display = none;
+        userEnable.style.display = 'none';
     }
 }
-//showBanner();
+showBanner();
 enableUser();
 updateCurrentWx();
 updateForecastWx();
