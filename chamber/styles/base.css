@@ -457,7 +457,7 @@
         font-size: x-large;
     }
     .full-bleed {
-        max-width: 100%;
+        max-width: 30%;
         height: auto;
         border-radius: 5px;
         margin: 5px 5px 0 5px;

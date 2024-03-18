@@ -518,7 +518,7 @@
         font-size: x-large;
     }
     img.full-bleed {
-        max-width: 100%;
+        max-width: 25%;
         height: auto;
 
         float: right;
