@@ -197,34 +197,6 @@
         margin-left: 31%;
 
     }
-
-    /* .alpha {
-        grid-area: link;
-        width: 100%;
-        height: auto;
-        background-color: #96969e;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 20% 80%;
-        grid-template-areas:
-            "top top"
-            "bottom-left bottom-right";
-    } */
-    /* .sub-card1 {
-        grid-area: top;
-        font-family: var(--woff2-font-great-vibes), Verdana, 'Geneva', Tahoma, sans-serif;
-        font-size: xx-large;
-        width: 30%;
-        text-align: center;
-        margin-top: 30px;
-        margin-left: 20px;
-        color: #060606;
-    } */
-    /* .second {
-        grid-area: bottom-left;
-        background-color: #a8a8b5;
-    } */
     .beta {
         grid-area: link;
         background-color: #acacc4;
