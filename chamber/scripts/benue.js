@@ -58,10 +58,10 @@ const modeText = document.getElementById('modeText');
 modeSwitch.addEventListener('change', () => {
     if (modeSwitch.checked) {
         document.body.classList.add('dark-mode');
-        modeText.textContent = 'Dark Mode';
+        modeText.textContent = 'Dark';
     } else {
         document.body.classList.remove('dark-mode');
-        modeText.textContent = 'Light Mode';
+        modeText.textContent = 'Light';
     }
 });
 

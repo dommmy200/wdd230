@@ -57,27 +57,95 @@
         padding: 0;
     }
     /* Body CSS rules */
-    #black-body {
+    #white-background {
+        /* box-sizing: border-box; */
         background-color: #fff;
         border-radius: 12px;
-        padding: 20px;
+        padding: 10px;
 
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto ;
         min-height: 100%;
+        gap: 5px;
+        
         grid-template-areas:
             "header header"
-            "nav nav"
             "main main"
             "footer footer";
-        gap: 5px;
     }
+     /* Header CSS rules */
+    #page-head {
+        grid-area: header;
+        border-radius: 5px;
+    
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "left right";
+    }
+    .header-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .top-header {
+        grid-area: left;
+        background-color: #000;
+        height: 150px;
+    }
+    .bottom-header{
+        grid-area: right;
+        border-radius: 10px;
+        margin-left:10px;
+        text-align: center;
+        padding-top: 30px;
+        background-color: #5d0f09;
+    }
+    .company-name {
+        font-family: Comfortaa;
+        font-weight: calc(700* var(--font-weight-multiplier, 2));
+        font-size: 1.8rem;
+        text-align: center;
+        background-color: #5d0f09;
+        color: var(--headline-color-on-color);
+    }
+    #black-body {
+        background-color: #fff;
+        border-radius: 12px;
+        height: auto;
+        width: 100%;
 
-    #pseudo-main {
+        display: flex;
+        flex-direction: column;
+
         grid-area: main;
+    }
+    /* nav section CSS rules */
+    #nav-section, #nav-sect {
+        margin-top: 10px;
+        background-color: #ececf0;
+        height: 205px;
+
+        display: flex;
+        gap: 5px;
+
+        grid-area: nav;
+    }
+    #nav-section a, #nav-section h2  {
+        flex: .3;
+        padding-top: 80px;
+        text-align: center;
+        color: #040404;
+        text-decoration: none;
         font-size: large;
-        padding: .6rem;
+    }
+    /* Main CSS rules */
+    .pseudo-main {
+        font-size: large;
+        margin-top: 1.2rem;
 
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -85,6 +153,27 @@
             "top-main"
             "mid-main"
             "base-main";
+    }
+    .pseudo {
+        display: flex;
+    }
+    h2, h3 {
+        font-size: x-large;
+        font-style: italic;
+        text-align: center;
+    }
+    /* footer CSS rules */
+    #page-foot {
+        height: 100px;
+
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto ;
+        grid-template-areas:
+            "bottom-left top-right middle-right bottom-right";
+        gap: 5px;
+
+        grid-area: footer;
     }
     .first-child {
         width: 100%;
@@ -181,9 +270,18 @@
     }
     .benefits {
         grid-area: main1;
+        color: #000;
+        background-color: #fff;
+        padding: 5px;
+        border-radius: 5px;
     }
     .member-form {
         grid-area: main2;
+        color: #000;
+        background-color: #fff;
+    }
+    .member-form label, .member-form legend {
+        color: #000;
     }
     .top-sections {
         grid-area: top-main;
@@ -317,38 +415,6 @@
         margin: 0;
         cursor: pointer;
     }
-    /* Header CSS rules */
-    #page-head {
-        grid-area: header;
-        border-radius: 5px;
-    
-        display: grid;
-        grid-template-columns: 100px 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "left right";
-    }
-    .header-image {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 5px;
-    }
-    .bottom-header{
-        grid-area: right;
-        border-radius: 5px;
-        margin: 5px;
-        padding-top: 20px;
-        background-color: #5d0f09;
-    }
-    .company-name {
-        font-family: Comfortaa;
-        font-weight: calc(700* var(--font-weight-multiplier, 2));
-        font-size: 1.8rem;
-        text-align: center;
-        background-color: #5d0f09;
-        color: var(--headline-color-on-color);
-    }
     
     /* Hero image and overlay */
     .hero-image {
@@ -389,23 +455,6 @@
         font-family: "comfortaa", Arial, Helvetica, sans-serif;
         font-size: large;
         border-radius: 5px;
-    }
-    /* nav section CSS rules */
-    #nav-section {
-        grid-area: nav;
-        background-color: #ececf0;
-        height: 205px;
-
-        display: flex;
-        gap: 5px;
-    }
-    #nav-section a, #nav-section h2  {
-        flex: .3;
-        padding-top: 80px;
-        text-align: center;
-        color: #040404;
-        text-decoration: none;
-        font-size: large;
     }
     
     .nav-title {
@@ -476,18 +525,6 @@
         word-spacing: 5px;
         font-size: large;
     }
-    /* footer CSS rules */
-    #page-foot {
-        grid-area: footer;
-        height: 100px;
-
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows: auto ;
-        grid-template-areas:
-            "bottom-left top-right middle-right bottom-right";
-        gap: 5px;
-    }
     #copy-date {
         grid-area: bottom-left;
     }
@@ -518,7 +555,7 @@
         font-size: x-large;
     }
     img.full-bleed {
-        max-width: 25%;
+        max-width: 20%;
         height: auto;
 
         float: right;
@@ -556,7 +593,7 @@
     .switch {
         position: fixed;
         top: 4rem;
-        right: 1rem;
+        right: 1.3rem;
         display: inline-block;
         width: 60px;
         height: 34px;
@@ -564,7 +601,7 @@
     .switch-container {
         position: fixed;
         top: 1rem;
-        right: 1rem;
+        right: .8rem;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
@@ -610,8 +647,10 @@
     }
     #modeText {
         display: block;
-        margin-top: 10px;
-        margin-left: 30px;
+        /* margin-top: 10px;
+        margin-left: 30px; */
+        padding-left: 21px;
+        padding-top: 13px;
         color: #f4f7f6;
     }
     .dark-mode #black-body {
@@ -627,19 +666,20 @@
     }
     .dark-mode #page-head {
         background-color: #dddde8;
+        color: #fff;
     }
     .dark-mode .course-name, .dark-mode #lastModified, .dark-mode #author-name, .dark-mode #copy-date, .dark-mode .bottom-header, .dark-mode .company-name {
-        background-color: #e8e1e1;
-        color: #000;
+        background-color: #000;
+        color: #fff;
     }
-    .dark-mode #nav-section li, .dark-mode #nav-section {
+    .dark-mode #nav-section li, .dark-mode #nav-section, .dark-mode .benefits, .dark-mode fieldset label, .dark-mode fieldset legend, .dark-mode .member-form {
         background-color: #000;
         color: #fff;
     }
     .dark-mode #nav-section li a, .dark-mode #nav-section a  {
         color: #fff;
     }
-    .dark-mode .sidebar div, .dark-mode .final-section {
+    .dark-mode .sidebar div, .dark-mode .final-section, .dark-mode button[type="submit"], .dark-mode #messages {
         background-color: #000;
         border: #fff 2px solid;
         color: #fff;
@@ -677,11 +717,12 @@
         color: #080808;
     }
     #messages {
-        color: #040404;
+        color: rgb(8, 8, 8);
+        text-align: center;
         font-size: large;
         min-height: 20px;
         border: 0;
-        background-color: #828084;
+        background-color: #d1ced3;
     }
     .images-area {
         grid-column: 2/3;
@@ -718,4 +759,25 @@
     .images-area img:hover {
         transform: scale(1.5);
     }
+    #empty {
+		width: 960px;
+		height: auto;
+		margin: 0 auto;
+		background-color: var(--paragraph-color-on-white1);
+    }
+    #record {
+		background-color: rgb(30, 29, 29);
+		border: 2px solid grey;
+		border-radius: 10px;
+		color: aliceblue;
+		width: 600px;
+		margin: 25vh auto;
+		height: 15rem;
+		padding: 0;
+	}
+	#record h1 {
+		text-align: center;
+        font-size: xx-large;
+		padding-top: 75px;
+	}
 }

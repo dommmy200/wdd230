@@ -310,7 +310,7 @@
         font-size: small;
         border-radius: 5px;
     }
-    #pseudo-main, .new-members {
+    .pseudo-main, .new-members {
         grid-area: main;
         font-size: large;
         padding: .6rem;
@@ -671,4 +671,24 @@
         border: 0;
         background-color: #b6b5b7;
     }
+    #empty {
+		width: 500px;
+		height: auto;
+		margin: 0 auto;
+		background-color: var(--paragraph-color-on-white1);
+    }
+    #record {
+		background-color: rgb(30, 29, 29);
+		border: 2px solid grey;
+		border-radius: 10px;
+		color: aliceblue;
+		width: 400px;
+		margin: 25vh auto;
+		height: 15rem;
+		padding: 0;
+	}
+	#record h1 {
+		text-align: center;
+		padding-top: 75px;
+	}
 }
