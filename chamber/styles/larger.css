@@ -402,7 +402,8 @@
     }
     #banner span {
         font-family: var(--paragraph-font);
-        color: #6e1818;
+        color: #040404;
+        font-size: large;
     }
     .clear-button {
         background-color: #5d0f09;
@@ -456,7 +457,7 @@
         font-size: large;
         border-radius: 5px;
     }
-    
+
     .nav-title {
         flex: 1;
 
