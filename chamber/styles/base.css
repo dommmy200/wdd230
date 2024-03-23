@@ -46,33 +46,28 @@
     body {
         font-family: sans-serif;
         box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-size: 12px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 14px;
         background-color: #807c7c;
-        /* width: 700px; */
+        width: 100%;
+        height: auto;
+    }
+    #white-background {
+        border-radius: 12px;
+        padding: 10px;
 
-        /* display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 15% 1fr 15%; */
-    
+        display: flex;
+        flex-direction: column;
     }
     #black-body {
         font-family: sans-serif;
-        background-color: #fff;
-        margin: 0;
-
-        grid-column: 2;
+        background-color: #faf6f6;
+        width: 100%;
+        margin: 10px auto;
         
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "header header"
-            "side side"
-            "main main"
-            "main main"
-            "footer footer";
+        display: flex;
+        flex-direction: column;
         gap: 5px;
     }
     .container {
@@ -197,6 +192,8 @@
     #page-head {
         grid-area: header;
         border-radius: 5px;
+        height: auto;
+        margin: 10px;
     
         display: grid;
         grid-template-columns: 100px 1fr;
@@ -223,15 +220,21 @@
         text-align: center;
         color: var(--headline-color-on-color);
     }
+    .sidebar {
+        box-sizing: border-box;
+        margin: 0;
+        max-width: 500px;
+        align-self: center;
+    }
     .sidebar h2, .sidebar h3 {
         width: 100%;
-       text-align: center;
+        text-align: center;
     }
     .sidebar div {
         background-color: #a5a2a7;
         border-radius: 7px;
         border: #27272b 2px solid;
-        margin: 5px;
+        margin: 5px 0;
         padding: 5px;
         color: #080808;
     }
@@ -241,6 +244,9 @@
         border: #776868 2px solid;
         box-shadow: 10px 10px 5px rgb(178, 178, 178, .25);
         /* margin: 0; */
+    }
+    figure {
+        margin: 0;
     }
     .images-area img {
         transition: all ease;
@@ -252,19 +258,14 @@
     /* nav section CSS rules */
     #nav-section {
         grid-area: side;
-        max-height: 100px;
+        height: 100%;
+        width: 100%;
         margin: 0;
         box-sizing: border-box;
 
-        display: grid;
-        grid-template-columns: repeat(14, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas: 
-            "left left image image image image lnks lnks lnks lnks lnks lnks lnks lnks"
-            "left left image image image image lnks lnks lnks lnks lnks lnks lnks lnks"
-            "left left image image image image lnks lnks lnks lnks lnks lnks lnks lnks"
-            "left left image image image image lnks lnks lnks lnks lnks lnks lnks lnks";
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
     .nav-title {
         grid-area: image;
         color: #080707;
@@ -292,7 +293,8 @@
     }
     #nav-links {
         grid-area: lnks;
-        height: 100%;
+        width: 100%;
+        height: 110px;
         z-index: 1;
 
         display: grid;
@@ -379,7 +381,7 @@
     }
     /* Form Rules */
      /* Form Section Rules */
-     .new-members{
+    .new-members{
         background-color: #404046;
     }
     .new-members h1{
