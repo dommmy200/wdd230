@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="author" content="Abah Dominic Odeh" >
+    <meta name="description" content="Home page for WDD 230 - Web Frontend Development. This page will serve as a course assignment portal. Links within this page will be updated each week with activities and revisions for Abah Dominic Odeh." >
+    <meta property="og:title" content="Winter course activities for WDD230" >
+    <meta property="og:type" content="website" >
+    <meta property="og:description" content="Links to weekly activities in Web Design and Development can be found here." >
+    <meta property="og:url" content="https://dommmy200.github.io/" >
+    <meta property="og:image" content="https://github.com/dommmy200/dommmy200.github.io/blob/wdd230x/images/gboko-market.jpeg" >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="canonical" href="https://dommmy200.github.io/">
+    <!-- <link rel="canonical" href="https://github.com/dommmy200/wdd230/blob/gh-pages/scoot/index.html" />
+    <meta http-equiv="refresh" content="0; url=https://github.com/dommmy200/wdd230/blob/gh-pages/scoot/" /> -->
+   
+    <link type="text/css" rel="stylesheet" href=".//styles/normalize.css" >
+    <link type="text/css" rel="stylesheet" href=".//styles/base.css" media="screen and (max-width: 767.98px)" >
+    <link rel="stylesheet" href=".//styles/larger.css" media="screen and (min-width: 768px)" >
+    <link rel="icon" href="favicon.ico" >
+    <title>Abah Dominic - WDD 230 - Web Frontend Development</title>
+</head>
+<body id="wrapper">
+    <header class="top container">
+        <div class="header image">
+            <picture>
+                <img src=".//images/dom-owerri.webp" alt="abah dominic odeh profile picture" width="157" height="200">
+            </picture>
+        </div>
+        <!-- <div> -->
+        <h1 class="header name">Abah O. Dominic</h1>
+        <!-- </div> -->
+    </header>
+    <div id="navigation">
+        <a id="menu"></a>
+        <nav class="first navigation">
+            <ul class="topnav">                 
+                <li><a href="#">Home</a></li>
+                <li><a href=".//lesson03/chamber-site-plan2.html">Site Plan</a></li>
+                <li><a href=".//chamber/">Benue South-West Chamber of Commerce</a></li>
+                <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/6?lang=eng&id=p4#p4" target="_blank">
+                    Scripture</a></li>
+                <li><a href="https://codepen.io/Dominic-Abah/pen/poYajYj">My Codepen</a></li>
+                <li><a href=".//lesson10/weather.html">Tier-Germany Weather</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="mid container">
+        <div class="hero image">
+            <picture>
+                <source srcset=".//lesson06/images/salt-lake-temple-small.webp" media="(max-width: 400px)">
+                <source srcset=".//lesson06/images/salt-lake-temple-large.webp" media="(max-width:960px)">
+                <img src=".//lesson06/images/salt-lake-temple-large.webp" alt="Aba Temple of Latter Day Saints" width="960" height="450">
+            </picture>
+        </div>
+        <div class="hero label">
+			<p>Salt Lake Temple</p>
+		</div>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <div class="line"></div>
+        <!-- Javascript dynamically populates this section with "Learning Activities" -->
+        <section class="beta card">
+            <h3 class="sub-card2">Information</h3>
+            <div class="visits"></div>
+            <div class="weather">
+                <img id="wx-icon" src="#" alt="xyz">
+                <div class="wx-description"></div>
+                <span class="temperature"></span>
+            </div>
+        </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23673.238646487956!2d8.058966111480366!3d7.11009400825128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105af4786063f635%3A0x241f799ebc348ae!2sBenue!5e0!3m2!1sen!2sng!4v1708448259532!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+    <footer class="bottom container">
+        <p class="paragraph1">
+            <span class="copyright-logo"></span>
+            <span class="page-author">Dominic Odeh Abah</span>
+            <span class="flag">Nigeria</span></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <!-- <script src="scripts/links.js"></script> -->
+    <script src="scripts/wx.js"></script>
+</body>
+</html>
