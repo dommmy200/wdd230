@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abah Dominic Odeh" >
+    <meta name="description" content="Scoots is a fictitious motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea" >
+    <meta property="og:title" content="home page for the scoots rentals" >
+    <meta property="og:description" content="Scoots is a fictitious motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea. Scoots caters to locals, walk-in tourists, motor scooter enthusiasts, and cruise-based touring groups and partnerships" >
+    <meta property="og:type" content="website" >
+    <meta property="og:url" content="https://dommmy200.github.io/" >
+    <meta property="og:image" content="https://github.com/dommmy200/dommmy200.github.io/blob/wdd230x/images/gboko-market.jpeg" >
+    <link type="text/css" rel="stylesheet" href="./styles/normalize.css" >
+    <link rel="stylesheet" href=".//styles/styles.css" >
+    <link rel="icon" href="favicon.ico" >
+    <title>Scoots Home</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Scoots</h1>
+        <h2 class="description">For your leisure and relaxation do it in style</h2>
+        <div class="highest-temp"></div>
+        <img class="scoot-logo" src=".//images/scooter-cartoon-vector.webp" alt="scoots logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href=".//rental.html">Rental</a></li>
+            <li><a href=".//reservation.html">Reservation</a></li>  
+            <li><a href=".//wireframe.html">Site Way Finder</a></li>
+            <li><a href=".//contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main class="main others">
+        <div class="fun-side">
+            <div class="beach one">
+                <div class="ancho side">
+                    <a href=".//reservation.html" class="anchor">Check Rental Reservation Here!</a>
+                    <img class="anchor-img" src=".//images/beach.webp" alt="booking">
+                </div>
+                <div class="summary side">
+                    <h2>Summary</h2>
+                    <h3>How much does it cost to rent a car in Cozumel for a week?</h3>
+                    <p>Based on the average daily cost of NGN 58,263, it will cost you around NGN 407,842 for a week on our site.</p>
+                    <h3>Which car do people usually rent in Cozumel?</h3>
+                    <p>Medium is the most popular car group to rent in Cozumel among our users, followed by large and small.</p>
+                    <h3>Which companies offer the cheapest car rates in Cozumel?</h3>
+                    <p>
+                        In the past 6 months, 11 rental companies were offering the cheapest rates for Medium car on our site:
+                        Dollar for an average daily price of NGN 30,417
+                        Fox for an average daily price of NGN 32,058
+                        Keddy By Europcar for an average daily price of NGN 33,905</p>
+                        <h3>Can I rent a car directly at the airport when I arrive in Cozumel?</h3>
+                        <p>
+                            Yes, you can. There is just one airport in Cozumel – Cozumel International Airport. Based on our bookings, you can rent a car from at least 11 car rental companies there, including these:
+                            Mex
+                            Mas By Mex
+                            Budget
+                            Alamo
+                            Avis
+                            Keddy By Europcar
+                            Hertz
+                            Payless
+                            Fox
+                            Europcar
+                            Dollar</p>
+                        <h3>How far in advance should I book the car rental in Cozumel?</h3>
+                        <p>
+                            14% of our customers usually book a car last-minute for an average price of NGN 62,202 per day. But the cheapest time to book is 2 weeks ahead of your trip, for an average price of NGN 56,944 per day.</p>
+                        <h3>What is special about Cozumel Mexico?</h3>
+                        <p>
+                            What To Do In Cozumel? | Cozumel Visitors Guide 2024
+                            Cozumel is world-renowned for its scuba diving and proximity to numerous top dive sites. The Mesoamerican reef system is the second-largest reef system in the world (after the Great Barrier Reef), and there is extensive coral and sea life with incredible visibility.</p>
+                        <h3>Why do people visit Cozumel?</h3>
+                        <p>
+                            It's clear, warm water, spectacular coral reefs, and an abundance of marine life make it hard not to visit this splendid island. With showcasing its beauty and lots of fun things to do, it is a bucket-list-worthy Mexican island. It is an exciting destination with so many exciting things to offer for travelers.</p>
+                </div>
+            </div>
+            <div class="beach two">
+                <div class="wx-side">
+                    <p>The current temperature in Cozumel, Mexico is <span id="current-temp"></span></p>
+                    <p>The current humidity in Cozumel, Mexico is <span id="current-humidity"></span></p>
+                    <p><span id="forecast14"></span></p>
+                    <p><span id="forecast15"></span></p>
+                    <p><span id="forecast16"></span></p>
+                    <figure>
+                        <img id="weather-icon" >
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <img src=".//images/cruise-ship.webp" alt="cruise ship">
+            </div>
+        </div>
+        <div id="cozumel"></div>
+    </main>
+    <footer id="page-foot">
+        <div id="copy-date"></div>
+        <a href=".//attribution.html">Attribution</a>
+    </footer>
+    <script src=".//scripts/wx.js"></script>
+    <script src="scripts/attractions.js"></script>
+</body>
+</html>

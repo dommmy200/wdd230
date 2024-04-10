@@ -6,6 +6,7 @@
     "words": [
         "birthdate",
         "byui",
+        "colspan",
         "deletebutton",
         "favchap",
         "hambutton",
@@ -25,7 +26,8 @@
         "Ophiney",
         "rangevalue",
         "tablebuild",
-        "topnav"
+        "topnav",
+        "Wireframe"
     ],
     "ignoreWords": [],
     "import": []

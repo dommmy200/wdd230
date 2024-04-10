@@ -5,6 +5,7 @@ async function getProphetData() {
     const response = await fetch(url);
     const data = await response.json();
     // console.table(data.prophets); // temporary testing of data retrieval
+    // console.log(data);
     displayProphets(data.prophets); // note that we reference the prophets array of the JSON data object, not just the object
 }
 const displayProphets = (prophets) => {
