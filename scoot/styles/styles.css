@@ -16,7 +16,7 @@
 
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto 980px 220px;
+        grid-template-rows: auto auto 990px 220px;
         grid-template-areas: 
             "laman"
             "lemuel"
@@ -89,7 +89,7 @@
         display: block;
         background-color: #444;
         color: #eee;
-        border-left: 1px solid #777;
+        border-left: 2px solid #777;
         padding: .5rem 0;
         text-decoration: none;
         font-size: .9rem;
@@ -100,6 +100,7 @@
     nav ul li a:hover {
         background-color: #eee;
         color: #333;
+        
     }
     nav ul li.active a {
         background-color: #000;
@@ -110,7 +111,7 @@
         grid-area: sam;
 
         width: 70%;
-        margin: 0 auto;
+        margin: 20px auto;
         background-color: rgb(253, 253, 253);
         box-sizing: border-box;
     }
@@ -711,7 +712,8 @@
         grid-area: sam;
 
         width: 70%;
-        margin: 0 auto;
+       
+        margin: 20px auto;
         background-color: rgb(253, 253, 253);
         box-sizing: border-box;
     }
