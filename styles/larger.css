@@ -333,4 +333,43 @@
         display: inline;
         margin-left: 20px;
     }
+    /* -----------Index Page---------- */
+    .indx1 {
+        height: 80vh;
+        margin: 50px auto;
+        background-color: #000;
+        color: white;
+        border-radius: 10px;
+
+        position: relative;
+    }
+    .indx2 {
+        position: absolute;
+        top: 6rem;
+        left: 7rem;
+        font-size: x-large;
+    }
+
+    .indx3 {
+        position: absolute;
+        color: white;
+        top: 15rem;
+        left: 9rem;
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #52acac;
+        margin: 20px;
+        padding: 10px;
+    }
+    .indx3 a {
+        display: block;
+        color: white;
+        font-size: xx-large;
+        text-decoration: none;
+        padding: 20px;
+       
+        background-color: #263535;
+    }
 }
