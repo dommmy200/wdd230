@@ -595,7 +595,7 @@
 
         width: 70%;
         height: 5rem;
-        padding: 15px;
+        padding: 5px;
         margin: 0 auto;
         background-color: rgb(121, 121, 129);
 
@@ -605,6 +605,21 @@
         font-size: x-large;
         text-decoration: none;
         color: #fff;
+    }
+    .copyright-logo {
+        background-color:#444;
+        width: fit-content;
+        padding: 4px;
+        margin-bottom: 5px;
+    }
+    a[href=".//attribution.html"] {
+        background-color: #5c1784;
+        padding: 8px;
+    }
+    a[href=".//attribution.html"]:hover {
+        background-color: #9b05f1;
+        padding: 8px;
+        border: 1px solid crimson;
     }
     header {
         grid-area: laman;
@@ -1168,7 +1183,7 @@
 
         width: 70%;
         height: 5rem;
-        padding: 15px;
+        padding: 30px;
         margin: 0 auto;
         background-color: rgb(121, 121, 129);
 
@@ -1178,6 +1193,21 @@
         font-size: x-large;
         text-decoration: none;
         color: #fff;
+    }
+    .copyright-logo {
+        background-color:#444;
+        width: fit-content;
+        padding: 4px;
+        margin-bottom: 5px;
+    }
+    a[href=".//attribution.html"] {
+        background-color: #5c1784;
+        padding: 8px;
+    }
+    a[href=".//attribution.html"]:hover {
+        background-color: #9b05f1;
+        padding: 8px;
+        border: 1px solid crimson;
     }
     header {
         grid-area: laman;

@@ -45,4 +45,22 @@ const displayAttractionPix = (aList) => {
     });
 }
 
+function getCurrentYear() {
+    return new Date().getFullYear();
+}
+
+function insertDateAndIcon() {
+    const dateContainer = document.querySelector(".copyright-logo");
+
+    // Create a text node with the copyright symbol
+    const copyrightSymbol = document.createTextNode(' \u00A9'); // Unicode character for the copyright symbol
+
+    // Create a text node with the current date
+    const dateTextNode = document.createTextNode(getCurrentYear());
+
+    // Append the icon and text node to the container element
+    dateContainer.appendChild(copyrightSymbol);
+    dateContainer.appendChild(dateTextNode);
+}
+insertDateAndIcon();
 getLinks();
