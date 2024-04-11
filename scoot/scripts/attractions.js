@@ -5,15 +5,12 @@ async function getLinks() {
     const response = await fetch(attractions);
     const data = await response.json();
     
-    console.log(data);
-    // console.table(data);
     displayAttractionPix(data);
 }
 
 const displayAttractionPix = (aList) => {
     aList.forEach(element => {
         
-        console.log(element.images);
         const imageContainer = document.createElement("div");
         imageContainer.classList.add("image-container");
 
