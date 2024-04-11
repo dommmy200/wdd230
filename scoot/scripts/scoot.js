@@ -6,6 +6,7 @@ const thead = document.createElement('thead');
 async function getScootPricingData() {
     const response = await fetch(url);
     const data = await response.json();
+    displayPriceList(data)
 }
 
 const displayPriceList = (pricing) => {
