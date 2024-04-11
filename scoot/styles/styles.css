@@ -181,7 +181,8 @@
         padding: 60px 0;
         text-decoration: none;
         color: rgb(11, 11, 11);
-        font-size: xx-large;
+        font-size: x-large;
+        display: block;
     }
     .ancho img {
         position: absolute;
