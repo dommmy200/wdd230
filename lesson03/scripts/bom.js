@@ -1,7 +1,7 @@
 // Target DOM elements
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
-const list = document.querySelector('#list');
+const list = document.querySelector('#list'); // ul container
 
 let chaptersArray = getChapterList() || [];
 chaptersArray.forEach(chapter => {
@@ -34,16 +34,16 @@ function displayList(item) {
 }
 
 function setChapterList() {
-  localStorage.setItem('myFavBOMList', JSON.stringify(chaptersArray));
+  localStorage.setItem('myFavBOMList', JSON.stringify(chaptersArray)); // Convert the array into JSON object
 }
 
 function getChapterList() {
-  return JSON.parse(localStorage.getItem('myFavBOMList'));
+  return JSON.parse(localStorage.getItem('myFavBOMList')); // Parse JSON object into an array
 }
 
 function deleteChapter(chapter) {
-  chapter = chapter.slice(0, chapter.length -1);
-  chaptersArray = chaptersArray.filter(item => item !== chapter);
+  chapter = chapter.slice(0, chapter.length -1); // Clean up the variable content
+  chaptersArray = chaptersArray.filter(item => item !== chapter); // Make a new array without the chapter
   setChapterList();
 }
 
